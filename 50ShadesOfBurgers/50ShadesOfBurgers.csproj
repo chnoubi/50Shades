@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectGuid>{DF20C9C0-B8C9-48E8-B106-1C6A9F23DA28}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>_50ShadesOfBurgers</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>50ShadesOfBurgers</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>i386</MtouchArch>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchDebug>true</MtouchDebug>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>i386</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\Ad-Hoc</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <BuildIpa>True</BuildIpa>
+    <CodesignProvision>1d492660-87d1-4bf2-8dbd-e14b452f5e57</CodesignProvision>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\AppStore</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignProvision>Automatic:AppStore</CodesignProvision>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="BurgersNearMeViewController.cs" />
+    <Compile Include="BurgersNearMeViewController.designer.cs">
+      <DependentUpon>BurgersNearMeViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Connections.cs" />
+    <Compile Include="FirstLoginViewController.cs" />
+    <Compile Include="FirstLoginViewController.designer.cs">
+      <DependentUpon>FirstLoginViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GoldenBurgerViewController.cs" />
+    <Compile Include="GoldenBurgerViewController.designer.cs">
+      <DependentUpon>GoldenBurgerViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IntroViewController.cs" />
+    <Compile Include="IntroViewController.designer.cs">
+      <DependentUpon>IntroViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="MainMenuTabBarController.cs" />
+    <Compile Include="MainMenuTabBarController.designer.cs">
+      <DependentUpon>MainMenuTabBarController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Burger.cs" />
+    <Compile Include="Model\BurgerTableModel.cs" />
+    <Compile Include="Model\Country.cs" />
+    <Compile Include="Model\CustomTop10Cell.cs" />
+    <Compile Include="Model\ListPickerViewModel.cs" />
+    <Compile Include="Model\LoadingOverlay.cs" />
+    <Compile Include="Model\Quest.cs" />
+    <Compile Include="Model\QuestionPickerViewModel.cs" />
+    <Compile Include="Model\Reachability.cs" />
+    <Compile Include="Model\Reponses.cs" />
+    <Compile Include="Model\Resto.cs" />
+    <Compile Include="Model\Top10DataSource.cs" />
+    <Compile Include="NoInternetViewController.cs" />
+    <Compile Include="NoInternetViewController.designer.cs">
+      <DependentUpon>NoInternetViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuestionFourFiveViewController.cs" />
+    <Compile Include="QuestionFourFiveViewController.designer.cs">
+      <DependentUpon>QuestionFourFiveViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuestionnaireChoixRestoViewController.cs" />
+    <Compile Include="QuestionnaireChoixRestoViewController.designer.cs">
+      <DependentUpon>QuestionnaireChoixRestoViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuestionnaireIntroViewController.cs" />
+    <Compile Include="QuestionnaireIntroViewController.designer.cs">
+      <DependentUpon>QuestionnaireIntroViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuestionOneViewController.cs" />
+    <Compile Include="QuestionOneViewController.designer.cs">
+      <DependentUpon>QuestionOneViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuestionSixSevenEightViewController.cs" />
+    <Compile Include="QuestionSixSevenEightViewController.designer.cs">
+      <DependentUpon>QuestionSixSevenEightViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuestionSixSevenViewController.cs" />
+    <Compile Include="QuestionSixSevenViewController.designer.cs">
+      <DependentUpon>QuestionSixSevenViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuestionTwoThreeViewController.cs" />
+    <Compile Include="QuestionTwoThreeViewController.designer.cs">
+      <DependentUpon>QuestionTwoThreeViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RestoDetailViewController.cs" />
+    <Compile Include="RestoDetailViewController.designer.cs">
+      <DependentUpon>RestoDetailViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Top10TableViewController.cs" />
+    <Compile Include="Top10TableViewController.designer.cs">
+      <DependentUpon>Top10TableViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Top10ViewController.cs" />
+    <Compile Include="Top10ViewController.designer.cs">
+      <DependentUpon>Top10ViewController.cs</DependentUpon>
+    </Compile>
+    <None Include="GettingStarted.Xamarin" />
+    <None Include="Info.plist" />
+    <Compile Include="Model\Buttons.cs" />
+    <Compile Include="Model\User.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="packages.config" />
+    <Compile Include="Helper Classes\AutoCompleteTextFieldManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Database\SQLite.cs" />
+    <Compile Include="Database\SQLiteAsync.cs" />
+    <InterfaceDefinition Include="Main.storyboard" />
+    <InterfaceDefinition Include="LaunchScreen.storyboard" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\json.net-7.0.1\lib\ios-unified\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="burger-iPhone-Icon.png" />
+    <Content Include="Entitlements.plist" />
+    <BundleResource Include="images\Burger 1.jpg" />
+    <BundleResource Include="images\grade5.jpg" />
+    <BundleResource Include="images\grade45.jpg" />
+    <BundleResource Include="images\grade4.jpg" />
+    <BundleResource Include="images\grade1.jpg" />
+    <BundleResource Include="images\grade05.jpg" />
+    <BundleResource Include="images\grade35.jpg" />
+    <BundleResource Include="images\grade25.jpg" />
+    <BundleResource Include="images\grade15.jpg" />
+    <BundleResource Include="images\grade2.jpg" />
+    <BundleResource Include="images\grade3.jpg" />
+    <BundleResource Include="images\4c1.pain_page1.jpg" />
+    <BundleResource Include="images\4c2.meat.jpg" />
+    <BundleResource Include="images\4d. Salad.jpg" />
+    <BundleResource Include="images\4e. Vue.jpg" />
+    <BundleResource Include="images\4f. fumet ouie.jpg" />
+    <BundleResource Include="images\6a. top .jpg" />
+    <BundleResource Include="images\1. splashscreen.jpg" />
+    <BundleResource Include="images\3. Intro.jpg" />
+    <BundleResource Include="images\4a. IntroQuest.jpg" />
+    <BundleResource Include="images\4b. Resto.jpg" />
+    <BundleResource Include="Resources\survey%401x.png" />
+    <BundleResource Include="Resources\cup%401x.png" />
+    <BundleResource Include="Resources\map%401x.png" />
+    <BundleResource Include="Resources\bestburger%401x.png" />
+    <BundleResource Include="images\nointernet.png" />
+    <BundleResource Include="images\4f fumet.jpg" />
+    <BundleResource Include="images\Tabbar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\burger-iPhone-Icon.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\LaunchImages.launchimage\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Helper Classes\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+</Project>

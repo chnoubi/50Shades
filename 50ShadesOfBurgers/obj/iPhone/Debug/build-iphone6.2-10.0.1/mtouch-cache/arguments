@@ -1,0 +1,40 @@
+# Version: 10.0.0.6 (xcode8: 6c3fee4)
+# [first argument, ignore] # /Library/Frameworks/Xamarin.iOS.framework/Versions/10.0.0.6/lib/mtouch/mtouch.exe
+/Library/Frameworks/Xamarin.iOS.framework/Versions/10.0.0.6/lib/mtouch/mtouch.exe \
+	--cache \
+	"/Users/ronaldhollander/Documents/Business/50 Shades of Burgers/App/50ShadesOfBurgers/Build 1.1/50ShadesOfBurgers/obj/iPhone/Debug/build-iphone6.2-10.0.1/mtouch-cache" \
+	--dev \
+	"/Users/ronaldhollander/Documents/Business/50 Shades of Burgers/App/50ShadesOfBurgers/Build 1.1/50ShadesOfBurgers/bin/iPhone/Debug/build-iphone6.2-10.0.1/50ShadesOfBurgers.app" \
+	--executable \
+	50ShadesOfBurgers \
+	--debug \
+	--linksdkonly \
+	--sdkroot \
+	/Applications/Xcode.app/Contents/Developer \
+	--sdk \
+	10.0 \
+	--targetver \
+	8.0 \
+	--http-message-handler=HttpClientHandler \
+	--tls-provider=default \
+	--abi=arm64 \
+	--symbollist \
+	"/Users/ronaldhollander/Documents/Business/50 Shades of Burgers/App/50ShadesOfBurgers/Build 1.1/50ShadesOfBurgers/obj/iPhone/Debug/build-iphone6.2-10.0.1/mtouch-symbols.list" \
+	--dsym=no \
+	-r \
+	"/Users/ronaldhollander/Documents/Business/50 Shades of Burgers/App/50ShadesOfBurgers/Build 1.1/packages/json.net-7.0.1/lib/ios-unified/Newtonsoft.Json.dll" \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Xml.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Core.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Xamarin.iOS.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll \
+	-r \
+	"/Users/ronaldhollander/Documents/Business/50 Shades of Burgers/App/50ShadesOfBurgers/Build 1.1/packages/json.net-7.0.1/lib/ios-unified/Newtonsoft.Json.dll" \
+	--target-framework \
+	"Xamarin.iOS,v1.0" \
+	"/Users/ronaldhollander/Documents/Business/50 Shades of Burgers/App/50ShadesOfBurgers/Build 1.1/50ShadesOfBurgers/bin/iPhone/Debug//50ShadesOfBurgers.exe" \

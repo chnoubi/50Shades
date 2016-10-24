@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>com.apple.actool.compilation-results</key>
+	<dict>
+		<key>output-files</key>
+		<array>
+			<string>/Users/ronaldhollander/Documents/Business/50 Shades of Burgers/App/50ShadesOfBurgers/50ShadesOfBurgers/obj/iPhone/Ad-Hoc/actool/bundle/AppIcons60x60@2x.png</string>
+			<string>/Users/ronaldhollander/Documents/Business/50 Shades of Burgers/App/50ShadesOfBurgers/50ShadesOfBurgers/obj/iPhone/Ad-Hoc/actool/partial-info.plist</string>
+		</array>
+	</dict>
+</dict>
+</plist>
