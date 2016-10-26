@@ -1,38 +1,20 @@
-/Users/ronaldhollander/Documents/Business/50 Shades of Burgers/App/50ShadesOfBurgers/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/Xamarin.iOS,Version=v1.0.AssemblyAttribute.cs
-/Users/ronaldhollander/Documents/Business/50 Shades of Burgers/App/50ShadesOfBurgers/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/ibtool/_BundleResourceWithLogicalName.items
-/Users/ronaldhollander/Documents/Business/50 Shades of Burgers/App/50ShadesOfBurgers/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/actool/_PartialAppManifest.items
-/Users/ronaldhollander/Documents/Business/50 Shades of Burgers/App/50ShadesOfBurgers/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/actool/_BundleResourceWithLogicalName.items
-/Users/ronaldhollander/Documents/Business/50 Shades of Burgers/App/50ShadesOfBurgers/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/optimized/burger-iPhone-Icon.png
-/Users/ronaldhollander/Documents/Business/50 Shades of Burgers/App/50ShadesOfBurgers/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/optimized/survey@1x.png
-/Users/ronaldhollander/Documents/Business/50 Shades of Burgers/App/50ShadesOfBurgers/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/optimized/cup@1x.png
-/Users/ronaldhollander/Documents/Business/50 Shades of Burgers/App/50ShadesOfBurgers/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/optimized/map@1x.png
-/Users/ronaldhollander/Documents/Business/50 Shades of Burgers/App/50ShadesOfBurgers/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/optimized/bestburger@1x.png
-/Users/ronaldhollander/Documents/Business/50 Shades of Burgers/App/50ShadesOfBurgers/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/optimized/images/nointernet.png
-/Users/ronaldhollander/Documents/Business/50 Shades of Burgers/App/50ShadesOfBurgers/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/optimized/Entitlements.plist
-/Users/ronaldhollander/Documents/Business/50 Shades of Burgers/App/50ShadesOfBurgers/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/optimized/
-/Users/ronaldhollander/Documents/Business/50 Shades of Burgers/App/50ShadesOfBurgers/50ShadesOfBurgers/bin/iPhoneSimulator/Debug/50ShadesOfBurgers.exe.mdb
-/Users/ronaldhollander/Documents/Business/50 Shades of Burgers/App/50ShadesOfBurgers/50ShadesOfBurgers/bin/iPhoneSimulator/Debug/50ShadesOfBurgers.pdb
-/Users/ronaldhollander/Documents/Business/50 Shades of Burgers/App/50ShadesOfBurgers/50ShadesOfBurgers/bin/iPhoneSimulator/Debug/50ShadesOfBurgers.exe
-/Users/ronaldhollander/Documents/Business/50 Shades of Burgers/App/50ShadesOfBurgers/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/50ShadesOfBurgers.exe
-/Users/ronaldhollander/Documents/Business/50 Shades of Burgers/App/50ShadesOfBurgers/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/50ShadesOfBurgers.exe.mdb
-/Users/ronaldhollander/Documents/Business/50 Shades of Burgers/App/50ShadesOfBurgers/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/50ShadesOfBurgers.pdb
-/Users/ronaldhollander/Documents/Business/50 Shades of Burgers/App/50ShadesOfBurgers/50ShadesOfBurgers/bin/iPhoneSimulator/Debug/Newtonsoft.Json.dll
-/Users/ronaldhollander/Documents/Business/50 Shades of Burgers/App/50ShadesOfBurgers/Build 1.1/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/Xamarin.iOS,Version=v1.0.AssemblyAttribute.cs
-/Users/ronaldhollander/Documents/Business/50 Shades of Burgers/App/50ShadesOfBurgers/Build 1.1/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/actool/_PartialAppManifest.items
-/Users/ronaldhollander/Documents/Business/50 Shades of Burgers/App/50ShadesOfBurgers/Build 1.1/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/actool/_BundleResourceWithLogicalName.items
-/Users/ronaldhollander/Documents/Business/50 Shades of Burgers/App/50ShadesOfBurgers/Build 1.1/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/optimized/burger-iPhone-Icon.png
-/Users/ronaldhollander/Documents/Business/50 Shades of Burgers/App/50ShadesOfBurgers/Build 1.1/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/optimized/survey@1x.png
-/Users/ronaldhollander/Documents/Business/50 Shades of Burgers/App/50ShadesOfBurgers/Build 1.1/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/optimized/cup@1x.png
-/Users/ronaldhollander/Documents/Business/50 Shades of Burgers/App/50ShadesOfBurgers/Build 1.1/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/optimized/map@1x.png
-/Users/ronaldhollander/Documents/Business/50 Shades of Burgers/App/50ShadesOfBurgers/Build 1.1/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/optimized/bestburger@1x.png
-/Users/ronaldhollander/Documents/Business/50 Shades of Burgers/App/50ShadesOfBurgers/Build 1.1/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/optimized/images/nointernet.png
-/Users/ronaldhollander/Documents/Business/50 Shades of Burgers/App/50ShadesOfBurgers/Build 1.1/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/optimized/Entitlements.plist
-/Users/ronaldhollander/Documents/Business/50 Shades of Burgers/App/50ShadesOfBurgers/Build 1.1/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/optimized/
-/Users/ronaldhollander/Documents/Business/50 Shades of Burgers/App/50ShadesOfBurgers/Build 1.1/50ShadesOfBurgers/bin/iPhoneSimulator/Debug/50ShadesOfBurgers.exe.mdb
-/Users/ronaldhollander/Documents/Business/50 Shades of Burgers/App/50ShadesOfBurgers/Build 1.1/50ShadesOfBurgers/bin/iPhoneSimulator/Debug/50ShadesOfBurgers.pdb
-/Users/ronaldhollander/Documents/Business/50 Shades of Burgers/App/50ShadesOfBurgers/Build 1.1/50ShadesOfBurgers/bin/iPhoneSimulator/Debug/50ShadesOfBurgers.exe
-/Users/ronaldhollander/Documents/Business/50 Shades of Burgers/App/50ShadesOfBurgers/Build 1.1/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/50ShadesOfBurgers.exe
-/Users/ronaldhollander/Documents/Business/50 Shades of Burgers/App/50ShadesOfBurgers/Build 1.1/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/50ShadesOfBurgers.exe.mdb
-/Users/ronaldhollander/Documents/Business/50 Shades of Burgers/App/50ShadesOfBurgers/Build 1.1/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/50ShadesOfBurgers.pdb
-/Users/ronaldhollander/Documents/Business/50 Shades of Burgers/App/50ShadesOfBurgers/Build 1.1/50ShadesOfBurgers/bin/iPhoneSimulator/Debug/Newtonsoft.Json.dll
-/Users/ronaldhollander/Documents/Business/50 Shades of Burgers/App/50ShadesOfBurgers/Build 1.1/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/ibtool/_BundleResourceWithLogicalName.items
+/Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/Xamarin.iOS,Version=v1.0.AssemblyAttribute.cs
+/Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/ibtool/_BundleResourceWithLogicalName.items
+/Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/actool/_PartialAppManifest.items
+/Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/actool/_BundleResourceWithLogicalName.items
+/Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/optimized/burger-iPhone-Icon.png
+/Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/optimized/survey@1x.png
+/Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/optimized/cup@1x.png
+/Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/optimized/map@1x.png
+/Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/optimized/bestburger@1x.png
+/Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/optimized/images/nointernet.png
+/Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/optimized/images/bgrMainMenu.png
+/Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/optimized/burgeroftheday.png
+/Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/optimized/RateABurgerButton.png
+/Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/optimized/Entitlements.plist
+/Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/optimized/
+/Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/bin/iPhoneSimulator/Debug/50ShadesOfBurgers.exe.mdb
+/Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/bin/iPhoneSimulator/Debug/50ShadesOfBurgers.exe
+/Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/50ShadesOfBurgers.exe
+/Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/50ShadesOfBurgers.exe.mdb
+/Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/bin/iPhoneSimulator/Debug/Newtonsoft.Json.dll

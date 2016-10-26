@@ -7,6 +7,67 @@
 	<key>com.apple.ibtool.document.notices</key>
 	<dict/>
 	<key>com.apple.ibtool.document.warnings</key>
-	<dict/>
+	<dict>
+		<key>1113</key>
+		<array>
+			<dict>
+				<key>affected-objects</key>
+				<array>
+					<string>1113</string>
+				</array>
+				<key>message</key>
+				<string>“Navigation Controller“ is unreachable because it has no entry points, and no identifier for runtime access via -[UIStoryboard instantiateViewControllerWithIdentifier:].</string>
+				<key>type</key>
+				<string>IBUnsupportedConfiguration</string>
+				<key>type-value</key>
+				<integer>9</integer>
+			</dict>
+		</array>
+		<key>212</key>
+		<array>
+			<dict>
+				<key>affected-objects</key>
+				<array>
+					<string>212</string>
+				</array>
+				<key>message</key>
+				<string>“Top 10“ is unreachable because it has no entry points, and no identifier for runtime access via -[UIStoryboard instantiateViewControllerWithIdentifier:].</string>
+				<key>type</key>
+				<string>IBUnsupportedConfiguration</string>
+				<key>type-value</key>
+				<integer>9</integer>
+			</dict>
+		</array>
+		<key>229</key>
+		<array>
+			<dict>
+				<key>affected-objects</key>
+				<array>
+					<string>229</string>
+				</array>
+				<key>message</key>
+				<string>“Burgers Near Me“ is unreachable because it has no entry points, and no identifier for runtime access via -[UIStoryboard instantiateViewControllerWithIdentifier:].</string>
+				<key>type</key>
+				<string>IBUnsupportedConfiguration</string>
+				<key>type-value</key>
+				<integer>9</integer>
+			</dict>
+		</array>
+		<key>6590</key>
+		<array>
+			<dict>
+				<key>affected-objects</key>
+				<array>
+					<string>6590</string>
+				</array>
+				<key>message</key>
+				<string>Segues initiated directly from view controllers must have an identifier</string>
+				<key>type</key>
+				<string>IBUnsupportedConfiguration</string>
+				<key>type-value</key>
+				<integer>9</integer>
+			</dict>
+		</array>
+	</dict>
 </dict>
 </plist>

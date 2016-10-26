@@ -6,8 +6,8 @@
 	<dict>
 		<key>output-files</key>
 		<array>
-			<string>/Users/ronaldhollander/Documents/Business/50 Shades of Burgers/App/50ShadesOfBurgers/Build 1.1/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/actool/bundle/AppIcons60x60@2x.png</string>
-			<string>/Users/ronaldhollander/Documents/Business/50 Shades of Burgers/App/50ShadesOfBurgers/Build 1.1/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/actool/partial-info.plist</string>
+			<string>/Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/actool/bundle/AppIcons60x60@2x.png</string>
+			<string>/Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/actool/partial-info.plist</string>
 		</array>
 	</dict>
 </dict>

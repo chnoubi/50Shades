@@ -242,11 +242,12 @@
                         <outlet property="lblDate" destination="15" id="name-outlet-15"/>
                         <outlet property="pickerGender" destination="119" id="name-outlet-119"/>
                         <outlet property="txtEmail" destination="13" id="name-outlet-13"/>
+                        <segue id="6590" destination="6534" kind="presentation"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2213" y="-67"/>
+            <point key="canvasLocation" x="-2253" y="-76"/>
         </scene>
         <!--Tab Bar Controller-->
         <!--Questionnaire Intro View Controller-->
@@ -2383,7 +2384,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <variation key="heightClass=regular-widthClass=compact">
-                                    <rect key="frame" x="20" y="430" width="260" height="90"/>
+                                    <rect key="frame" x="20" y="429.5" width="260" height="90.5"/>
                                 </variation>
                             </textView>
                         </subviews>
@@ -3066,6 +3067,225 @@
             </objects>
             <point key="canvasLocation" x="3450" y="-994"/>
         </scene>
+        <scene sceneID="6533">
+            <objects>
+                <viewController id="6534" sceneMemberID="viewController" customClass="MainMenuViewController" storyboardIdentifier="MainMenuViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6531"/>
+                        <viewControllerLayoutGuide type="bottom" id="6532"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6535">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="6592" translatesAutoresizingMaskIntoConstraints="NO" image="images/bgrMainMenu.png">
+                                <rect key="frame" x="40" y="167" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6609" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="46" y="101" width="46" height="30"/>
+                                <state key="normal" title="VOTE">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="20" y="80" width="130" height="130"/>
+                                    <mask key="constraints">
+                                        <include reference="6701"/>
+                                        <include reference="6702"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="6701" firstAttribute="width" constant="130"/>
+                                    <constraint id="6702" firstAttribute="height" constant="130"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="6701"/>
+                                        <exclude reference="6702"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6610" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="214" y="101" width="46" height="30"/>
+                                <state key="normal" title="TOP 10">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="170" y="80" width="130" height="130"/>
+                                    <mask key="constraints">
+                                        <include reference="6705"/>
+                                        <include reference="6706"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="6705" firstAttribute="width" constant="130"/>
+                                    <constraint id="6706" firstAttribute="height" constant="130"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="6705"/>
+                                        <exclude reference="6706"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6611" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="46" y="262" width="46" height="30"/>
+                                <state key="normal" title="LOCATE">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="20" y="270" width="130" height="130"/>
+                                    <mask key="constraints">
+                                        <include reference="6709"/>
+                                        <include reference="6710"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="6709" firstAttribute="width" constant="130"/>
+                                    <constraint id="6710" firstAttribute="height" constant="130"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="6709"/>
+                                        <exclude reference="6710"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6612" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="214" y="262" width="46" height="30"/>
+                                <state key="normal" title="GOLDEN">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="170" y="270" width="130" height="130"/>
+                                    <mask key="constraints">
+                                        <include reference="6713"/>
+                                        <include reference="6714"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="6713" firstAttribute="width" constant="130"/>
+                                    <constraint id="6714" firstAttribute="height" constant="130"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="6713"/>
+                                        <exclude reference="6714"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6613" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="46" y="470" width="46" height="30"/>
+                                <state key="normal" title="ABOUT">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="70" y="477" width="180" height="50"/>
+                                    <mask key="constraints">
+                                        <include reference="6717"/>
+                                        <include reference="6718"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="6717" firstAttribute="width" constant="180"/>
+                                    <constraint id="6718" firstAttribute="height" constant="50"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="6717"/>
+                                        <exclude reference="6718"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                        </subviews>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="6592"/>
+                                <exclude reference="6609"/>
+                                <exclude reference="6610"/>
+                                <exclude reference="6611"/>
+                                <exclude reference="6612"/>
+                                <exclude reference="6613"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="6599"/>
+                                <exclude reference="6600"/>
+                                <exclude reference="6601"/>
+                                <exclude reference="6602"/>
+                                <exclude reference="6699"/>
+                                <exclude reference="6700"/>
+                                <exclude reference="6703"/>
+                                <exclude reference="6704"/>
+                                <exclude reference="6707"/>
+                                <exclude reference="6708"/>
+                                <exclude reference="6711"/>
+                                <exclude reference="6712"/>
+                                <exclude reference="6715"/>
+                                <exclude reference="6716"/>
+                                <exclude reference="6719"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="6592"/>
+                                <include reference="6609"/>
+                                <include reference="6610"/>
+                                <include reference="6611"/>
+                                <include reference="6612"/>
+                                <include reference="6613"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="6599"/>
+                                <include reference="6600"/>
+                                <include reference="6601"/>
+                                <include reference="6602"/>
+                                <include reference="6699"/>
+                                <include reference="6700"/>
+                                <include reference="6703"/>
+                                <include reference="6704"/>
+                                <include reference="6707"/>
+                                <include reference="6708"/>
+                                <include reference="6711"/>
+                                <include reference="6712"/>
+                                <include reference="6715"/>
+                                <include reference="6716"/>
+                                <include reference="6719"/>
+                            </mask>
+                        </variation>
+                        <constraints>
+                            <constraint id="6599" firstItem="6592" firstAttribute="bottom" secondItem="6535" secondAttribute="bottom"/>
+                            <constraint id="6600" firstItem="6592" firstAttribute="trailing" secondItem="6535" secondAttribute="trailing"/>
+                            <constraint id="6601" firstItem="6531" firstAttribute="bottom" secondItem="6592" secondAttribute="top" constant="20"/>
+                            <constraint id="6602" firstItem="6592" firstAttribute="leading" secondItem="6535" secondAttribute="leading"/>
+                            <constraint id="6699" firstItem="6609" firstAttribute="leading" secondItem="6535" secondAttribute="leading" constant="20"/>
+                            <constraint id="6700" firstItem="6609" firstAttribute="top" secondItem="6535" secondAttribute="top" constant="80"/>
+                            <constraint id="6703" firstItem="6535" firstAttribute="trailing" secondItem="6610" secondAttribute="trailing" constant="20"/>
+                            <constraint id="6704" firstItem="6610" firstAttribute="top" secondItem="6535" secondAttribute="top" constant="80"/>
+                            <constraint id="6707" firstItem="6611" firstAttribute="leading" secondItem="6535" secondAttribute="leading" constant="20"/>
+                            <constraint id="6708" firstItem="6535" firstAttribute="bottom" secondItem="6611" secondAttribute="bottom" constant="168"/>
+                            <constraint id="6711" firstItem="6535" firstAttribute="trailing" secondItem="6612" secondAttribute="trailing" constant="20"/>
+                            <constraint id="6712" firstItem="6535" firstAttribute="bottom" secondItem="6612" secondAttribute="bottom" constant="168"/>
+                            <constraint id="6715" firstItem="6535" firstAttribute="trailing" secondItem="6613" secondAttribute="trailing" constant="70"/>
+                            <constraint id="6716" firstItem="6535" firstAttribute="bottom" secondItem="6613" secondAttribute="bottom" constant="41"/>
+                            <constraint id="6719" firstItem="6613" firstAttribute="leading" secondItem="6535" secondAttribute="leading" constant="70"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imgBackground" destination="6592" id="name-outlet-6592"/>
+                        <outlet property="btnVote" destination="6609" id="name-outlet-6609"/>
+                        <outlet property="btnTop10" destination="6610" id="name-outlet-6610"/>
+                        <outlet property="btnLocate" destination="6611" id="name-outlet-6611"/>
+                        <outlet property="btnGolden" destination="6612" id="name-outlet-6612"/>
+                        <outlet property="btnAbout" destination="6613" id="name-outlet-6613"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6536" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1704" y="-85"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers/>
     <resources>
@@ -3098,6 +3318,10 @@
         <image name="images/nointernet.png" width="455" height="590"/>
         <image name="images/4f fumet.jpg" width="600" height="358"/>
         <image name="images/Tabbar.jpg" width="320" height="49"/>
+        <image name="images/bgrMainMenu.png" width="750" height="1334"/>
+        <image name="burgeroftheday.png" width="130" height="130"/>
+        <image name="RateABurgerButton.png" width="130" height="130"/>
+        <image name="RateABurgerButton72.png" width="31" height="31"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedScreenMetrics key="destination" type="retina4"/>

@@ -1,10 +1,10 @@
-# Version: 10.0.0.6 (xcode8: 6c3fee4)
-# [first argument, ignore] # /Library/Frameworks/Xamarin.iOS.framework/Versions/10.0.0.6/lib/mtouch/mtouch.exe
-/Library/Frameworks/Xamarin.iOS.framework/Versions/10.0.0.6/lib/mtouch/mtouch.exe \
+# Version: 10.0.1.10 (cycle8-sr0-xi: ad1cd42)
+# [first argument, ignore] # /Library/Frameworks/Xamarin.iOS.framework/Versions/10.0.1.10/lib/mtouch/mtouch.exe
+/Library/Frameworks/Xamarin.iOS.framework/Versions/10.0.1.10/lib/mtouch/mtouch.exe \
 	--cache \
-	"/Users/ronaldhollander/Documents/Business/50 Shades of Burgers/App/50ShadesOfBurgers/Build 1.1/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/mtouch-cache" \
+	/Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/mtouch-cache \
 	--sim \
-	"/Users/ronaldhollander/Documents/Business/50 Shades of Burgers/App/50ShadesOfBurgers/Build 1.1/50ShadesOfBurgers/bin/iPhoneSimulator/Debug/50ShadesOfBurgers.app" \
+	/Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/bin/iPhoneSimulator/Debug/50ShadesOfBurgers.app \
 	--executable \
 	50ShadesOfBurgers \
 	--debug \
@@ -19,10 +19,10 @@
 	--tls-provider=default \
 	--abi=i386 \
 	--symbollist \
-	"/Users/ronaldhollander/Documents/Business/50 Shades of Burgers/App/50ShadesOfBurgers/Build 1.1/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/mtouch-symbols.list" \
+	/Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/mtouch-symbols.list \
 	--dsym=no \
 	-r \
-	"/Users/ronaldhollander/Documents/Business/50 Shades of Burgers/App/50ShadesOfBurgers/Build 1.1/packages/json.net-7.0.1/lib/ios-unified/Newtonsoft.Json.dll" \
+	/Users/ronaldhollander/GitHub/50Shades/packages/json.net-7.0.1/lib/ios-unified/Newtonsoft.Json.dll \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.dll \
 	-r \
@@ -34,7 +34,7 @@
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll \
 	-r \
-	"/Users/ronaldhollander/Documents/Business/50 Shades of Burgers/App/50ShadesOfBurgers/Build 1.1/packages/json.net-7.0.1/lib/ios-unified/Newtonsoft.Json.dll" \
+	/Users/ronaldhollander/GitHub/50Shades/packages/json.net-7.0.1/lib/ios-unified/Newtonsoft.Json.dll \
 	--target-framework \
 	"Xamarin.iOS,v1.0" \
-	"/Users/ronaldhollander/Documents/Business/50 Shades of Burgers/App/50ShadesOfBurgers/Build 1.1/50ShadesOfBurgers/bin/iPhoneSimulator/Debug//50ShadesOfBurgers.exe" \
+	/Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/bin/iPhoneSimulator/Debug//50ShadesOfBurgers.exe \

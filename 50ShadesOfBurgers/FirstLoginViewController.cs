@@ -48,7 +48,7 @@ namespace _50ShadesOfBurgers
                    ad.user.Birthday = NSDateToDateTime(datePicker.Date);
                    ad.connection.updateUser(ad.user);
                    this.updateServerDB();
-                   this.PerformSegue("goToIntro", this);
+                   this.PerformSegue("goToMainMenu", this);
               // }
            
 

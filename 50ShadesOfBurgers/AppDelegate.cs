@@ -72,7 +72,7 @@ namespace _50ShadesOfBurgers
                 }
                 else
                 {
-                    Window.RootViewController = (UIViewController)storyBoard.InstantiateViewController("IntroViewController");
+                    Window.RootViewController = (UIViewController)storyBoard.InstantiateViewController("MainMenuViewController");
                 }
 
                 Window.MakeKeyAndVisible();

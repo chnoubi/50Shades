@@ -12,7 +12,6 @@ namespace _50ShadesOfBurgers
 {
 	partial class QuestionnaireIntroViewController : UIViewController
 	{
-        UIImage barIcon;
         public QuestionnaireIntroViewController (IntPtr handle) : base (handle)
 		{
 		}

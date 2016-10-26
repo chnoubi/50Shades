@@ -103,10 +103,6 @@
     </Compile>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
-    <Compile Include="MainMenuTabBarController.cs" />
-    <Compile Include="MainMenuTabBarController.designer.cs">
-      <DependentUpon>MainMenuTabBarController.cs</DependentUpon>
-    </Compile>
     <Compile Include="Model\Burger.cs" />
     <Compile Include="Model\BurgerTableModel.cs" />
     <Compile Include="Model\Country.cs" />
@@ -165,11 +161,15 @@
     </Compile>
     <None Include="GettingStarted.Xamarin" />
     <None Include="Info.plist" />
-    <Compile Include="Model\Buttons.cs" />
     <Compile Include="Model\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="packages.config" />
     <Compile Include="Helper Classes\AutoCompleteTextFieldManager.cs" />
+    <Compile Include="MainMenuViewController.cs" />
+    <Compile Include="MainMenuViewController.designer.cs">
+      <DependentUpon>MainMenuViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper Classes\Buttons.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Database\SQLite.cs" />
@@ -217,6 +217,9 @@
     <BundleResource Include="images\nointernet.png" />
     <BundleResource Include="images\4f fumet.jpg" />
     <BundleResource Include="images\Tabbar.jpg" />
+    <BundleResource Include="images\bgrMainMenu.png" />
+    <BundleResource Include="Resources\burgeroftheday.png" />
+    <BundleResource Include="Resources\RateABurgerButton.png" />
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\burger-iPhone-Icon.png">
