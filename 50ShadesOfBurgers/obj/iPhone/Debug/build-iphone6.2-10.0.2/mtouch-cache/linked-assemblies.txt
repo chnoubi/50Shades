@@ -1,0 +1,8 @@
+/Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/obj/iPhone/Debug/build-iphone6.2-10.0.2/mtouch-cache/Link/Xamarin.iOS.dll
+/Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/obj/iPhone/Debug/build-iphone6.2-10.0.2/mtouch-cache/Link/Newtonsoft.Json.dll
+/Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/obj/iPhone/Debug/build-iphone6.2-10.0.2/mtouch-cache/Link/Mono.Dynamic.Interpreter.dll
+/Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/obj/iPhone/Debug/build-iphone6.2-10.0.2/mtouch-cache/Link/System.Runtime.Serialization.dll
+/Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/obj/iPhone/Debug/build-iphone6.2-10.0.2/mtouch-cache/Link/50ShadesOfBurgers.exe
+/Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/obj/iPhone/Debug/build-iphone6.2-10.0.2/mtouch-cache/Link/System.dll
+/Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/obj/iPhone/Debug/build-iphone6.2-10.0.2/mtouch-cache/Link/mscorlib.dll
+/Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/obj/iPhone/Debug/build-iphone6.2-10.0.2/mtouch-cache/Link/System.Core.dll

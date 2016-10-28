@@ -53,6 +53,12 @@ namespace _50ShadesOfBurgers
             Buttons.setupButtons(btnWorldTop);
             Buttons.setupButtons(btnCountryTop);
             Buttons.setupButtons(btnCityTop);
+
+			this.NavigationItem.SetLeftBarButtonItem(new UIBarButtonItem("Menu", UIBarButtonItemStyle.Plain, (sender, args) =>
+			{
+				this.PerformSegue("goToMenu1", this);
+			}), true);
+
         }
 
         private void setupPicker()

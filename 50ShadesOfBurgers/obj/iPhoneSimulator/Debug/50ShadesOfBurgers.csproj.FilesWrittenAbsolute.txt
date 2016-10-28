@@ -8,9 +8,13 @@
 /Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/optimized/map@1x.png
 /Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/optimized/bestburger@1x.png
 /Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/optimized/images/nointernet.png
-/Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/optimized/images/bgrMainMenu.png
 /Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/optimized/burgeroftheday.png
 /Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/optimized/RateABurgerButton.png
+/Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/optimized/bgrMainMenu.png
+/Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/optimized/LocateABurgerButton.png
+/Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/optimized/GoldenBurgerButton.png
+/Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/optimized/BestBurgersButton.png
+/Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/optimized/AboutThisAppButton.png
 /Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/optimized/Entitlements.plist
 /Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/optimized/
 /Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/bin/iPhoneSimulator/Debug/50ShadesOfBurgers.exe.mdb

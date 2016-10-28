@@ -28,11 +28,11 @@ namespace _50ShadesOfBurgers
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIButton btnTop10 { get; set; }
+        UIKit.UIButton btnRate { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIButton btnVote { get; set; }
+        UIKit.UIButton btnTop10 { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
@@ -55,14 +55,14 @@ namespace _50ShadesOfBurgers
                 btnLocate = null;
             }
 
+            if (btnRate != null) {
+                btnRate.Dispose ();
+                btnRate = null;
+            }
+
             if (btnTop10 != null) {
                 btnTop10.Dispose ();
                 btnTop10 = null;
-            }
-
-            if (btnVote != null) {
-                btnVote.Dispose ();
-                btnVote = null;
             }
 
             if (imgBackground != null) {

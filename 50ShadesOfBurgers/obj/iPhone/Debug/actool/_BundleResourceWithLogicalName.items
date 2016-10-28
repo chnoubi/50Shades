@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <_BundleResourceWithLogicalName Include="obj/iPhone/Debug/actool/bundle/AppIcons60x60@2x.png">
+    <_BundleResourceWithLogicalName Include="obj/iPhone/Debug/build-iphone6.2-10.0.2/actool/bundle/AppIcons60x60@2x.png">
       <LogicalName>AppIcons60x60@2x.png</LogicalName>
       <Optimize>false</Optimize>
     </_BundleResourceWithLogicalName>

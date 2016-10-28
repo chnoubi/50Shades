@@ -217,9 +217,13 @@
     <BundleResource Include="images\nointernet.png" />
     <BundleResource Include="images\4f fumet.jpg" />
     <BundleResource Include="images\Tabbar.jpg" />
-    <BundleResource Include="images\bgrMainMenu.png" />
     <BundleResource Include="Resources\burgeroftheday.png" />
     <BundleResource Include="Resources\RateABurgerButton.png" />
+    <BundleResource Include="Resources\bgrMainMenu.png" />
+    <BundleResource Include="Resources\LocateABurgerButton.png" />
+    <BundleResource Include="Resources\GoldenBurgerButton.png" />
+    <BundleResource Include="Resources\BestBurgersButton.png" />
+    <BundleResource Include="Resources\AboutThisAppButton.png" />
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\burger-iPhone-Icon.png">

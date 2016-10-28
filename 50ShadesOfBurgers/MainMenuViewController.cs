@@ -7,7 +7,7 @@ namespace _50ShadesOfBurgers
 {
     public partial class MainMenuViewController : UIViewController
     {
-		UIImage btnGoldenImg, btnLocateImg;
+		UIImage btnGoldenImg, btnLocateImg, btnRateImg, btnTop10Img, btnAboutImg;
 
         public MainMenuViewController (IntPtr handle) : base (handle)
         {
@@ -18,19 +18,30 @@ namespace _50ShadesOfBurgers
 		{
 			base.ViewWillAppear(animated);
 
-			Buttons.setupButtons(btnVote);
-			Buttons.setupButtons(btnTop10);
-			Buttons.setupButtons(btnAbout);
+			//	Buttons.setupButtons(btnVote);
+			//	Buttons.setupButtons(btnTop10);
+			//	Buttons.setupButtons(btnAbout);
 
-			btnGoldenImg = UIImage.FromFile("RateABurgerButton.png");
+			btnRateImg = UIImage.FromFile("RateABurgerButton.png");
+			btnRateImg = btnRateImg.ImageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal);
+
+			btnTop10Img = UIImage.FromFile("BestBurgersButton.png");
+			btnTop10Img = btnTop10Img.ImageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal);
+
+			btnLocateImg = UIImage.FromFile("LocateABurgerButton.png");
+			btnLocateImg = btnLocateImg.ImageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal);
+
+			btnGoldenImg = UIImage.FromFile("GoldenBurgerButton.png");
 			btnGoldenImg = btnGoldenImg.ImageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal);
 
-			/*btnLocateImg = UIImage.FromFile("RateABurgerButton72.png");
-			btnLocateImg = btnLocateImg.ImageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal);*/
+			btnAboutImg = UIImage.FromFile("AboutThisAppButton.png");
+			btnAboutImg = btnAboutImg.ImageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal);
 
+			btnRate.SetImage(btnRateImg, UIControlState.Normal);
+			btnTop10.SetImage(btnTop10Img, UIControlState.Normal);
+			btnLocate.SetImage(btnLocateImg, UIControlState.Normal);
 			btnGolden.SetImage(btnGoldenImg, UIControlState.Normal);
-
-			//btnLocate.SetImage(btnLocateImg, UIControlState.Normal);
+			btnAbout.SetImage(btnAboutImg, UIControlState.Normal);
 
 		}
     }

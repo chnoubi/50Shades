@@ -14,16 +14,8 @@ namespace _50ShadesOfBurgers
     [Register ("QuestionnaireIntroViewController")]
     partial class QuestionnaireIntroViewController
     {
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIButton btnGo { get; set; }
-
         void ReleaseDesignerOutlets ()
         {
-            if (btnGo != null) {
-                btnGo.Dispose ();
-                btnGo = null;
-            }
         }
     }
 }

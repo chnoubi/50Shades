@@ -242,12 +242,12 @@
                         <outlet property="lblDate" destination="15" id="name-outlet-15"/>
                         <outlet property="pickerGender" destination="119" id="name-outlet-119"/>
                         <outlet property="txtEmail" destination="13" id="name-outlet-13"/>
-                        <segue id="6590" destination="6534" kind="presentation"/>
+                        <segue id="6590" destination="6534" kind="presentation" identifier="goToMainMenu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2253" y="-76"/>
+            <point key="canvasLocation" x="-1082" y="301"/>
         </scene>
         <!--Tab Bar Controller-->
         <!--Questionnaire Intro View Controller-->
@@ -406,30 +406,6 @@
                                     </mask>
                                 </variation>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="620">
-                                <rect key="frame" x="137" y="484" width="46" height="30"/>
-                                <state key="normal" title="On y va!">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <rect key="frame" x="121" y="476" width="92" height="38"/>
-                                    <mask key="constraints">
-                                        <include reference="5291"/>
-                                        <include reference="5292"/>
-                                    </mask>
-                                </variation>
-                                <connections/>
-                                <constraints>
-                                    <constraint id="5291" firstItem="620" firstAttribute="height" constant="38"/>
-                                    <constraint id="5292" firstItem="620" firstAttribute="width" constant="92"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="5291"/>
-                                        <exclude reference="5292"/>
-                                    </mask>
-                                </variation>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -441,7 +417,6 @@
                                 <exclude reference="617"/>
                                 <exclude reference="618"/>
                                 <exclude reference="619"/>
-                                <exclude reference="620"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="5264"/>
@@ -465,8 +440,6 @@
                                 <exclude reference="5288"/>
                                 <exclude reference="5289"/>
                                 <exclude reference="5290"/>
-                                <exclude reference="5293"/>
-                                <exclude reference="5294"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -478,7 +451,6 @@
                                 <include reference="617"/>
                                 <include reference="618"/>
                                 <include reference="619"/>
-                                <include reference="620"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="5264"/>
@@ -502,8 +474,6 @@
                                 <include reference="5288"/>
                                 <include reference="5289"/>
                                 <include reference="5290"/>
-                                <include reference="5293"/>
-                                <include reference="5294"/>
                             </mask>
                         </variation>
                         <constraints>
@@ -528,13 +498,11 @@
                             <constraint id="5288" firstItem="619" firstAttribute="top" secondItem="618" secondAttribute="bottom" constant="8"/>
                             <constraint id="5289" firstItem="619" firstAttribute="leading" secondItem="216" secondAttribute="leading"/>
                             <constraint id="5290" firstItem="619" firstAttribute="trailing" secondItem="216" secondAttribute="trailing"/>
-                            <constraint id="5293" firstItem="620" firstAttribute="top" secondItem="619" secondAttribute="bottom" constant="8"/>
-                            <constraint id="5294" firstItem="620" firstAttribute="centerX" secondItem="216" secondAttribute="centerX" constant="7"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" id="217" title="Survey"/>
                     <connections>
-                        <outlet property="btnGo" destination="620" id="name-outlet-620"/>
+                        <segue id="7297" destination="6534" kind="presentation" identifier="goToMenu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="218" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -864,11 +832,13 @@
                         <outlet property="btnWorldTop" destination="4106" id="name-outlet-4106"/>
                         <outlet property="pickerCountry" destination="4167" id="name-outlet-4167"/>
                         <outlet property="btnCountryTop" destination="4164" id="name-outlet-4164"/>
+                        <segue id="7635" destination="6534" kind="presentation" identifier="goToMenu1"/>
                     </connections>
+                    <navigationItem title="Top 10" id="7744" key="navigationItem"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="222" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8" y="-147"/>
+            <point key="canvasLocation" x="325" y="-266"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="228">
@@ -885,10 +855,13 @@
                     </view>
                     <tabBarItem key="tabBarItem" id="402" title="Burgers Near Me"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue id="7337" destination="6534" kind="presentation" identifier="goToMenu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="231" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="16" y="570"/>
+            <point key="canvasLocation" x="370" y="577"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="407">
@@ -906,7 +879,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" id="537" title="Golden Burger"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <connections/>
+                    <connections>
+                        <segue id="7395" destination="6534" kind="presentation" identifier="goToMenu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="410" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -927,7 +902,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1117" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="640" y="-1004"/>
+            <point key="canvasLocation" x="550" y="-984"/>
         </scene>
         <!--Burger a quoter-->
         <scene sceneID="1118">
@@ -1582,11 +1557,12 @@
                         <outlet property="lblNewResto" destination="1633" id="name-outlet-1633"/>
                         <outlet property="lblNewBurger" destination="1634" id="name-outlet-1634"/>
                         <outlet property="lblAddNew" destination="1233" id="name-outlet-1233"/>
+                        <segue id="7171" destination="6534" kind="presentation" identifier="goToMenu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1121" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1290" y="-1001"/>
+            <point key="canvasLocation" x="1123" y="-985"/>
         </scene>
         <!--Question One View Controller-->
         <scene sceneID="1525">
@@ -2821,7 +2797,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5230" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1966" y="580"/>
+            <point key="canvasLocation" x="-1087" y="1012"/>
         </scene>
         <scene sceneID="5523">
             <objects>
@@ -3079,7 +3055,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="6592" translatesAutoresizingMaskIntoConstraints="NO" image="images/bgrMainMenu.png">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="6592" translatesAutoresizingMaskIntoConstraints="NO" image="bgrMainMenu.png">
                                 <rect key="frame" x="40" y="167" width="240" height="128"/>
                                 <variation key="heightClass=regular-widthClass=compact">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -3087,6 +3063,7 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6609" translatesAutoresizingMaskIntoConstraints="NO">
                                 <rect key="frame" x="46" y="101" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="VOTE">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -3107,6 +3084,9 @@
                                         <exclude reference="6702"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <segue id="6831" destination="1113" kind="presentation" identifier="goToRate"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6610" translatesAutoresizingMaskIntoConstraints="NO">
                                 <rect key="frame" x="214" y="101" width="46" height="30"/>
@@ -3130,6 +3110,9 @@
                                         <exclude reference="6706"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <segue id="7555" destination="7500" kind="presentation" identifier="goToTop10"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6611" translatesAutoresizingMaskIntoConstraints="NO">
                                 <rect key="frame" x="46" y="262" width="46" height="30"/>
@@ -3153,6 +3136,9 @@
                                         <exclude reference="6710"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <segue id="6947" destination="229" kind="presentation" identifier="goToLocate"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6612" translatesAutoresizingMaskIntoConstraints="NO">
                                 <rect key="frame" x="214" y="262" width="46" height="30"/>
@@ -3176,10 +3162,13 @@
                                         <exclude reference="6714"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <segue id="6979" destination="408" kind="presentation" identifier="goToGolden"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6613" translatesAutoresizingMaskIntoConstraints="NO">
                                 <rect key="frame" x="46" y="470" width="46" height="30"/>
-                                <state key="normal" title="ABOUT">
+                                <state key="normal" title="ABOUT THIS APP">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=regular-widthClass=compact">
@@ -3199,6 +3188,9 @@
                                         <exclude reference="6718"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <segue id="7475" destination="210" kind="presentation" identifier="goToAbout"/>
+                                </connections>
                             </button>
                         </subviews>
                         <variation key="default">
@@ -3275,7 +3267,7 @@
                     </view>
                     <connections>
                         <outlet property="imgBackground" destination="6592" id="name-outlet-6592"/>
-                        <outlet property="btnVote" destination="6609" id="name-outlet-6609"/>
+                        <outlet property="btnRate" destination="6609" id="name-outlet-6609"/>
                         <outlet property="btnTop10" destination="6610" id="name-outlet-6610"/>
                         <outlet property="btnLocate" destination="6611" id="name-outlet-6611"/>
                         <outlet property="btnGolden" destination="6612" id="name-outlet-6612"/>
@@ -3284,7 +3276,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6536" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1704" y="-85"/>
+            <point key="canvasLocation" x="-567" y="294"/>
+        </scene>
+        <scene sceneID="7499">
+            <objects>
+                <navigationController id="7500" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7502">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue id="7745" destination="212" kind="relationship" relationship="rootViewController"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7503" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-127" y="-338"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers/>
@@ -3318,10 +3325,13 @@
         <image name="images/nointernet.png" width="455" height="590"/>
         <image name="images/4f fumet.jpg" width="600" height="358"/>
         <image name="images/Tabbar.jpg" width="320" height="49"/>
-        <image name="images/bgrMainMenu.png" width="750" height="1334"/>
         <image name="burgeroftheday.png" width="130" height="130"/>
         <image name="RateABurgerButton.png" width="130" height="130"/>
-        <image name="RateABurgerButton72.png" width="31" height="31"/>
+        <image name="bgrMainMenu.png" width="750" height="1334"/>
+        <image name="LocateABurgerButton.png" width="130" height="130"/>
+        <image name="GoldenBurgerButton.png" width="130" height="130"/>
+        <image name="BestBurgersButton.png" width="130" height="130"/>
+        <image name="AboutThisAppButton.png" width="180" height="50"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedScreenMetrics key="destination" type="retina4"/>

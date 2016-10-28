@@ -23,11 +23,6 @@ namespace _50ShadesOfBurgers
 			this.View.BackgroundColor = UIColor.FromPatternImage(UIImage.FromFile("images/4b. Resto.jpg"));
             
 
-           /* barIcon = UIImage.FromBundle("survey@1x");
-            barIcon = barIcon.ImageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal);
-            this.TabBarItem.Image = barIcon;
-            this.TabBarItem.Title = "Survey";*/
-
           
            
         }
@@ -38,7 +33,10 @@ namespace _50ShadesOfBurgers
         {
             base.ViewWillAppear(animated);
 
-            Buttons.setupButtons(btnGo);
+			this.NavigationItem.SetLeftBarButtonItem(new UIBarButtonItem("Menu", UIBarButtonItemStyle.Plain, (sender, args) =>
+			{
+				this.PerformSegue("goToMenu", this);
+			}), true);
 
         }
 

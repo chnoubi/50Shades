@@ -14,7 +14,7 @@
 	--sdk \
 	10.0 \
 	--targetver \
-	7.0 \
+	8.0 \
 	--http-message-handler=HttpClientHandler \
 	--tls-provider=default \
 	"--abi=armv7,arm64" \

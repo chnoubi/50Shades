@@ -18,5 +18,15 @@ namespace _50ShadesOfBurgers
 
             
         }
+
+		public override void ViewWillAppear(bool animated)
+		{
+			base.ViewWillAppear(animated);
+
+			this.NavigationItem.SetLeftBarButtonItem(new UIBarButtonItem("Menu", UIBarButtonItemStyle.Plain, (sender, args) =>
+			{
+				this.PerformSegue("goToMenu", this);
+			}), true);
+		}
     }
 }

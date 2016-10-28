@@ -1,0 +1,40 @@
+# Version: 10.0.1.10 (cycle8-sr0-xi: ad1cd42)
+# [first argument, ignore] # /Library/Frameworks/Xamarin.iOS.framework/Versions/10.0.1.10/lib/mtouch/mtouch.exe
+/Library/Frameworks/Xamarin.iOS.framework/Versions/10.0.1.10/lib/mtouch/mtouch.exe \
+	--cache \
+	/Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/obj/iPhone/Debug/build-iphone6.2-10.0.2/mtouch-cache \
+	--dev \
+	/Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/bin/iPhone/Debug/build-iphone6.2-10.0.2/50ShadesOfBurgers.app \
+	--executable \
+	50ShadesOfBurgers \
+	--debug \
+	--linksdkonly \
+	--sdkroot \
+	/Applications/Xcode.app/Contents/Developer \
+	--sdk \
+	10.0 \
+	--targetver \
+	8.0 \
+	--http-message-handler=HttpClientHandler \
+	--tls-provider=default \
+	--abi=arm64 \
+	--symbollist \
+	/Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/obj/iPhone/Debug/build-iphone6.2-10.0.2/mtouch-symbols.list \
+	--dsym=no \
+	-r \
+	/Users/ronaldhollander/GitHub/50Shades/packages/json.net-7.0.1/lib/ios-unified/Newtonsoft.Json.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Xml.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Core.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Xamarin.iOS.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll \
+	-r \
+	/Users/ronaldhollander/GitHub/50Shades/packages/json.net-7.0.1/lib/ios-unified/Newtonsoft.Json.dll \
+	--target-framework \
+	"Xamarin.iOS,v1.0" \
+	/Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/bin/iPhone/Debug//50ShadesOfBurgers.exe \

@@ -3914,8 +3914,8 @@ exception_handling:;
 	@property (nonatomic, assign) UIButton * btnAbout;
 	@property (nonatomic, assign) UIButton * btnGolden;
 	@property (nonatomic, assign) UIButton * btnLocate;
+	@property (nonatomic, assign) UIButton * btnRate;
 	@property (nonatomic, assign) UIButton * btnTop10;
-	@property (nonatomic, assign) UIButton * btnVote;
 	@property (nonatomic, assign) UIImageView * imgBackground;
 	-(void) release;
 	-(id) retain;
@@ -3927,10 +3927,10 @@ exception_handling:;
 	-(void) setBtnGolden:(UIButton *)p0;
 	-(UIButton *) btnLocate;
 	-(void) setBtnLocate:(UIButton *)p0;
+	-(UIButton *) btnRate;
+	-(void) setBtnRate:(UIButton *)p0;
 	-(UIButton *) btnTop10;
 	-(void) setBtnTop10:(UIButton *)p0;
-	-(UIButton *) btnVote;
-	-(void) setBtnVote:(UIButton *)p0;
 	-(UIImageView *) imgBackground;
 	-(void) setImgBackground:(UIImageView *)p0;
 	-(void) viewWillAppear:(BOOL)p0;
@@ -3995,6 +3995,18 @@ exception_handling:;
 		native_to_managed_trampoline_5 (self, _cmd, &managed_method, p0, "UIKit.UIButton, Xamarin.iOS", "_50ShadesOfBurgers.MainMenuViewController, 50ShadesOfBurgers", "set_btnLocate");
 	}
 
+	-(UIButton *) btnRate
+	{
+		static MonoMethod *managed_method = NULL;
+		return native_to_managed_trampoline_4 (self, _cmd, &managed_method, "_50ShadesOfBurgers.MainMenuViewController, 50ShadesOfBurgers", "get_btnRate");
+	}
+
+	-(void) setBtnRate:(UIButton *)p0
+	{
+		static MonoMethod *managed_method = NULL;
+		native_to_managed_trampoline_5 (self, _cmd, &managed_method, p0, "UIKit.UIButton, Xamarin.iOS", "_50ShadesOfBurgers.MainMenuViewController, 50ShadesOfBurgers", "set_btnRate");
+	}
+
 	-(UIButton *) btnTop10
 	{
 		static MonoMethod *managed_method = NULL;
@@ -4005,18 +4017,6 @@ exception_handling:;
 	{
 		static MonoMethod *managed_method = NULL;
 		native_to_managed_trampoline_5 (self, _cmd, &managed_method, p0, "UIKit.UIButton, Xamarin.iOS", "_50ShadesOfBurgers.MainMenuViewController, 50ShadesOfBurgers", "set_btnTop10");
-	}
-
-	-(UIButton *) btnVote
-	{
-		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_4 (self, _cmd, &managed_method, "_50ShadesOfBurgers.MainMenuViewController, 50ShadesOfBurgers", "get_btnVote");
-	}
-
-	-(void) setBtnVote:(UIButton *)p0
-	{
-		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_5 (self, _cmd, &managed_method, p0, "UIKit.UIButton, Xamarin.iOS", "_50ShadesOfBurgers.MainMenuViewController, 50ShadesOfBurgers", "set_btnVote");
 	}
 
 	-(UIImageView *) imgBackground
