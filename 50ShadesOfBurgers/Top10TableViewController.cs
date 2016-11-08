@@ -49,9 +49,7 @@ namespace _50ShadesOfBurgers
               View.Add(loadingOverlay);
               loadingOverlay.Hide();
 
-            this.NavigationItem.SetLeftBarButtonItem(new UIBarButtonItem("Menu", UIBarButtonItemStyle.Plain, (sender, args) => {
-                this.PerformSegue("goToMenu", this);
-            }),true);
+            
         }
 
         public override void ViewDidAppear(bool animated)

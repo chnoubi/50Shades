@@ -1,6 +1,6 @@
-# Version: 10.0.1.10 (cycle8-sr0-xi: ad1cd42)
-# [first argument, ignore] # /Library/Frameworks/Xamarin.iOS.framework/Versions/10.0.1.10/lib/mtouch/mtouch.exe
-/Library/Frameworks/Xamarin.iOS.framework/Versions/10.0.1.10/lib/mtouch/mtouch.exe \
+# Version: 10.2.0.4 (xcode8.1: b638977)
+# [first argument, ignore] # /Library/Frameworks/Xamarin.iOS.framework/Versions/10.2.0.4/lib/mtouch/mtouch.exe
+/Library/Frameworks/Xamarin.iOS.framework/Versions/10.2.0.4/lib/mtouch/mtouch.exe \
 	--cache \
 	/Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/obj/iPhone/Debug/build-iphone6.2-10.0.2/mtouch-cache \
 	--dev \

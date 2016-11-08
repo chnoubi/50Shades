@@ -18,9 +18,9 @@
 @protocol CALayerDelegate;
 @protocol UIPickerViewModel;
 @class Foundation_InternalNSNotificationHandler;
+@class UIKit_UIControlEventProxy;
 @class __MonoMac_NSActionDispatcher;
 @class __MonoMac_NSAsyncActionDispatcher;
-@class UIKit_UIControlEventProxy;
 @class BurgersNearMeViewController;
 @class GoldenBurgerViewController;
 @class IntroViewController;
@@ -44,12 +44,12 @@
 @class RestoDetailViewController;
 @class Top10TableViewController;
 @class _50ShadesOfBurgers_AutoCompleteTextFieldManager_AutoCompleteTableViewSource;
-@class UIKit_UITextField__UITextFieldDelegate;
-@class UIKit_UIScrollView__UIScrollViewDelegate;
-@class UIKit_UITextView__UITextViewDelegate;
+@class UIKit_UIBarButtonItem_Callback;
 @class __UIGestureRecognizerToken;
 @class __UIGestureRecognizerParameterlessToken;
 @class __UIGestureRecognizerParametrizedToken;
+@class UIKit_UITextField__UITextFieldDelegate;
+@class UIKit_UIScrollView__UIScrollViewDelegate;
+@class UIKit_UITextView__UITextViewDelegate;
 @class __NSObject_Disposer;
-@class UIKit_UIBarButtonItem_Callback;
 

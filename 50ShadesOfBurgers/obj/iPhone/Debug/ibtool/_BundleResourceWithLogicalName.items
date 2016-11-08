@@ -101,12 +101,12 @@
       <LogicalName>Main.storyboardc/UINavigationController-1113.nib</LogicalName>
       <Optimize>false</Optimize>
     </_BundleResourceWithLogicalName>
-    <_BundleResourceWithLogicalName Include="obj/iPhone/Debug/build-iphone6.2-10.0.2/ibtool-link/Main.storyboardc/UINavigationController-3271.nib">
-      <LogicalName>Main.storyboardc/UINavigationController-3271.nib</LogicalName>
-      <Optimize>false</Optimize>
-    </_BundleResourceWithLogicalName>
     <_BundleResourceWithLogicalName Include="obj/iPhone/Debug/build-iphone6.2-10.0.2/ibtool-link/Main.storyboardc/UINavigationController-7500.nib">
       <LogicalName>Main.storyboardc/UINavigationController-7500.nib</LogicalName>
+      <Optimize>false</Optimize>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhone/Debug/build-iphone6.2-10.0.2/ibtool-link/Main.storyboardc/UITableViewController-3196.nib">
+      <LogicalName>Main.storyboardc/UITableViewController-3196.nib</LogicalName>
       <Optimize>false</Optimize>
     </_BundleResourceWithLogicalName>
     <_BundleResourceWithLogicalName Include="obj/iPhone/Debug/build-iphone6.2-10.0.2/ibtool-link/Main.storyboardc/UIViewController-1526.nib">

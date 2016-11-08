@@ -6,16 +6,16 @@
       <File FileName="50ShadesOfBurgers/QuestionSixSevenEightViewController.cs" Line="1" Column="1" />
       <File FileName="50ShadesOfBurgers/QuestionOneViewController.cs" Line="1" Column="1" />
       <File FileName="50ShadesOfBurgers/QuestionnaireChoixRestoViewController.cs" Line="149" Column="4" />
-      <File FileName="50ShadesOfBurgers/Top10ViewController.cs" Line="59" Column="33" />
+      <File FileName="50ShadesOfBurgers/Top10ViewController.cs" Line="54" Column="33" />
       <File FileName="50ShadesOfBurgers/BurgersNearMeViewController.cs" Line="31" Column="14" />
       <File FileName="50ShadesOfBurgers/GoldenBurgerViewController.cs" Line="29" Column="14" />
       <File FileName="50ShadesOfBurgers/QuestionnaireIntroViewController.cs" Line="25" Column="4" />
-      <File FileName="50ShadesOfBurgers/Top10TableViewController.cs" Line="1" Column="1" />
-      <File FileName="50ShadesOfBurgers/Main.cs" Line="15" Column="2" />
+      <File FileName="50ShadesOfBurgers/Top10TableViewController.cs" Line="52" Column="13" />
+      <File FileName="50ShadesOfBurgers/Main.cs" Line="12" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
-  <MonoDevelop.Ide.ItemProperties.50ShadesOfBurgers PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.598f255b16530f7b0c87b76578401f080ca0a999" />
+  <MonoDevelop.Ide.ItemProperties.50ShadesOfBurgers PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

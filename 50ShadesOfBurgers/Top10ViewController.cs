@@ -30,11 +30,6 @@ namespace _50ShadesOfBurgers
         {
             base.ViewDidLoad();
 
-            barIcon = UIImage.FromBundle("cup@1x");
-            barIcon = barIcon.ImageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal);
-            this.TabBarItem.Image = barIcon;
-            this.TabBarItem.Title = "Top 10";
-
             restos = new List<Resto>();
             burgers = new List<Burger>();
             cities = new SortedSet<String>();
@@ -81,9 +76,8 @@ namespace _50ShadesOfBurgers
             base.PrepareForSegue(segue, sender);
             String name = "";
             String choice = "";
-            
-            var navController = segue.DestinationViewController as UINavigationController;
-            var top10tableController = navController.TopViewController as Top10TableViewController;
+
+			var top10tableController = segue.DestinationViewController as Top10TableViewController;
 
             if (segue.Identifier == "goToWorldTop10Table")
             {
