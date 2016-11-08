@@ -7,11 +7,11 @@
       <File FileName="../../Downloads/GooglePlaceApi_iOS-master/AppDelegate.cs" Line="1" Column="1" />
       <File FileName="../../Downloads/GooglePlaceApi_iOS-master/ViewController/ViewController.cs" Line="1" Column="1" />
       <File FileName="../../Downloads/GooglePlaceApi_iOS-master/Model/LocationPredictionClass.cs" Line="1" Column="1" />
-      <File FileName="50ShadesOfBurgers/QuestionnaireChoixRestoViewController.cs" Line="149" Column="1" />
+      <File FileName="50ShadesOfBurgers/QuestionnaireChoixRestoViewController.cs" Line="148" Column="16" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
-  <MonoDevelop.Ide.ItemProperties.50ShadesOfBurgers PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.ItemProperties.50ShadesOfBurgers PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.24A5F762-B996-443D-90AC-E29EF94409F0" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -41,6 +41,8 @@
 	<key>XSLaunchImageAssets</key>
 	<string>Resources/Media.xcassets/LaunchImages.launchimage</string>
 	<key>UIAppFonts</key>
-	<string>HomemadeApple.ttf</string>
+	<array>
+		<string>HomemadeApple.ttf</string>
+	</array>
 </dict>
 </plist>

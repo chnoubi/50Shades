@@ -21,7 +21,7 @@ Ldebug_info_begin:
 	.short 2
 	.long 0
 	.byte 4,1
-	.asciz "Mono AOT Compiler 4.6.1 (tarball Mon Oct  3 15:04:52 EDT 2016)"
+	.asciz "Mono AOT Compiler 4.6.1 (tarball Tue Oct 25 14:07:01 EDT 2016)"
 	.asciz "System.Runtime.Serialization.dll"
 	.asciz ""
 
@@ -134,7 +134,7 @@ LDIFF_SYM3=ut_end - ut_0
 	.align 2
 	.no_dead_strip System_Runtime_Serialization_KeyValue_2_K_REF_V_REF_get_Key
 System_Runtime_Serialization_KeyValue_2_K_REF_V_REF_get_Key:
-.file 1 "/Users/builder/data/lanes/3818/ad1cd42d/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/System.Runtime.Serialization/System/Runtime/Serialization/CollectionDataContract.cs"
+.file 1 "/Users/builder/data/lanes/3859/b638977c/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/System.Runtime.Serialization/System/Runtime/Serialization/CollectionDataContract.cs"
 .loc 1 41 0 prologue_end
 
 	.byte 128,64,45,233,13,112,160,225,0,1,45,233,3,223,77,226,0,128,141,229,4,0,141,229,4,0,157,229,0,0,144,229
@@ -199,7 +199,7 @@ Lme_3:
 	.align 2
 	.no_dead_strip System_Runtime_Serialization_DataContractAttribute__ctor
 System_Runtime_Serialization_DataContractAttribute__ctor:
-.file 2 "/Users/builder/data/lanes/3818/ad1cd42d/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/System.Runtime.Serialization/System/Runtime/Serialization/DataContractAttribute.cs"
+.file 2 "/Users/builder/data/lanes/3859/b638977c/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/System.Runtime.Serialization/System/Runtime/Serialization/DataContractAttribute.cs"
 .loc 2 17 0 prologue_end
 
 	.byte 128,64,45,233,13,112,160,225,0,1,45,233,3,223,77,226,0,0,141,229,3,223,141,226,0,1,189,232,128,128,189,232
@@ -251,7 +251,7 @@ Lme_7:
 	.align 2
 	.no_dead_strip System_Runtime_Serialization_DataMemberAttribute__ctor
 System_Runtime_Serialization_DataMemberAttribute__ctor:
-.file 3 "/Users/builder/data/lanes/3818/ad1cd42d/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/System.Runtime.Serialization/System/Runtime/Serialization/DataMemberAttribute.cs"
+.file 3 "/Users/builder/data/lanes/3859/b638977c/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/System.Runtime.Serialization/System/Runtime/Serialization/DataMemberAttribute.cs"
 .loc 3 12 0 prologue_end
 
 	.byte 128,64,45,233,13,112,160,225,0,1,45,233,3,223,77,226,0,0,141,229,0,0,157,229,0,31,224,227,16,16,128,229
@@ -336,7 +336,7 @@ ut_15:
 	.align 2
 	.no_dead_strip System_Runtime_Serialization_DateTimeOffsetAdapter_get_UtcDateTime
 System_Runtime_Serialization_DateTimeOffsetAdapter_get_UtcDateTime:
-.file 4 "/Users/builder/data/lanes/3818/ad1cd42d/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/System.Runtime.Serialization/System/Runtime/Serialization/DateTimeOffsetAdapter.cs"
+.file 4 "/Users/builder/data/lanes/3859/b638977c/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/System.Runtime.Serialization/System/Runtime/Serialization/DateTimeOffsetAdapter.cs"
 .loc 4 30 0 prologue_end
 
 	.byte 128,64,45,233,13,112,160,225,0,1,45,233,5,223,77,226,0,16,141,229,12,0,141,229,12,0,157,229,0,16,144,229
@@ -396,7 +396,7 @@ Lme_12:
 	.align 2
 	.no_dead_strip System_Runtime_Serialization_EnumMemberAttribute_get_Value
 System_Runtime_Serialization_EnumMemberAttribute_get_Value:
-.file 5 "/Users/builder/data/lanes/3818/ad1cd42d/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/System.Runtime.Serialization/System/Runtime/Serialization/EnumMemberAttribute.cs"
+.file 5 "/Users/builder/data/lanes/3859/b638977c/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/System.Runtime.Serialization/System/Runtime/Serialization/EnumMemberAttribute.cs"
 .loc 5 19 0 prologue_end
 
 	.byte 128,64,45,233,13,112,160,225,0,1,45,233,3,223,77,226,0,0,141,229,0,0,157,229,8,0,144,229,3,223,141,226
@@ -765,7 +765,7 @@ _mono_aot_file_info:
 	.long 48,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 110,231,68,215,111,184,215,225,22,232,43,3,186,175,135,33
+	.byte 251,241,92,201,241,63,156,146,229,224,35,215,52,47,113,14
 	.globl _mono_aot_module_System_Runtime_Serialization_info
 	.align 2
 _mono_aot_module_System_Runtime_Serialization_info:

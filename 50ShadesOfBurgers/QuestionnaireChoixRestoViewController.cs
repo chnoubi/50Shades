@@ -16,16 +16,17 @@ namespace _50ShadesOfBurgers
 	{
         AppDelegate ad = (AppDelegate)UIApplication.SharedApplication.Delegate;
 
-        public Resto selectedResto;
+     /*   public Resto selectedResto;
 
         public List<Resto> restos;
         public List<Burger> burgers;
-        public List<Country> allCountries;
+       // public List<Country> allCountries;
         public SortedSet<String> burgerNames;
 		public List<String> restoCountry;
-        public SortedSet<String> restoName, restoCity, countries;
+        public SortedSet<String> restoName, restoCity, countries;*/
 
         LoadingOverlay loadingOverlay;
+
 		public QuestionnaireChoixRestoViewController (IntPtr handle) : base (handle)
 		{
 
@@ -34,9 +35,10 @@ namespace _50ShadesOfBurgers
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
-			this.View.BackgroundColor = UIColor.FromPatternImage(UIImage.FromFile("images/4b. Resto.jpg"));
 
-            restos = new List<Resto>();
+		//	lblChoose.Font = UIFont.FromName("HomemadeApple", 19f);
+
+           /* restos = new List<Resto>();
             burgers = new List<Burger>();
             
 
@@ -47,17 +49,17 @@ namespace _50ShadesOfBurgers
             burgerNames = new SortedSet<String>();
 
             restoCountry = getCountryList(restos);
-          //  CreateCountryPicker(restoCountry);
+            CreateCountryPicker(restoCountry);
             selectedResto = new Resto();
             btnStart.TouchUpInside += HandleBtnStart;
 
-			AutoCompleteTextFieldManager.Add(this, txtCountry, restoCountry);
+			AutoCompleteTextFieldManager.Add(this, txtCountry, restoCountry); */
         }
 
       
        
 
-        private void HandleBtnStart(object sender, EventArgs e)
+       /* private void HandleBtnStart(object sender, EventArgs e)
         {
             if(string.IsNullOrEmpty(txtBurger.Text) && string.IsNullOrEmpty(txtBurgerNew.Text))
             {
@@ -87,9 +89,9 @@ namespace _50ShadesOfBurgers
             
 
 
-        }
+        }*/
 
-        private void prepareRestoBurger()
+       /* private void prepareRestoBurger()
         {
             if (string.IsNullOrEmpty(txtBurgerNew.Text)) { 
                 foreach (Burger burger in burgers)
@@ -120,7 +122,7 @@ namespace _50ShadesOfBurgers
 
             ad.connection.updateRestoBurger(ad.resto, ad.burger);
 
-        }
+        }*/
            
 
         public override void ViewWillAppear(bool animated)
@@ -132,25 +134,30 @@ namespace _50ShadesOfBurgers
                 return true;
             };
 
-            this.txtCityNew.ShouldReturn += (textField) => {
-                textField.ResignFirstResponder();
-                return true;
-            };
+			txtName.Layer.BorderColor = UIColor.White.CGColor;
+			txtName.Layer.BorderWidth = 0.5f;
+			txtName.Layer.CornerRadius = 8.0f;
+			txtName.Layer.MasksToBounds = true;
+			txtBurger.Layer.BorderColor = UIColor.White.CGColor;
+			txtBurger.Layer.BorderWidth = 0.5f;
+			txtBurger.Layer.CornerRadius = 8.0f;
+			txtBurger.Layer.MasksToBounds = true;
+			txtBurgerNew.Layer.BorderColor = UIColor.White.CGColor;
+			txtBurgerNew.Layer.BorderWidth = 0.5f;
+			txtBurgerNew.Layer.CornerRadius = 8.0f;
+			txtBurgerNew.Layer.MasksToBounds = true;
 
-            this.txtRestoNew.ShouldReturn += (textField) => {
-                textField.ResignFirstResponder();
-                return true;
-            };
+
 
             this.NavigationItem.SetLeftBarButtonItem(new UIBarButtonItem("Menu", UIBarButtonItemStyle.Plain, (sender, args) => {
                 this.PerformSegue("goToMenu", this);
             }), true);
 
 
-            getCountries();
+           // getCountries();
         }
 
-        private void CreateCountryPicker(SortedSet<String> existingCountries)
+     /*   private void CreateCountryPicker(SortedSet<String> existingCountries)
         {
             var picker = new UIPickerView();
             picker.Model = new ListPickerViewModel<String>(existingCountries);
@@ -422,7 +429,7 @@ namespace _50ShadesOfBurgers
             });
 
             webClient.DownloadStringAsync(new Uri("http://dtsl.ehb.be/~ronald.hollander/pma/php/getCountries.php"));
-        }
+        }*/
 
     }
 }

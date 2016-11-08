@@ -18,9 +18,9 @@
 @protocol CALayerDelegate;
 @protocol UIPickerViewModel;
 @class Foundation_InternalNSNotificationHandler;
+@class UIKit_UIControlEventProxy;
 @class __MonoMac_NSActionDispatcher;
 @class __MonoMac_NSAsyncActionDispatcher;
-@class UIKit_UIControlEventProxy;
 @class BurgersNearMeViewController;
 @class GoldenBurgerViewController;
 @class IntroViewController;
@@ -31,6 +31,7 @@
 @class _50ShadesOfBurgers_Model_Top10DataSource;
 @class NoInternetViewController;
 @class QuestionFourFiveViewController;
+@class QuestionnaireChoixRestoViewController;
 @class QuestionnaireIntroViewController;
 @class QuestionOneViewController;
 @class QuestionSixSevenViewController;
@@ -39,17 +40,16 @@
 @class MainMenuViewController;
 @class FirstLoginViewController;
 @class AppDelegate;
-@class QuestionnaireChoixRestoViewController;
 @class QuestionSixSevenEightViewController;
 @class RestoDetailViewController;
 @class Top10TableViewController;
 @class _50ShadesOfBurgers_AutoCompleteTextFieldManager_AutoCompleteTableViewSource;
-@class UIKit_UITextField__UITextFieldDelegate;
-@class UIKit_UIScrollView__UIScrollViewDelegate;
-@class UIKit_UITextView__UITextViewDelegate;
+@class UIKit_UIBarButtonItem_Callback;
 @class __UIGestureRecognizerToken;
 @class __UIGestureRecognizerParameterlessToken;
 @class __UIGestureRecognizerParametrizedToken;
+@class UIKit_UITextField__UITextFieldDelegate;
+@class UIKit_UIScrollView__UIScrollViewDelegate;
+@class UIKit_UITextView__UITextViewDelegate;
 @class __NSObject_Disposer;
-@class UIKit_UIBarButtonItem_Callback;
 
