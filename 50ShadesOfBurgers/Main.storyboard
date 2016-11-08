@@ -902,142 +902,83 @@
                                     <rect key="frame" x="0.0" y="65" width="320" height="504"/>
                                 </variation>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text=" Restaurant:" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="1231">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text=" Resto :" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="1231">
                                 <rect key="frame" x="20" y="104" width="42" height="21"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HomemadeApple" family="Homemade Apple" pointSize="17"/>
                                 <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="170" width="120" height="30"/>
-                                </variation>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1232">
-                                <rect key="frame" x="70" y="100" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="96" y="182" width="180" height="30"/>
-                                </variation>
-                                <color key="backgroundColor" colorSpace="calibratedWhite" white="0" alpha="0"/>
-                            </textField>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Si le Resto et/ou Burger ne sont pas dans la liste, mettez le ici:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="1233">
-                                <rect key="frame" x="139" y="90" width="42" height="21"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="271" width="320" height="50"/>
-                                </variation>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1241">
-                                <rect key="frame" x="137" y="456" width="46" height="30"/>
-                                <state key="normal" title="Commencer">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <rect key="frame" x="107" y="519" width="106" height="40"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="20" y="170" width="80" height="30"/>
                                     <mask key="constraints">
-                                        <include reference="5333"/>
-                                        <include reference="5334"/>
+                                        <include reference="8061"/>
+                                        <include reference="8062"/>
                                     </mask>
                                 </variation>
-                                <connections/>
                                 <constraints>
-                                    <constraint id="5333" firstItem="1241" firstAttribute="height" constant="40"/>
-                                    <constraint id="5334" firstItem="1241" firstAttribute="width" constant="106"/>
+                                    <constraint id="8061" firstItem="1231" firstAttribute="height" constant="30"/>
+                                    <constraint id="8062" firstItem="1231" firstAttribute="width" constant="80"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="5333"/>
-                                        <exclude reference="5334"/>
+                                        <exclude reference="8061"/>
+                                        <exclude reference="8062"/>
                                     </mask>
                                 </variation>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1232" clearButtonMode="whileEditing">
+                                <rect key="frame" x="70" y="100" width="97" height="30"/>
+                                <fontDescription key="fontDescription" name="HomemadeApple" family="Homemade Apple" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="110" y="170" width="190" height="30"/>
+                                </variation>
+                                <color key="backgroundColor" colorSpace="calibratedWhite" white="0" alpha="0"/>
+                                <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                <color key="tintColor" colorSpace="calibratedWhite" white="0" alpha="0"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1241">
+                                <rect key="frame" x="137" y="456" width="46" height="30"/>
+                                <fontDescription key="fontDescription" name="HomemadeApple" family="Homemade Apple" pointSize="17"/>
+                                <state key="normal" title=" Rate Now!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="107" y="490" width="106" height="40"/>
+                                </variation>
+                                <connections/>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Burger:" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="1621">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Burger :" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="1621">
                                 <rect key="frame" x="20" y="104" width="42" height="21"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="HomemadeApple" family="Homemade Apple" pointSize="17"/>
+                                <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="224" width="59" height="21"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="20" y="210" width="90" height="40"/>
+                                    <mask key="constraints">
+                                        <include reference="8068"/>
+                                        <include reference="8069"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="8068" firstItem="1621" firstAttribute="height" constant="40"/>
+                                    <constraint id="8069" firstItem="1621" firstAttribute="width" constant="90"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="8068"/>
+                                        <exclude reference="8069"/>
+                                    </mask>
                                 </variation>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1622">
                                 <rect key="frame" x="70" y="100" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="96" y="220" width="210" height="30"/>
-                                </variation>
-                                <color key="backgroundColor" colorSpace="calibratedWhite" white="0" alpha="0"/>
-                            </textField>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Pays:" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="1631">
-                                <rect key="frame" x="20" y="104" width="42" height="21"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="344" width="42" height="21"/>
-                                </variation>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Ville:" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="1632">
-                                <rect key="frame" x="20" y="104" width="42" height="21"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="384" width="42" height="21"/>
-                                </variation>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Resto:" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="1633">
-                                <rect key="frame" x="20" y="104" width="42" height="21"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="424" width="60" height="21"/>
-                                </variation>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Burger:" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="1634">
-                                <rect key="frame" x="20" y="104" width="42" height="21"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="464" width="60" height="21"/>
-                                </variation>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1635">
-                                <rect key="frame" x="70" y="100" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="96" y="340" width="210" height="30"/>
-                                </variation>
-                                <color key="backgroundColor" colorSpace="calibratedWhite" white="0" alpha="0"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1636">
-                                <rect key="frame" x="70" y="100" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="96" y="380" width="210" height="30"/>
-                                </variation>
-                                <color key="backgroundColor" colorSpace="calibratedWhite" white="0" alpha="0"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1637">
-                                <rect key="frame" x="70" y="100" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="96" y="420" width="210" height="30"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="110" y="215" width="190" height="30"/>
                                 </variation>
                                 <color key="backgroundColor" colorSpace="calibratedWhite" white="0" alpha="0"/>
                             </textField>
@@ -1046,7 +987,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="96" y="460" width="210" height="30"/>
+                                    <rect key="frame" x="50" y="400" width="220" height="30"/>
                                 </variation>
                                 <color key="backgroundColor" colorSpace="calibratedWhite" white="0" alpha="0"/>
                             </textField>
@@ -1058,15 +999,41 @@
                                     <rect key="frame" x="60" y="110" width="200" height="50"/>
                                     <mask key="constraints">
                                         <include reference="8049"/>
+                                        <include reference="8055"/>
                                     </mask>
                                 </variation>
                                 <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
                                 <constraints>
                                     <constraint id="8049" firstItem="8048" firstAttribute="height" constant="50"/>
+                                    <constraint id="8055" firstItem="8048" firstAttribute="width" constant="200"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="8049"/>
+                                        <exclude reference="8055"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If the Burger is not in the list, add it here :" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" id="8052" translatesAutoresizingMaskIntoConstraints="NO" numberOfLines="2" adjustsLetterSpacingToFitWidth="NO" adjustsFontSizeToFit="NO">
+                                <rect key="frame" x="85" y="126" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="HomemadeApple" family="Homemade Apple" pointSize="15"/>
+                                <nil key="highlightedColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="50" y="300" width="220" height="80"/>
+                                    <mask key="constraints">
+                                        <include reference="8054"/>
+                                        <include reference="8056"/>
+                                    </mask>
+                                </variation>
+                                <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                <constraints>
+                                    <constraint id="8054" firstItem="8052" firstAttribute="height" constant="80"/>
+                                    <constraint id="8056" firstItem="8052" firstAttribute="width" constant="220"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="8054"/>
+                                        <exclude reference="8056"/>
                                     </mask>
                                 </variation>
                             </label>
@@ -1076,59 +1043,69 @@
                             <mask key="subviews">
                                 <exclude reference="1231"/>
                                 <exclude reference="1232"/>
-                                <exclude reference="1233"/>
                                 <exclude reference="1241"/>
                                 <exclude reference="1621"/>
                                 <exclude reference="1622"/>
-                                <exclude reference="1631"/>
-                                <exclude reference="1632"/>
-                                <exclude reference="1633"/>
-                                <exclude reference="1634"/>
-                                <exclude reference="1635"/>
-                                <exclude reference="1636"/>
-                                <exclude reference="1637"/>
                                 <exclude reference="1638"/>
                                 <exclude reference="8047"/>
                                 <exclude reference="8048"/>
+                                <exclude reference="8052"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="5335"/>
-                                <exclude reference="5336"/>
                                 <exclude reference="8050"/>
                                 <exclude reference="8051"/>
+                                <exclude reference="8057"/>
+                                <exclude reference="8058"/>
+                                <exclude reference="8059"/>
+                                <exclude reference="8060"/>
+                                <exclude reference="8063"/>
+                                <exclude reference="8064"/>
+                                <exclude reference="8065"/>
+                                <exclude reference="8066"/>
+                                <exclude reference="8067"/>
+                                <exclude reference="8070"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="1231"/>
                                 <include reference="1232"/>
-                                <include reference="1233"/>
                                 <include reference="1241"/>
                                 <include reference="1621"/>
                                 <include reference="1622"/>
-                                <include reference="1631"/>
-                                <include reference="1632"/>
-                                <include reference="1633"/>
-                                <include reference="1634"/>
-                                <include reference="1635"/>
-                                <include reference="1636"/>
-                                <include reference="1637"/>
                                 <include reference="1638"/>
                                 <include reference="8047"/>
                                 <include reference="8048"/>
+                                <include reference="8052"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="5335"/>
-                                <include reference="5336"/>
                                 <include reference="8050"/>
                                 <include reference="8051"/>
+                                <include reference="8057"/>
+                                <include reference="8058"/>
+                                <include reference="8059"/>
+                                <include reference="8060"/>
+                                <include reference="8063"/>
+                                <include reference="8064"/>
+                                <include reference="8065"/>
+                                <include reference="8066"/>
+                                <include reference="8067"/>
+                                <include reference="8070"/>
                             </mask>
                         </variation>
                         <constraints>
-                            <constraint id="5335" firstItem="1120" firstAttribute="bottom" secondItem="1241" secondAttribute="bottom" constant="9"/>
-                            <constraint id="5336" firstItem="1241" firstAttribute="centerX" secondItem="1120" secondAttribute="centerX"/>
                             <constraint id="8050" firstItem="8048" firstAttribute="leading" secondItem="1120" secondAttribute="leading" constant="60"/>
                             <constraint id="8051" firstItem="1120" firstAttribute="trailing" secondItem="8048" secondAttribute="trailing" constant="60"/>
+                            <constraint id="8057" firstItem="8052" firstAttribute="leading" secondItem="1120" secondAttribute="leading" constant="50"/>
+                            <constraint id="8058" firstItem="1120" firstAttribute="trailing" secondItem="8052" secondAttribute="trailing" constant="50"/>
+                            <constraint id="8059" firstItem="1231" firstAttribute="leading" secondItem="1120" secondAttribute="leading" constant="20"/>
+                            <constraint id="8060" firstItem="1231" firstAttribute="top" secondItem="8048" secondAttribute="bottom" constant="10"/>
+                            <constraint id="8063" firstItem="1120" firstAttribute="trailing" secondItem="1232" secondAttribute="trailing" constant="20"/>
+                            <constraint id="8064" firstItem="1232" firstAttribute="leading" secondItem="1231" secondAttribute="trailing" constant="10"/>
+                            <constraint id="8065" firstItem="1621" firstAttribute="leading" secondItem="1120" secondAttribute="leading" constant="20"/>
+                            <constraint id="8066" firstItem="1621" firstAttribute="top" secondItem="1231" secondAttribute="bottom" constant="10"/>
+                            <constraint id="8067" firstItem="1621" firstAttribute="trailing" secondItem="1622" secondAttribute="leading"/>
+                            <constraint id="8070" firstItem="1120" firstAttribute="trailing" secondItem="1622" secondAttribute="trailing" constant="20"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Burger a quoter" id="1119">
@@ -1138,21 +1115,14 @@
                         <outlet property="btnStart" destination="1241" id="name-outlet-1241"/>
                         <outlet property="txtBurger" destination="1622" id="name-outlet-1622"/>
                         <outlet property="txtBurgerNew" destination="1638" id="name-outlet-1638"/>
-                        <outlet property="txtCityNew" destination="1636" id="name-outlet-1636"/>
-                        <outlet property="txtCountryNew" destination="1635" id="name-outlet-1635"/>
                         <outlet property="txtName" destination="1232" id="name-outlet-1232"/>
-                        <outlet property="txtRestoNew" destination="1637" id="name-outlet-1637"/>
                         <segue id="4086" destination="1526" kind="show" identifier="goToQuestOne"/>
                         <outlet property="lblResto" destination="1231" id="name-outlet-1231"/>
                         <outlet property="lblBurger" destination="1621" id="name-outlet-1621"/>
-                        <outlet property="lblNewCountry" destination="1631" id="name-outlet-1631"/>
-                        <outlet property="lblNewCity" destination="1632" id="name-outlet-1632"/>
-                        <outlet property="lblNewResto" destination="1633" id="name-outlet-1633"/>
-                        <outlet property="lblNewBurger" destination="1634" id="name-outlet-1634"/>
-                        <outlet property="lblAddNew" destination="1233" id="name-outlet-1233"/>
                         <segue id="7171" destination="6534" kind="presentation" identifier="goToMenu"/>
                         <outlet property="imgBgr" destination="8047" id="name-outlet-8047"/>
                         <outlet property="lblChoose" destination="8048" id="name-outlet-8048"/>
+                        <outlet property="lblAddBurger" destination="8052" id="name-outlet-8052"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1121" userLabel="First Responder" sceneMemberID="firstResponder"/>

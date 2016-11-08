@@ -24,7 +24,7 @@ namespace _50ShadesOfBurgers
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UILabel lblAddNew { get; set; }
+        UIKit.UILabel lblAddBurger { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
@@ -33,22 +33,6 @@ namespace _50ShadesOfBurgers
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UILabel lblChoose { get; set; }
-
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UILabel lblNewBurger { get; set; }
-
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UILabel lblNewCity { get; set; }
-
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UILabel lblNewCountry { get; set; }
-
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UILabel lblNewResto { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
@@ -64,19 +48,7 @@ namespace _50ShadesOfBurgers
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UITextField txtCityNew { get; set; }
-
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UITextField txtCountryNew { get; set; }
-
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UITextField txtName { get; set; }
-
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UITextField txtRestoNew { get; set; }
 
         void ReleaseDesignerOutlets ()
         {
@@ -90,9 +62,9 @@ namespace _50ShadesOfBurgers
                 imgBgr = null;
             }
 
-            if (lblAddNew != null) {
-                lblAddNew.Dispose ();
-                lblAddNew = null;
+            if (lblAddBurger != null) {
+                lblAddBurger.Dispose ();
+                lblAddBurger = null;
             }
 
             if (lblBurger != null) {
@@ -103,26 +75,6 @@ namespace _50ShadesOfBurgers
             if (lblChoose != null) {
                 lblChoose.Dispose ();
                 lblChoose = null;
-            }
-
-            if (lblNewBurger != null) {
-                lblNewBurger.Dispose ();
-                lblNewBurger = null;
-            }
-
-            if (lblNewCity != null) {
-                lblNewCity.Dispose ();
-                lblNewCity = null;
-            }
-
-            if (lblNewCountry != null) {
-                lblNewCountry.Dispose ();
-                lblNewCountry = null;
-            }
-
-            if (lblNewResto != null) {
-                lblNewResto.Dispose ();
-                lblNewResto = null;
             }
 
             if (lblResto != null) {
@@ -140,24 +92,9 @@ namespace _50ShadesOfBurgers
                 txtBurgerNew = null;
             }
 
-            if (txtCityNew != null) {
-                txtCityNew.Dispose ();
-                txtCityNew = null;
-            }
-
-            if (txtCountryNew != null) {
-                txtCountryNew.Dispose ();
-                txtCountryNew = null;
-            }
-
             if (txtName != null) {
                 txtName.Dispose ();
                 txtName = null;
-            }
-
-            if (txtRestoNew != null) {
-                txtRestoNew.Dispose ();
-                txtRestoNew = null;
             }
         }
     }

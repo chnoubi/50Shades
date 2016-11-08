@@ -126,7 +126,6 @@ namespace _50ShadesOfBurgers
         public override void ViewWillAppear(bool animated)
         {
             base.ViewWillAppear(animated);
-            Buttons.setupButtons(btnStart);
 
             this.txtBurgerNew.ShouldReturn += (textField) => {
                 textField.ResignFirstResponder();
