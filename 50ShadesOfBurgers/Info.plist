@@ -40,5 +40,7 @@
 	<string>50 Nuances of Burgers</string>
 	<key>XSLaunchImageAssets</key>
 	<string>Resources/Media.xcassets/LaunchImages.launchimage</string>
+	<key>UIAppFonts</key>
+	<string>HomemadeApple.ttf</string>
 </dict>
 </plist>

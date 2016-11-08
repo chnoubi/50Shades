@@ -224,6 +224,9 @@
     <BundleResource Include="Resources\GoldenBurgerButton.png" />
     <BundleResource Include="Resources\BestBurgersButton.png" />
     <BundleResource Include="Resources\AboutThisAppButton.png" />
+    <BundleResource Include="Resources\HomemadeApple.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\burger-iPhone-Icon.png">

@@ -1,17 +1,13 @@
 ﻿<Properties StartupConfiguration="{DF20C9C0-B8C9-48E8-B106-1C6A9F23DA28}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="50ShadesOfBurgers/MainMenuViewController.cs">
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="50ShadesOfBurgers/MainMenuViewController.cs" Line="44" Column="58" />
-      <File FileName="50ShadesOfBurgers/FirstLoginViewController.cs" Line="64" Column="90" />
-      <File FileName="50ShadesOfBurgers/QuestionSixSevenEightViewController.cs" Line="1" Column="1" />
-      <File FileName="50ShadesOfBurgers/QuestionOneViewController.cs" Line="1" Column="1" />
-      <File FileName="50ShadesOfBurgers/QuestionnaireChoixRestoViewController.cs" Line="149" Column="4" />
-      <File FileName="50ShadesOfBurgers/Top10ViewController.cs" Line="54" Column="33" />
-      <File FileName="50ShadesOfBurgers/BurgersNearMeViewController.cs" Line="31" Column="14" />
-      <File FileName="50ShadesOfBurgers/GoldenBurgerViewController.cs" Line="29" Column="14" />
-      <File FileName="50ShadesOfBurgers/QuestionnaireIntroViewController.cs" Line="25" Column="4" />
-      <File FileName="50ShadesOfBurgers/Top10TableViewController.cs" Line="52" Column="13" />
-      <File FileName="50ShadesOfBurgers/Main.cs" Line="12" Column="1" />
+      <File FileName="../../Downloads/GooglePlaceApi_iOS-master/Model/RestRequestClass.cs" Line="4" Column="7" />
+      <File FileName="../../Downloads/GooglePlaceApi_iOS-master/ViewController/LocationViewController.cs" Line="1" Column="1" />
+      <File FileName="../../Downloads/GooglePlaceApi_iOS-master/Model/Constants.cs" Line="7" Column="85" />
+      <File FileName="../../Downloads/GooglePlaceApi_iOS-master/AppDelegate.cs" Line="1" Column="1" />
+      <File FileName="../../Downloads/GooglePlaceApi_iOS-master/ViewController/ViewController.cs" Line="1" Column="1" />
+      <File FileName="../../Downloads/GooglePlaceApi_iOS-master/Model/LocationPredictionClass.cs" Line="1" Column="1" />
+      <File FileName="50ShadesOfBurgers/QuestionnaireChoixRestoViewController.cs" Line="149" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />

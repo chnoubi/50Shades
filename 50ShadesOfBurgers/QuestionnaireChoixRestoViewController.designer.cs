@@ -20,6 +20,10 @@ namespace _50ShadesOfBurgers
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIImageView imgBgr { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UILabel lblAddNew { get; set; }
 
         [Outlet]
@@ -28,11 +32,7 @@ namespace _50ShadesOfBurgers
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UILabel lblCity { get; set; }
-
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UILabel lblCountry { get; set; }
+        UIKit.UILabel lblChoose { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
@@ -56,10 +56,6 @@ namespace _50ShadesOfBurgers
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UILabel lblTest { get; set; }
-
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UITextField txtBurger { get; set; }
 
         [Outlet]
@@ -68,15 +64,7 @@ namespace _50ShadesOfBurgers
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UITextField txtCity { get; set; }
-
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UITextField txtCityNew { get; set; }
-
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UITextField txtCountry { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
@@ -97,6 +85,11 @@ namespace _50ShadesOfBurgers
                 btnStart = null;
             }
 
+            if (imgBgr != null) {
+                imgBgr.Dispose ();
+                imgBgr = null;
+            }
+
             if (lblAddNew != null) {
                 lblAddNew.Dispose ();
                 lblAddNew = null;
@@ -107,14 +100,9 @@ namespace _50ShadesOfBurgers
                 lblBurger = null;
             }
 
-            if (lblCity != null) {
-                lblCity.Dispose ();
-                lblCity = null;
-            }
-
-            if (lblCountry != null) {
-                lblCountry.Dispose ();
-                lblCountry = null;
+            if (lblChoose != null) {
+                lblChoose.Dispose ();
+                lblChoose = null;
             }
 
             if (lblNewBurger != null) {
@@ -142,11 +130,6 @@ namespace _50ShadesOfBurgers
                 lblResto = null;
             }
 
-            if (lblTest != null) {
-                lblTest.Dispose ();
-                lblTest = null;
-            }
-
             if (txtBurger != null) {
                 txtBurger.Dispose ();
                 txtBurger = null;
@@ -157,19 +140,9 @@ namespace _50ShadesOfBurgers
                 txtBurgerNew = null;
             }
 
-            if (txtCity != null) {
-                txtCity.Dispose ();
-                txtCity = null;
-            }
-
             if (txtCityNew != null) {
                 txtCityNew.Dispose ();
                 txtCityNew = null;
-            }
-
-            if (txtCountry != null) {
-                txtCountry.Dispose ();
-                txtCountry = null;
             }
 
             if (txtCountryNew != null) {
