@@ -70,7 +70,7 @@ namespace _50ShadesOfBurgers.Model
         {
           
             pickerView.Layer.BorderColor = UIColor.Gray.CGColor;
-            pickerView.Layer.BackgroundColor = UIColor.LightGray.CGColor;
+			pickerView.Layer.BackgroundColor = UIColor.White.CGColor;
           
             pickerView.Layer.BorderWidth = 1;
             pickerView.Layer.CornerRadius = 8;

@@ -16,14 +16,14 @@ namespace _50ShadesOfBurgers
 	{
         AppDelegate ad = (AppDelegate)UIApplication.SharedApplication.Delegate;
 
-		/*   public Resto selectedResto;
+		//  public Resto selectedResto;
 
-		   public List<Resto> restos;
+		  // public List<Resto> restos;
 		   public List<Burger> burgers;
 		  // public List<Country> allCountries;
 		   public SortedSet<String> burgerNames;
-		   public List<String> restoCountry;
-		   public SortedSet<String> restoName, restoCity, countries;*/
+		   //public List<String> restoCountry;
+		   //public SortedSet<String> restoName, restoCity, countries;
 		string placeId;
         LoadingOverlay loadingOverlay;
 		LocationPredictionClass objAutoCompleteLocationClass;
@@ -78,8 +78,6 @@ namespace _50ShadesOfBurgers
 			txtBurgerNew.Layer.CornerRadius = 8.0f;
 			txtBurgerNew.Layer.MasksToBounds = true;
 
-
-
 			this.NavigationItem.SetLeftBarButtonItem(new UIBarButtonItem("Menu", UIBarButtonItemStyle.Plain, (sender, args) =>
 			{
 				this.PerformSegue("goToMenu", this);
@@ -93,7 +91,7 @@ namespace _50ShadesOfBurgers
 		{
 			tableViewLocationAutoComplete.Hidden = true;
 			tableViewLocationAutoComplete.BackgroundColor = UIColor.Clear;
-			txtName.ShouldReturn += (textField) => textField.ResignFirstResponder();
+			txtName.ShouldReturn += TextFieldShouldReturn;
 			txtBurger.ShouldReturn += (textField) => textField.ResignFirstResponder();
 			txtBurgerNew.ShouldReturn += (textField) => textField.ResignFirstResponder();
 
@@ -159,20 +157,104 @@ namespace _50ShadesOfBurgers
 
 		void LocationSelectedFromAutoFill(Prediction objPrediction)
 		{
-			//Console.WriteLine(objPrediction.terms[0].value);
+			Console.WriteLine(objPrediction.terms[0].value);
+
+			showViews();
+
+			txtName.Text = objPrediction.terms[0].value;
+			placeId = objPrediction.place_id;
+			getBurgersForPicker(placeId);
+			txtName.ResignFirstResponder();
+		}
+
+		private bool TextFieldShouldReturn(UITextField textField)
+		{
+			showViews();
+			textField.ResignFirstResponder();
+			return true;
+		}
+
+		private void showViews()
+		{
 			tableViewLocationAutoComplete.Hidden = true;
-			//show other views
+
 			txtBurger.Hidden = false;
 			lblBurger.Hidden = false;
 			txtBurgerNew.Hidden = false;
 			lblAddBurger.Hidden = false;
-			txtName.Text = objPrediction.terms[0].value;
-			txtName.ResignFirstResponder();
 		}
-	
 
-      
-       
+		private async Task getBurgersForPicker(string placeId)
+		{
+			getBurgersFromDatabase(placeId);
+			var bounds = UIScreen.MainScreen.Bounds;
+			loadingOverlay = new LoadingOverlay(bounds, "Getting Burgers...");
+			View.Add(loadingOverlay);
+			await Task.Delay(1000);
+			loadingOverlay.Hide();
+			burgerNames = getBurgerSortedNameList(burgers);
+			CreateBurgerPicker(burgerNames);
+		}
+
+		private SortedSet<String> getBurgerSortedNameList(List<Burger> burgers)
+		{
+			SortedSet<String> burgerNames = new SortedSet<String>();
+			foreach (Burger burger in burgers)
+			{
+				burgerNames.Add(burger.BurgerName);
+			}
+			return burgerNames;
+		}
+
+
+		private void CreateBurgerPicker(SortedSet<String> burgerNames)
+		{
+			var picker = new UIPickerView();
+			picker.Model = new ListPickerViewModel<String>(burgerNames);
+			picker.ShowSelectionIndicator = true;
+
+
+			UIToolbar toolbar = new UIToolbar();
+			toolbar.BarStyle = UIBarStyle.BlackTranslucent;
+			toolbar.Translucent = true;
+			toolbar.SizeToFit();
+
+			// Event Handler for Done Button on Drop Down
+			UIBarButtonItem doneButton = new UIBarButtonItem("Done", UIBarButtonItemStyle.Done, (s, e) =>
+			{
+				foreach (UIView view in this.View.Subviews)
+				{
+					if (view.IsFirstResponder)
+					{
+						UITextField textview = (UITextField)view;
+						var pickerItem = picker.Model as ListPickerViewModel<String>;
+						textview.Text = pickerItem.SelectedItem;
+						textview.ResignFirstResponder();
+					}
+				}
+
+			});
+			toolbar.SetItems(new UIBarButtonItem[] { doneButton }, true);
+
+			txtBurger.InputView = picker;
+			txtBurger.InputAccessoryView = toolbar;
+		}
+
+         private void getBurgersFromDatabase(string placeId)
+		{
+
+			var webClient = new WebClient();
+			webClient.Encoding = Encoding.UTF8;
+			webClient.Headers[HttpRequestHeader.ContentType] = "application/x-www-form-urlencoded";
+
+			webClient.UploadStringCompleted += (s, e) => InvokeOnMainThread(() =>
+			{
+				var json = e.Result;
+				burgers = JsonConvert.DeserializeObject<List<Burger>>(json);
+			});
+
+			webClient.UploadStringAsync(new Uri("http://dtsl.ehb.be/~ronald.hollander/pma/php/getBurger.php"), String.Format("RestoGoogleId={0}", placeId));
+		}
 
        /* private void HandleBtnStart(object sender, EventArgs e)
         {
@@ -358,38 +440,7 @@ namespace _50ShadesOfBurgers
             txtName.InputAccessoryView = toolbar;
         }
 
-        private void CreateBurgerPicker(SortedSet<String> burgerNames)
-        {
-            var picker = new UIPickerView();
-            picker.Model = new ListPickerViewModel<String>(burgerNames);
-            picker.ShowSelectionIndicator = true;
-
-
-            UIToolbar toolbar = new UIToolbar();
-            toolbar.BarStyle = UIBarStyle.Black;
-            toolbar.Translucent = true;
-            toolbar.SizeToFit();
-
-            // Event Handler for Done Button on Drop Down
-            UIBarButtonItem doneButton = new UIBarButtonItem("Done", UIBarButtonItemStyle.Done, (s, e) =>
-            {
-                foreach (UIView view in this.View.Subviews)
-                {
-                    if (view.IsFirstResponder)
-                    {
-                        UITextField textview = (UITextField)view;
-                        var pickerItem = picker.Model as ListPickerViewModel<String>;
-                        textview.Text = pickerItem.SelectedItem;
-                        textview.ResignFirstResponder();
-                    }
-                }
-
-            });
-            toolbar.SetItems(new UIBarButtonItem[] { doneButton }, true);
-
-            txtBurger.InputView = picker;
-            txtBurger.InputAccessoryView = toolbar;
-        }
+        
 
 
 		private List<String> getCountryList(List<Resto> restos)
@@ -429,34 +480,12 @@ namespace _50ShadesOfBurgers
             return names;
         }
 
-        private SortedSet<String> getBurgerSortedNameList(List<Burger> burgersList)
-        {
-            SortedSet<String> burgerNames = new SortedSet<String>();
-            foreach (Burger burger in burgers)
-            {
-                burgerNames.Add(burger.BurgerName);
-            }
-            return burgerNames;
-        }
+        
 
 
 
        
-         public void getBurgers()
-        {
-            
-            var webClient = new WebClient();
-            webClient.Encoding = Encoding.UTF8;
-            webClient.Headers[HttpRequestHeader.ContentType] = "application/x-www-form-urlencoded";
-
-            webClient.UploadStringCompleted += (s, e) => InvokeOnMainThread(() =>
-            {
-                var json = e.Result;
-                burgers = JsonConvert.DeserializeObject<List<Burger>>(json);
-            });
-
-            webClient.UploadStringAsync(new Uri("http://dtsl.ehb.be/~ronald.hollander/pma/php/getBurger.php"), String.Format("RestoCity={0}&RestoName={1}", txtCity.Text, txtName.Text));
-        }
+       
 
         private void CreateGeneralCountryPicker(SortedSet<String> Countries)
         {
