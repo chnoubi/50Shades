@@ -77,7 +77,7 @@ namespace _50ShadesOfBurgers.Model
 
 
             UILabel lbl = new UILabel(new RectangleF(0, 0, (float)pickerView.RowSizeForComponent(component).Width - 10.0f, (float)pickerView.RowSizeForComponent(component).Height * 2));
-            lbl.TextColor = UIColor.White;
+			lbl.TextColor = UIColor.Black;
             lbl.Font = UIFont.SystemFontOfSize(12f);
             lbl.TextAlignment = UITextAlignment.Center;
             lbl.LineBreakMode = UILineBreakMode.WordWrap;

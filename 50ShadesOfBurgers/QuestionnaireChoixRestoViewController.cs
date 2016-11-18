@@ -20,16 +20,13 @@ namespace _50ShadesOfBurgers
 
 		  // public List<Resto> restos;
 		   public List<Burger> burgers;
-		  // public List<Country> allCountries;
 		   public SortedSet<String> burgerNames;
-		   //public List<String> restoCountry;
-		   //public SortedSet<String> restoName, restoCity, countries;
 		string placeId;
         LoadingOverlay loadingOverlay;
 		LocationPredictionClass objAutoCompleteLocationClass;
 		string strAutoCompleteQuery;
 		LocationAutoCompleteTableSource objLocationAutoCompleteTableSource;
-
+		bool noBurgersFlag = false;
 
 		public QuestionnaireChoixRestoViewController (IntPtr handle) : base (handle)
 		{
@@ -203,6 +200,12 @@ namespace _50ShadesOfBurgers
 			{
 				burgerNames.Add(burger.BurgerName);
 			}
+			if (burgerNames.Count == 0)
+			{
+				burgerNames.Add("No burgers found for this place!");
+				noBurgersFlag = true;
+			}
+			else noBurgersFlag = false;
 			return burgerNames;
 		}
 
@@ -228,7 +231,8 @@ namespace _50ShadesOfBurgers
 					{
 						UITextField textview = (UITextField)view;
 						var pickerItem = picker.Model as ListPickerViewModel<String>;
-						textview.Text = pickerItem.SelectedItem;
+						if (!noBurgersFlag) textview.Text = pickerItem.SelectedItem;
+						else textview.Text = "";
 						textview.ResignFirstResponder();
 					}
 				}
@@ -324,226 +328,6 @@ namespace _50ShadesOfBurgers
 
        
 
-     /*   private void CreateCountryPicker(SortedSet<String> existingCountries)
-        {
-            var picker = new UIPickerView();
-            picker.Model = new ListPickerViewModel<String>(existingCountries);
-            picker.ShowSelectionIndicator = true;
-            
-
-            UIToolbar toolbar = new UIToolbar();
-            toolbar.BarStyle = UIBarStyle.Black;
-            toolbar.Translucent = true;
-            toolbar.SizeToFit();
-
-            // Event Handler for Done Button on Drop Down
-            UIBarButtonItem doneButton = new UIBarButtonItem("Done", UIBarButtonItemStyle.Done, (s, e) =>
-            {
-                foreach (UIView view in this.View.Subviews)
-                {
-                    if (view.IsFirstResponder)
-                    {
-                        UITextField textview = (UITextField)view;
-                        var pickerItem = picker.Model as ListPickerViewModel<String>;
-                        textview.Text = pickerItem.SelectedItem;
-                        restoCity = getCityList(restos, textview.Text);
-                        CreateCityPicker(restoCity);
-                        txtCity.Enabled = true;
-                        textview.ResignFirstResponder();
-                    }
-                }
-
-            });
-            toolbar.SetItems(new UIBarButtonItem[] { doneButton }, true);
-
-            txtCountry.InputView = picker ;
-            txtCountry.InputAccessoryView = toolbar;
-        }
-
-        private void CreateCityPicker(SortedSet<String> cities)
-        {
-            var picker = new UIPickerView();
-            picker.Model = new ListPickerViewModel<String>(cities);
-            picker.ShowSelectionIndicator = true;
-
-
-            UIToolbar toolbar = new UIToolbar();
-            toolbar.BarStyle = UIBarStyle.Black;
-            toolbar.Translucent = true;
-            toolbar.SizeToFit();
-
-            // Event Handler for Done Button on Drop Down
-            UIBarButtonItem doneButton = new UIBarButtonItem("Done", UIBarButtonItemStyle.Done, (s, e) =>
-            {
-                foreach (UIView view in this.View.Subviews)
-                {
-                    if (view.IsFirstResponder)
-                    {
-                        UITextField textview = (UITextField)view;
-                        var pickerItem = picker.Model as ListPickerViewModel<String>;
-                        textview.Text = pickerItem.SelectedItem;
-                        restoName = getNameList(restos, textview.Text);
-                        CreateNamePicker(restoName);
-                        txtName.Enabled = true;
-                        textview.ResignFirstResponder();
-                        
-                        
-                    }
-                }
-
-            });
-            toolbar.SetItems(new UIBarButtonItem[] { doneButton }, true);
-
-            txtCity.InputView = picker;
-            txtCity.InputAccessoryView = toolbar;
-        }
-
-        private void CreateNamePicker(SortedSet<String> names)
-        {
-            var picker = new UIPickerView();
-            picker.Model = new ListPickerViewModel<String>(names);
-            picker.ShowSelectionIndicator = true;
-
-
-            UIToolbar toolbar = new UIToolbar();
-            toolbar.BarStyle = UIBarStyle.Black;
-            toolbar.Translucent = true;
-            toolbar.SizeToFit();
-
-            // Event Handler for Done Button on Drop Down
-            UIBarButtonItem doneButton = new UIBarButtonItem("Done", UIBarButtonItemStyle.Done, async (s, e) =>
-            {
-                foreach (UIView view in this.View.Subviews)
-                {
-                    if (view.IsFirstResponder)
-                    {
-                        UITextField textview = (UITextField)view;
-                        var pickerItem = picker.Model as ListPickerViewModel<String>;
-                        textview.Text = pickerItem.SelectedItem;
-                        getBurgers();
-                        var bounds = UIScreen.MainScreen.Bounds;
-                        loadingOverlay = new LoadingOverlay(bounds, "Getting Burgers...");  
-                        View.Add(loadingOverlay);
-                        await Task.Delay(1000);
-                        loadingOverlay.Hide();
-                        burgerNames = getBurgerSortedNameList(burgers);
-                        CreateBurgerPicker(burgerNames);
-                        txtBurger.Enabled = true;
-                        textview.ResignFirstResponder();
-                    }
-                }
-
-            });
-            toolbar.SetItems(new UIBarButtonItem[] { doneButton }, true);
-
-            txtName.InputView = picker;
-            txtName.InputAccessoryView = toolbar;
-        }
-
-        
-
-
-		private List<String> getCountryList(List<Resto> restos)
-        {
-			List<String> countries = new List<String>();
-            foreach (Resto resto in restos)
-            {
-				if(!countries.Contains(resto.RestoCountry)) countries.Add(resto.RestoCountry);
-
-            }
-			countries.Sort();
-            return countries;
-        }
-
-
-        private SortedSet<String> getCityList(List<Resto> restos, String country)
-        {
-            SortedSet<String> cities = new SortedSet<String>();
-            foreach (Resto resto in restos)
-            {
-                if(resto.RestoCountry.Equals(country))
-                cities.Add(resto.RestoCity);
-
-            }
-            return cities;
-        }
-
-        private SortedSet<String> getNameList(List<Resto> restos, String city)
-        {
-            SortedSet<String> names = new SortedSet<String>();
-            foreach (Resto resto in restos)
-            {
-                if (resto.RestoCity.Equals(city))
-                    names.Add(resto.RestoName);
-
-            }
-            return names;
-        }
-
-        
-
-
-
-       
-       
-
-        private void CreateGeneralCountryPicker(SortedSet<String> Countries)
-        {
-            var picker = new UIPickerView();
-            picker.Model = new ListPickerViewModel<String>(Countries);
-            picker.ShowSelectionIndicator = true;
-
-
-            UIToolbar toolbar = new UIToolbar();
-            toolbar.BarStyle = UIBarStyle.Black;
-            toolbar.Translucent = true;
-            toolbar.SizeToFit();
-
-            // Event Handler for Done Button on Drop Down
-            UIBarButtonItem doneButton = new UIBarButtonItem("Done", UIBarButtonItemStyle.Done, (s, e) =>
-            {
-                foreach (UIView view in this.View.Subviews)
-                {
-                    if (view.IsFirstResponder)
-                    {
-                        UITextField textview = (UITextField)view;
-                        var pickerItem = picker.Model as ListPickerViewModel<String>;
-                        textview.Text = pickerItem.SelectedItem;
-                        textview.ResignFirstResponder();
-                    }
-                }
-
-            });
-            toolbar.SetItems(new UIBarButtonItem[] { doneButton }, true);
-
-            txtCountryNew.InputView = picker;
-            txtCountryNew.InputAccessoryView = toolbar;
-        }
-
-        private void getCountries()
-        {
-            var webClient = new WebClient();
-            webClient.Encoding = Encoding.UTF8;
-            webClient.Headers[HttpRequestHeader.ContentType] = "application/x-www-form-urlencoded";
-
-            webClient.DownloadStringCompleted += (s, e) => InvokeOnMainThread(() =>
-            {
-                allCountries = new List<Country>();
-                countries = new SortedSet<String>();
-                var json = e.Result;
-                allCountries = JsonConvert.DeserializeObject<List<Country>>(json);
-
-                foreach(Country country in allCountries)
-                {
-                    countries.Add(country.CountryName);
-                }
-                CreateGeneralCountryPicker(countries);
-
-
-            });
-
-            webClient.DownloadStringAsync(new Uri("http://dtsl.ehb.be/~ronald.hollander/pma/php/getCountries.php"));
-        }*/
-
+     
     }
 }
