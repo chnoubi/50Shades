@@ -40,6 +40,10 @@ namespace _50ShadesOfBurgers
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UITableView tableViewLocationAutoComplete { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UITextField txtBurger { get; set; }
 
         [Outlet]
@@ -80,6 +84,11 @@ namespace _50ShadesOfBurgers
             if (lblResto != null) {
                 lblResto.Dispose ();
                 lblResto = null;
+            }
+
+            if (tableViewLocationAutoComplete != null) {
+                tableViewLocationAutoComplete.Dispose ();
+                tableViewLocationAutoComplete = null;
             }
 
             if (txtBurger != null) {

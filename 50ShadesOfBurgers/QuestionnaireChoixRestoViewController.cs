@@ -16,16 +16,20 @@ namespace _50ShadesOfBurgers
 	{
         AppDelegate ad = (AppDelegate)UIApplication.SharedApplication.Delegate;
 
-     /*   public Resto selectedResto;
+		/*   public Resto selectedResto;
 
-        public List<Resto> restos;
-        public List<Burger> burgers;
-       // public List<Country> allCountries;
-        public SortedSet<String> burgerNames;
-		public List<String> restoCountry;
-        public SortedSet<String> restoName, restoCity, countries;*/
-
+		   public List<Resto> restos;
+		   public List<Burger> burgers;
+		  // public List<Country> allCountries;
+		   public SortedSet<String> burgerNames;
+		   public List<String> restoCountry;
+		   public SortedSet<String> restoName, restoCity, countries;*/
+		string placeId;
         LoadingOverlay loadingOverlay;
+		LocationPredictionClass objAutoCompleteLocationClass;
+		string strAutoCompleteQuery;
+		LocationAutoCompleteTableSource objLocationAutoCompleteTableSource;
+
 
 		public QuestionnaireChoixRestoViewController (IntPtr handle) : base (handle)
 		{
@@ -35,7 +39,8 @@ namespace _50ShadesOfBurgers
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
-
+			InitializeView();
+			ChooseRestoNameInit();
 		//	lblChoose.Font = UIFont.FromName("HomemadeApple", 19f);
 
            /* restos = new List<Resto>();
@@ -55,6 +60,116 @@ namespace _50ShadesOfBurgers
 
 			AutoCompleteTextFieldManager.Add(this, txtCountry, restoCountry); */
         }
+
+		public override void ViewWillAppear(bool animated)
+		{
+			base.ViewWillAppear(animated);
+
+			txtName.Layer.BorderColor = UIColor.White.CGColor;
+			txtName.Layer.BorderWidth = 0.5f;
+			txtName.Layer.CornerRadius = 8.0f;
+			txtName.Layer.MasksToBounds = true;
+			txtBurger.Layer.BorderColor = UIColor.White.CGColor;
+			txtBurger.Layer.BorderWidth = 0.5f;
+			txtBurger.Layer.CornerRadius = 8.0f;
+			txtBurger.Layer.MasksToBounds = true;
+			txtBurgerNew.Layer.BorderColor = UIColor.White.CGColor;
+			txtBurgerNew.Layer.BorderWidth = 0.5f;
+			txtBurgerNew.Layer.CornerRadius = 8.0f;
+			txtBurgerNew.Layer.MasksToBounds = true;
+
+
+
+			this.NavigationItem.SetLeftBarButtonItem(new UIBarButtonItem("Menu", UIBarButtonItemStyle.Plain, (sender, args) =>
+			{
+				this.PerformSegue("goToMenu", this);
+			}), true);
+
+
+			// getCountries();
+		}
+
+		void InitializeView()
+		{
+			tableViewLocationAutoComplete.Hidden = true;
+			tableViewLocationAutoComplete.BackgroundColor = UIColor.Clear;
+			txtName.ShouldReturn += (textField) => textField.ResignFirstResponder();
+			txtBurger.ShouldReturn += (textField) => textField.ResignFirstResponder();
+			txtBurgerNew.ShouldReturn += (textField) => textField.ResignFirstResponder();
+
+			StringBuilder builderLocationAutoComplete = new StringBuilder(Constants.strPlacesAutofillUrl);
+			builderLocationAutoComplete.Append("?input={0}").Append("&types=establishment").Append("&key=").Append(Constants.strGooglePlaceAPIKey);
+			strAutoCompleteQuery = builderLocationAutoComplete.ToString();
+			builderLocationAutoComplete.Clear();
+			builderLocationAutoComplete = null;
+
+		}
+		void ChooseRestoNameInit()
+		{
+			txtName.EditingChanged += async delegate (object sender, EventArgs e)
+			  {
+				if (string.IsNullOrWhiteSpace(txtName.Text))
+				  {
+					  tableViewLocationAutoComplete.Hidden = true;
+				  }
+				  else
+				  {
+					if (txtName.Text.Length >= 3)
+					  {
+						  //hide other views
+						  txtBurger.Hidden = true;
+						  lblBurger.Hidden = true;
+						  txtBurgerNew.Hidden = true;
+						  lblAddBurger.Hidden = true;
+
+						//Autofill
+						string strFullURL = string.Format(strAutoCompleteQuery, txtName.Text);
+						  objAutoCompleteLocationClass = await RestRequestClass.LocationAutoComplete(strFullURL);
+
+
+						  if (objAutoCompleteLocationClass != null && objAutoCompleteLocationClass.status == "OK")
+						  {
+							  if (objAutoCompleteLocationClass.predictions.Count > 0)
+							  {
+								  if (objLocationAutoCompleteTableSource != null)
+								  {
+									  objLocationAutoCompleteTableSource.LocationRowSelectedEventAction -= LocationSelectedFromAutoFill;
+									  objLocationAutoCompleteTableSource = null;
+								  }
+
+								  tableViewLocationAutoComplete.Hidden = false;
+								  objLocationAutoCompleteTableSource = new LocationAutoCompleteTableSource(objAutoCompleteLocationClass.predictions);
+								  objLocationAutoCompleteTableSource.LocationRowSelectedEventAction += LocationSelectedFromAutoFill;
+								  tableViewLocationAutoComplete.Source = objLocationAutoCompleteTableSource;
+								  tableViewLocationAutoComplete.ReloadData();
+							  }
+							  else
+								  tableViewLocationAutoComplete.Hidden = true;
+						  }
+						  else
+						  {
+							  tableViewLocationAutoComplete.Hidden = true;
+						  }
+					  }
+				  }
+			  };
+
+
+		}
+
+		void LocationSelectedFromAutoFill(Prediction objPrediction)
+		{
+			//Console.WriteLine(objPrediction.terms[0].value);
+			tableViewLocationAutoComplete.Hidden = true;
+			//show other views
+			txtBurger.Hidden = false;
+			lblBurger.Hidden = false;
+			txtBurgerNew.Hidden = false;
+			lblAddBurger.Hidden = false;
+			txtName.Text = objPrediction.terms[0].value;
+			txtName.ResignFirstResponder();
+		}
+	
 
       
        
@@ -125,37 +240,7 @@ namespace _50ShadesOfBurgers
         }*/
            
 
-        public override void ViewWillAppear(bool animated)
-        {
-            base.ViewWillAppear(animated);
-
-            this.txtBurgerNew.ShouldReturn += (textField) => {
-                textField.ResignFirstResponder();
-                return true;
-            };
-
-			txtName.Layer.BorderColor = UIColor.White.CGColor;
-			txtName.Layer.BorderWidth = 0.5f;
-			txtName.Layer.CornerRadius = 8.0f;
-			txtName.Layer.MasksToBounds = true;
-			txtBurger.Layer.BorderColor = UIColor.White.CGColor;
-			txtBurger.Layer.BorderWidth = 0.5f;
-			txtBurger.Layer.CornerRadius = 8.0f;
-			txtBurger.Layer.MasksToBounds = true;
-			txtBurgerNew.Layer.BorderColor = UIColor.White.CGColor;
-			txtBurgerNew.Layer.BorderWidth = 0.5f;
-			txtBurgerNew.Layer.CornerRadius = 8.0f;
-			txtBurgerNew.Layer.MasksToBounds = true;
-
-
-
-            this.NavigationItem.SetLeftBarButtonItem(new UIBarButtonItem("Menu", UIBarButtonItemStyle.Plain, (sender, args) => {
-                this.PerformSegue("goToMenu", this);
-            }), true);
-
-
-           // getCountries();
-        }
+       
 
      /*   private void CreateCountryPicker(SortedSet<String> existingCountries)
         {

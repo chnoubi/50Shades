@@ -1,17 +1,34 @@
 ﻿<Properties StartupConfiguration="{DF20C9C0-B8C9-48E8-B106-1C6A9F23DA28}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="50ShadesOfBurgers/Model/GooglePlaceApi/LocationPredictionClass.cs">
     <Files>
-      <File FileName="../../Downloads/GooglePlaceApi_iOS-master/Model/RestRequestClass.cs" Line="4" Column="7" />
-      <File FileName="../../Downloads/GooglePlaceApi_iOS-master/ViewController/LocationViewController.cs" Line="1" Column="1" />
-      <File FileName="../../Downloads/GooglePlaceApi_iOS-master/Model/Constants.cs" Line="7" Column="85" />
-      <File FileName="../../Downloads/GooglePlaceApi_iOS-master/AppDelegate.cs" Line="1" Column="1" />
-      <File FileName="../../Downloads/GooglePlaceApi_iOS-master/ViewController/ViewController.cs" Line="1" Column="1" />
-      <File FileName="../../Downloads/GooglePlaceApi_iOS-master/Model/LocationPredictionClass.cs" Line="1" Column="1" />
-      <File FileName="50ShadesOfBurgers/QuestionnaireChoixRestoViewController.cs" Line="148" Column="16" />
+      <File FileName="50ShadesOfBurgers/QuestionnaireChoixRestoViewController.cs" Line="75" Column="39" />
+      <File FileName="50ShadesOfBurgers/Model/GooglePlaceApi/TableViewSource/LocationAutoCompleteTableSource.cs" Line="35" Column="41" />
+      <File FileName="50ShadesOfBurgers/Model/GooglePlaceApi/LocationPredictionClass.cs" Line="4" Column="29" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="50ShadesOfBurgers" expanded="True">
+            <Node name="50ShadesOfBurgers" expanded="True">
+              <Node name="References" expanded="True" />
+              <Node name="ComponentReferenceFolder" expanded="True" />
+              <Node name="Database" expanded="True" />
+              <Node name="Helper Classes" expanded="True" />
+              <Node name="Model" expanded="True">
+                <Node name="GooglePlaceApi" expanded="True">
+                  <Node name="TableViewSource" expanded="True" />
+                  <Node name="LocationPredictionClass.cs" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+          <Node />
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
-  <MonoDevelop.Ide.ItemProperties.50ShadesOfBurgers PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.24A5F762-B996-443D-90AC-E29EF94409F0" />
+  <MonoDevelop.Ide.ItemProperties.50ShadesOfBurgers PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.2BEFED22-D45F-4B75-B2EE-00939CBA9906" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

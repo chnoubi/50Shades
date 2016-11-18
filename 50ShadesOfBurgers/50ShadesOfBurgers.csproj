@@ -170,6 +170,10 @@
       <DependentUpon>MainMenuViewController.cs</DependentUpon>
     </Compile>
     <Compile Include="Helper Classes\Buttons.cs" />
+    <Compile Include="Model\GooglePlaceApi\TableViewSource\LocationAutoCompleteTableSource.cs" />
+    <Compile Include="Model\GooglePlaceApi\Constants.cs" />
+    <Compile Include="Model\GooglePlaceApi\LocationPredictionClass.cs" />
+    <Compile Include="Model\GooglePlaceApi\RestRequestClass.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Database\SQLite.cs" />
@@ -178,13 +182,13 @@
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\packages\json.net-7.0.1\lib\ios-unified\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="burger-iPhone-Icon.png" />
@@ -242,6 +246,14 @@
   <ItemGroup />
   <ItemGroup>
     <Folder Include="Helper Classes\" />
+    <Folder Include="Model\GooglePlaceApi\" />
+    <Folder Include="Model\GooglePlaceApi\TableViewSource\" />
+  </ItemGroup>
+  <ItemGroup>
+    <XamarinComponentReference Include="json.net">
+      <Version>7.0.1</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
