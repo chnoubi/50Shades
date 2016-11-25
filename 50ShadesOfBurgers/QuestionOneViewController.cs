@@ -32,10 +32,12 @@ namespace _50ShadesOfBurgers
 
         private void BtnNext_TouchUpInside(object sender, EventArgs e)
         {
-         //    ad.reponses.ReponseQuestId1 = (int) pickerPain.SelectedRowInComponent(0) + 1;
-         //    ad.reponses.ReponseQuestId2 = (int)pickerViande.SelectedRowInComponent(0) + 1;
+			//    ad.reponses.ReponseQuestId1 = (int) pickerPain.SelectedRowInComponent(0) + 1;
+			//    ad.reponses.ReponseQuestId2 = (int)pickerViande.SelectedRowInComponent(0) + 1;
 
-            ad.connection.updateReponses(ad.reponses);
+			//ad.connection.updateReponses(ad.reponses);
+
+			this.PerformSegue("goToQuest5", this);
         }
 
         public override void ViewWillAppear(bool animated)

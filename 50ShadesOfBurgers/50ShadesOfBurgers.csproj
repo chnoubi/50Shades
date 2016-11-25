@@ -175,6 +175,14 @@
     <Compile Include="Model\GooglePlaceApi\LocationPredictionClass.cs" />
     <Compile Include="Model\GooglePlaceApi\RestRequestClass.cs" />
     <Compile Include="Model\AlertViewModel.cs" />
+    <Compile Include="QuestionFiveEightViewController.cs" />
+    <Compile Include="QuestionFiveEightViewController.designer.cs">
+      <DependentUpon>QuestionFiveEightViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommentsAndConfirmViewController.cs" />
+    <Compile Include="CommentsAndConfirmViewController.designer.cs">
+      <DependentUpon>CommentsAndConfirmViewController.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Database\SQLite.cs" />
