@@ -183,6 +183,7 @@
     <Compile Include="CommentsAndConfirmViewController.designer.cs">
       <DependentUpon>CommentsAndConfirmViewController.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\CheckGrades.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Database\SQLite.cs" />

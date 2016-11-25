@@ -1072,17 +1072,14 @@
                                     <rect key="frame" x="110" y="205" width="190" height="250"/>
                                     <mask key="constraints">
                                         <include reference="8188"/>
-                                        <include reference="8189"/>
                                     </mask>
                                 </variation>
                                 <constraints>
                                     <constraint id="8188" firstItem="8168" firstAttribute="height" constant="250"/>
-                                    <constraint id="8189" firstItem="8168" firstAttribute="width" constant="190"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="8188"/>
-                                        <exclude reference="8189"/>
                                     </mask>
                                 </variation>
                             </tableView>
@@ -1125,11 +1122,13 @@
                                 <exclude reference="8095"/>
                                 <exclude reference="8096"/>
                                 <exclude reference="8187"/>
-                                <exclude reference="8190"/>
                                 <exclude reference="8214"/>
                                 <exclude reference="8237"/>
                                 <exclude reference="8242"/>
                                 <exclude reference="8546"/>
+                                <exclude reference="8665"/>
+                                <exclude reference="8668"/>
+                                <exclude reference="8669"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -1169,11 +1168,13 @@
                                 <include reference="8095"/>
                                 <include reference="8096"/>
                                 <include reference="8187"/>
-                                <include reference="8190"/>
                                 <include reference="8214"/>
                                 <include reference="8237"/>
                                 <include reference="8242"/>
                                 <include reference="8546"/>
+                                <include reference="8665"/>
+                                <include reference="8668"/>
+                                <include reference="8669"/>
                             </mask>
                         </variation>
                         <constraints>
@@ -1202,11 +1203,13 @@
                             <constraint id="8095" firstItem="8047" firstAttribute="trailing" secondItem="1120" secondAttribute="trailing"/>
                             <constraint id="8096" firstItem="8047" firstAttribute="bottom" secondItem="1111" secondAttribute="top" constant="1"/>
                             <constraint id="8187" firstItem="8168" firstAttribute="top" secondItem="1232" secondAttribute="bottom" constant="5"/>
-                            <constraint id="8190" firstItem="8047" firstAttribute="trailing" secondItem="8168" secondAttribute="trailing" constant="20"/>
                             <constraint id="8214" firstItem="8048" firstAttribute="leading" secondItem="1120" secondAttribute="leading" constant="60"/>
                             <constraint id="8237" firstItem="8048" firstAttribute="top" secondItem="1110" secondAttribute="bottom" constant="36"/>
                             <constraint id="8242" firstItem="1111" firstAttribute="top" secondItem="1241" secondAttribute="bottom" constant="28"/>
                             <constraint id="8546" firstItem="1120" firstAttribute="trailing" secondItem="8048" secondAttribute="trailing" constant="60"/>
+                            <constraint id="8665" firstItem="1231" firstAttribute="top" secondItem="8048" secondAttribute="bottom" constant="20"/>
+                            <constraint id="8668" firstItem="8168" firstAttribute="trailing" secondItem="1232" secondAttribute="trailing"/>
+                            <constraint id="8669" firstItem="8168" firstAttribute="leading" secondItem="1232" secondAttribute="leading"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Burger a quoter" id="1119">
@@ -1383,7 +1386,7 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8277" translatesAutoresizingMaskIntoConstraints="NO">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8277" translatesAutoresizingMaskIntoConstraints="NO" tag="1">
                                 <rect key="frame" x="108" y="196" width="46" height="30"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -1406,7 +1409,7 @@
                                     </mask>
                                 </variation>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8285" translatesAutoresizingMaskIntoConstraints="NO">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8285" translatesAutoresizingMaskIntoConstraints="NO" tag="2">
                                 <rect key="frame" x="108" y="196" width="46" height="30"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -1429,7 +1432,7 @@
                                     </mask>
                                 </variation>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8286" translatesAutoresizingMaskIntoConstraints="NO">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8286" translatesAutoresizingMaskIntoConstraints="NO" tag="3">
                                 <rect key="frame" x="108" y="196" width="46" height="30"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -1452,7 +1455,7 @@
                                     </mask>
                                 </variation>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8287" translatesAutoresizingMaskIntoConstraints="NO">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8287" translatesAutoresizingMaskIntoConstraints="NO" tag="4">
                                 <rect key="frame" x="108" y="196" width="46" height="30"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -1475,7 +1478,7 @@
                                     </mask>
                                 </variation>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8306" translatesAutoresizingMaskIntoConstraints="NO">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8306" translatesAutoresizingMaskIntoConstraints="NO" tag="5">
                                 <rect key="frame" x="108" y="196" width="46" height="30"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -1498,7 +1501,7 @@
                                     </mask>
                                 </variation>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8309" translatesAutoresizingMaskIntoConstraints="NO">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8309" translatesAutoresizingMaskIntoConstraints="NO" tag="6">
                                 <rect key="frame" x="108" y="196" width="46" height="30"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -1521,7 +1524,7 @@
                                     </mask>
                                 </variation>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8312" translatesAutoresizingMaskIntoConstraints="NO">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8312" translatesAutoresizingMaskIntoConstraints="NO" tag="7">
                                 <rect key="frame" x="108" y="196" width="46" height="30"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -1544,7 +1547,7 @@
                                     </mask>
                                 </variation>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8315" translatesAutoresizingMaskIntoConstraints="NO">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8315" translatesAutoresizingMaskIntoConstraints="NO" tag="8">
                                 <rect key="frame" x="108" y="196" width="46" height="30"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -1567,7 +1570,7 @@
                                     </mask>
                                 </variation>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8326" translatesAutoresizingMaskIntoConstraints="NO">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8326" translatesAutoresizingMaskIntoConstraints="NO" tag="9">
                                 <rect key="frame" x="108" y="196" width="46" height="30"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -1590,7 +1593,7 @@
                                     </mask>
                                 </variation>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8329" translatesAutoresizingMaskIntoConstraints="NO">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8329" translatesAutoresizingMaskIntoConstraints="NO" tag="10">
                                 <rect key="frame" x="108" y="196" width="46" height="30"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -1613,7 +1616,7 @@
                                     </mask>
                                 </variation>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8332" translatesAutoresizingMaskIntoConstraints="NO">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8332" translatesAutoresizingMaskIntoConstraints="NO" tag="11">
                                 <rect key="frame" x="108" y="196" width="46" height="30"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -1636,7 +1639,7 @@
                                     </mask>
                                 </variation>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8335" translatesAutoresizingMaskIntoConstraints="NO">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8335" translatesAutoresizingMaskIntoConstraints="NO" tag="12">
                                 <rect key="frame" x="108" y="196" width="46" height="30"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -1659,7 +1662,7 @@
                                     </mask>
                                 </variation>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8346" translatesAutoresizingMaskIntoConstraints="NO">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8346" translatesAutoresizingMaskIntoConstraints="NO" tag="13">
                                 <rect key="frame" x="108" y="196" width="46" height="30"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -1682,7 +1685,7 @@
                                     </mask>
                                 </variation>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8349" translatesAutoresizingMaskIntoConstraints="NO">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8349" translatesAutoresizingMaskIntoConstraints="NO" tag="14">
                                 <rect key="frame" x="108" y="196" width="46" height="30"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -1705,7 +1708,7 @@
                                     </mask>
                                 </variation>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8352" translatesAutoresizingMaskIntoConstraints="NO">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8352" translatesAutoresizingMaskIntoConstraints="NO" tag="15">
                                 <rect key="frame" x="108" y="196" width="46" height="30"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -1728,7 +1731,7 @@
                                     </mask>
                                 </variation>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8355" translatesAutoresizingMaskIntoConstraints="NO">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8355" translatesAutoresizingMaskIntoConstraints="NO" tag="16">
                                 <rect key="frame" x="108" y="196" width="46" height="30"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
