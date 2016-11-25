@@ -38,6 +38,7 @@ namespace _50ShadesOfBurgers
             base.ViewDidLoad();
 			InitializeView();
 			ChooseRestoNameInit();
+			btnStart.TouchUpInside += HandleBtnStart;
 		//	lblChoose.Font = UIFont.FromName("HomemadeApple", 19f);
 
            /* restos = new List<Resto>();
@@ -53,7 +54,7 @@ namespace _50ShadesOfBurgers
             restoCountry = getCountryList(restos);
             CreateCountryPicker(restoCountry);
             selectedResto = new Resto();
-            btnStart.TouchUpInside += HandleBtnStart;
+
 
 			AutoCompleteTextFieldManager.Add(this, txtCountry, restoCountry); */
         }
@@ -260,37 +261,29 @@ namespace _50ShadesOfBurgers
 			webClient.UploadStringAsync(new Uri("http://dtsl.ehb.be/~ronald.hollander/pma/php/getBurger.php"), String.Format("RestoGoogleId={0}", placeId));
 		}
 
-       /* private void HandleBtnStart(object sender, EventArgs e)
+        private void HandleBtnStart(object sender, EventArgs e)
         {
-            if(string.IsNullOrEmpty(txtBurger.Text) && string.IsNullOrEmpty(txtBurgerNew.Text))
+			if (string.IsNullOrEmpty(txtName.Text)){
+				AlertViewModel.alertViewNormal("No restaurant selected", "Please enter a restaurant");
+			}
+			else if(string.IsNullOrEmpty(txtBurger.Text) && string.IsNullOrEmpty(txtBurgerNew.Text))
             {
-                UIAlertView alertActive = new UIAlertView()
-                {
-                    Title = "Pas de Burger!",
-                    Message = "Veuillez choisir un Burger dans la liste ou en cr¨¦er un nouveau!"
-                };
-                alertActive.AddButton("OK");
-                alertActive.Show();
+				AlertViewModel.alertViewNormal("No burger selected", "Please select a burger or enter a new one");
             } else if(!string.IsNullOrEmpty(txtBurger.Text) && !string.IsNullOrEmpty(txtBurgerNew.Text))
             {
-                UIAlertView alertActive = new UIAlertView()
-                {
-                    Title = "Trop de Burgers!",
-                    Message = "Veuillez choisir un Burger dans la liste ou en cr¨¦er un nouveau!"
-                };
-                alertActive.AddButton("OK");
-                alertActive.Show();
+                AlertViewModel.alertViewNormal("Too many burgers selected", "Please select a burger or enter a new one");
+
             }
             else
             {
                 //make new Resto & Burger object
-                prepareRestoBurger();
+               // prepareRestoBurger();
                 this.PerformSegue("goToQuestOne", this);
             }
             
 
 
-        }*/
+        }
 
        /* private void prepareRestoBurger()
         {

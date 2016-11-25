@@ -12,7 +12,6 @@ namespace _50ShadesOfBurgers
 	{
         AppDelegate ad = (AppDelegate)UIApplication.SharedApplication.Delegate;
         public List<String> question1, question2;
-       
 		public QuestionOneViewController (IntPtr handle) : base (handle)
 		{
             
@@ -21,6 +20,7 @@ namespace _50ShadesOfBurgers
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
+
             question1 = new List<String>();
             question2 = new List<String>();
 
@@ -30,8 +30,8 @@ namespace _50ShadesOfBurgers
 
         private void BtnNext_TouchUpInside(object sender, EventArgs e)
         {
-             ad.reponses.ReponseQuestId1 = (int) pickerPain.SelectedRowInComponent(0) + 1;
-             ad.reponses.ReponseQuestId2 = (int)pickerViande.SelectedRowInComponent(0) + 1;
+         //    ad.reponses.ReponseQuestId1 = (int) pickerPain.SelectedRowInComponent(0) + 1;
+         //    ad.reponses.ReponseQuestId2 = (int)pickerViande.SelectedRowInComponent(0) + 1;
 
             ad.connection.updateReponses(ad.reponses);
         }
@@ -39,7 +39,7 @@ namespace _50ShadesOfBurgers
         public override void ViewWillAppear(bool animated)
         {
             base.ViewWillAppear(animated);
-            Buttons.setupButtons(btnNext);
+
         }
 
         public void setupPickers()
@@ -54,8 +54,8 @@ namespace _50ShadesOfBurgers
             question2.Add(ad.questions[1].QuestRep3);
             question2.Add(ad.questions[1].QuestRep4);
 
-            pickerPain.Model = new QuestionPickerViewModel<String>(question1);
-            pickerViande.Model = new QuestionPickerViewModel<String>(question2);
+       //     pickerPain.Model = new QuestionPickerViewModel<String>(question1);
+         //   pickerViande.Model = new QuestionPickerViewModel<String>(question2);
 
 
         }

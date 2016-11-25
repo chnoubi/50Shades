@@ -21,24 +21,12 @@
       <LogicalName>Main.storyboardc/1526-view-1527.nib</LogicalName>
       <Optimize>false</Optimize>
     </_BundleResourceWithLogicalName>
-    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool-link/Main.storyboardc/1860-view-1861.nib">
-      <LogicalName>Main.storyboardc/1860-view-1861.nib</LogicalName>
-      <Optimize>false</Optimize>
-    </_BundleResourceWithLogicalName>
     <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool-link/Main.storyboardc/210-view-216.nib">
       <LogicalName>Main.storyboardc/210-view-216.nib</LogicalName>
       <Optimize>false</Optimize>
     </_BundleResourceWithLogicalName>
     <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool-link/Main.storyboardc/212-view-220.nib">
       <LogicalName>Main.storyboardc/212-view-220.nib</LogicalName>
-      <Optimize>false</Optimize>
-    </_BundleResourceWithLogicalName>
-    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool-link/Main.storyboardc/2142-view-2143.nib">
-      <LogicalName>Main.storyboardc/2142-view-2143.nib</LogicalName>
-      <Optimize>false</Optimize>
-    </_BundleResourceWithLogicalName>
-    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool-link/Main.storyboardc/2261-view-2262.nib">
-      <LogicalName>Main.storyboardc/2261-view-2262.nib</LogicalName>
       <Optimize>false</Optimize>
     </_BundleResourceWithLogicalName>
     <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool-link/Main.storyboardc/229-view-230.nib">
@@ -59,10 +47,6 @@
     </_BundleResourceWithLogicalName>
     <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool-link/Main.storyboardc/5228-view-5229.nib">
       <LogicalName>Main.storyboardc/5228-view-5229.nib</LogicalName>
-      <Optimize>false</Optimize>
-    </_BundleResourceWithLogicalName>
-    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool-link/Main.storyboardc/5524-view-5525.nib">
-      <LogicalName>Main.storyboardc/5524-view-5525.nib</LogicalName>
       <Optimize>false</Optimize>
     </_BundleResourceWithLogicalName>
     <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool-link/Main.storyboardc/6534-view-6535.nib">
@@ -113,28 +97,12 @@
       <LogicalName>Main.storyboardc/UIViewController-1526.nib</LogicalName>
       <Optimize>false</Optimize>
     </_BundleResourceWithLogicalName>
-    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool-link/Main.storyboardc/UIViewController-1860.nib">
-      <LogicalName>Main.storyboardc/UIViewController-1860.nib</LogicalName>
-      <Optimize>false</Optimize>
-    </_BundleResourceWithLogicalName>
-    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool-link/Main.storyboardc/UIViewController-2142.nib">
-      <LogicalName>Main.storyboardc/UIViewController-2142.nib</LogicalName>
-      <Optimize>false</Optimize>
-    </_BundleResourceWithLogicalName>
-    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool-link/Main.storyboardc/UIViewController-2261.nib">
-      <LogicalName>Main.storyboardc/UIViewController-2261.nib</LogicalName>
-      <Optimize>false</Optimize>
-    </_BundleResourceWithLogicalName>
     <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool-link/Main.storyboardc/UIViewController-229.nib">
       <LogicalName>Main.storyboardc/UIViewController-229.nib</LogicalName>
       <Optimize>false</Optimize>
     </_BundleResourceWithLogicalName>
     <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool-link/Main.storyboardc/UIViewController-4300.nib">
       <LogicalName>Main.storyboardc/UIViewController-4300.nib</LogicalName>
-      <Optimize>false</Optimize>
-    </_BundleResourceWithLogicalName>
-    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool-link/Main.storyboardc/UIViewController-5524.nib">
-      <LogicalName>Main.storyboardc/UIViewController-5524.nib</LogicalName>
       <Optimize>false</Optimize>
     </_BundleResourceWithLogicalName>
   </ItemGroup>

@@ -9,12 +9,12 @@ namespace _50ShadesOfBurgers
 		{
 		}
 
-		public static void alertViewNormal()
+		public static void alertViewNormal(String title, String message)
 		{
 			UIAlertView alertActive = new UIAlertView()
 			{
-				Title = "Hallo",
-				Message = "Hallo"
+				Title = title,
+				Message = message
 			};
 			alertActive.AddButton("OK");
 			alertActive.Show();

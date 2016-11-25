@@ -16,31 +16,67 @@ namespace _50ShadesOfBurgers
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIImageView bgrImage { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIButton btnNext { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIPickerView pickerPain { get; set; }
+        UIKit.UILabel lblBun { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIPickerView pickerViande { get; set; }
+        UIKit.UILabel lblMeat { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel lblSalad { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel lblSauce { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel lblTaste { get; set; }
 
         void ReleaseDesignerOutlets ()
         {
+            if (bgrImage != null) {
+                bgrImage.Dispose ();
+                bgrImage = null;
+            }
+
             if (btnNext != null) {
                 btnNext.Dispose ();
                 btnNext = null;
             }
 
-            if (pickerPain != null) {
-                pickerPain.Dispose ();
-                pickerPain = null;
+            if (lblBun != null) {
+                lblBun.Dispose ();
+                lblBun = null;
             }
 
-            if (pickerViande != null) {
-                pickerViande.Dispose ();
-                pickerViande = null;
+            if (lblMeat != null) {
+                lblMeat.Dispose ();
+                lblMeat = null;
+            }
+
+            if (lblSalad != null) {
+                lblSalad.Dispose ();
+                lblSalad = null;
+            }
+
+            if (lblSauce != null) {
+                lblSauce.Dispose ();
+                lblSauce = null;
+            }
+
+            if (lblTaste != null) {
+                lblTaste.Dispose ();
+                lblTaste = null;
             }
         }
     }
