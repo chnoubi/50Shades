@@ -2669,6 +2669,282 @@
                                     </mask>
                                 </variation>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8559" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="160" y="418" width="46" height="30"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="170" y="194" width="30" height="30"/>
+                                    <mask key="constraints">
+                                        <include reference="8560"/>
+                                        <include reference="8561"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="8560" firstItem="8559" firstAttribute="width" constant="30"/>
+                                    <constraint id="8561" firstItem="8559" firstAttribute="height" constant="30"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="8560"/>
+                                        <exclude reference="8561"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8562" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="160" y="418" width="46" height="30"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="220" y="194" width="30" height="30"/>
+                                    <mask key="constraints">
+                                        <include reference="8563"/>
+                                        <include reference="8564"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="8563" firstItem="8562" firstAttribute="width" constant="30"/>
+                                    <constraint id="8564" firstItem="8562" firstAttribute="height" constant="30"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="8563"/>
+                                        <exclude reference="8564"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8565" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="160" y="418" width="46" height="30"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="270" y="194" width="30" height="30"/>
+                                    <mask key="constraints">
+                                        <include reference="8566"/>
+                                        <include reference="8567"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="8566" firstItem="8565" firstAttribute="width" constant="30"/>
+                                    <constraint id="8567" firstItem="8565" firstAttribute="height" constant="30"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="8566"/>
+                                        <exclude reference="8567"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8568" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="160" y="418" width="46" height="30"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="170" y="270" width="30" height="30"/>
+                                    <mask key="constraints">
+                                        <include reference="8569"/>
+                                        <include reference="8570"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="8569" firstItem="8568" firstAttribute="width" constant="30"/>
+                                    <constraint id="8570" firstItem="8568" firstAttribute="height" constant="30"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="8569"/>
+                                        <exclude reference="8570"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8571" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="160" y="418" width="46" height="30"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="220" y="270" width="30" height="30"/>
+                                    <mask key="constraints">
+                                        <include reference="8572"/>
+                                        <include reference="8573"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="8572" firstItem="8571" firstAttribute="width" constant="30"/>
+                                    <constraint id="8573" firstItem="8571" firstAttribute="height" constant="30"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="8572"/>
+                                        <exclude reference="8573"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8574" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="160" y="418" width="46" height="30"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="270" y="270" width="30" height="30"/>
+                                    <mask key="constraints">
+                                        <include reference="8575"/>
+                                        <include reference="8576"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="8575" firstItem="8574" firstAttribute="width" constant="30"/>
+                                    <constraint id="8576" firstItem="8574" firstAttribute="height" constant="30"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="8575"/>
+                                        <exclude reference="8576"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8583" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="160" y="418" width="46" height="30"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="170" y="346" width="30" height="30"/>
+                                    <mask key="constraints">
+                                        <include reference="8584"/>
+                                        <include reference="8585"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="8584" firstItem="8583" firstAttribute="width" constant="30"/>
+                                    <constraint id="8585" firstItem="8583" firstAttribute="height" constant="30"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="8584"/>
+                                        <exclude reference="8585"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8586" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="160" y="418" width="46" height="30"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="220" y="346" width="30" height="30"/>
+                                    <mask key="constraints">
+                                        <include reference="8587"/>
+                                        <include reference="8588"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="8587" firstItem="8586" firstAttribute="width" constant="30"/>
+                                    <constraint id="8588" firstItem="8586" firstAttribute="height" constant="30"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="8587"/>
+                                        <exclude reference="8588"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8589" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="160" y="418" width="46" height="30"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="270" y="346" width="30" height="30"/>
+                                    <mask key="constraints">
+                                        <include reference="8590"/>
+                                        <include reference="8591"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="8590" firstItem="8589" firstAttribute="width" constant="30"/>
+                                    <constraint id="8591" firstItem="8589" firstAttribute="height" constant="30"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="8590"/>
+                                        <exclude reference="8591"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8598" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="160" y="418" width="46" height="30"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="170" y="422" width="30" height="30"/>
+                                    <mask key="constraints">
+                                        <include reference="8599"/>
+                                        <include reference="8600"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="8599" firstItem="8598" firstAttribute="width" constant="30"/>
+                                    <constraint id="8600" firstItem="8598" firstAttribute="height" constant="30"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="8599"/>
+                                        <exclude reference="8600"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8601" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="160" y="418" width="46" height="30"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="220" y="422" width="30" height="30"/>
+                                    <mask key="constraints">
+                                        <include reference="8602"/>
+                                        <include reference="8603"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="8602" firstItem="8601" firstAttribute="width" constant="30"/>
+                                    <constraint id="8603" firstItem="8601" firstAttribute="height" constant="30"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="8602"/>
+                                        <exclude reference="8603"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8604" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="160" y="418" width="46" height="30"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="270" y="422" width="30" height="30"/>
+                                    <mask key="constraints">
+                                        <include reference="8605"/>
+                                        <include reference="8606"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="8605" firstItem="8604" firstAttribute="width" constant="30"/>
+                                    <constraint id="8606" firstItem="8604" firstAttribute="height" constant="30"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="8605"/>
+                                        <exclude reference="8606"/>
+                                    </mask>
+                                </variation>
+                            </button>
                         </subviews>
                         <variation key="default">
                             <mask key="subviews">
@@ -2683,6 +2959,18 @@
                                 <exclude reference="8527"/>
                                 <exclude reference="8532"/>
                                 <exclude reference="8537"/>
+                                <exclude reference="8559"/>
+                                <exclude reference="8562"/>
+                                <exclude reference="8565"/>
+                                <exclude reference="8568"/>
+                                <exclude reference="8571"/>
+                                <exclude reference="8574"/>
+                                <exclude reference="8583"/>
+                                <exclude reference="8586"/>
+                                <exclude reference="8589"/>
+                                <exclude reference="8598"/>
+                                <exclude reference="8601"/>
+                                <exclude reference="8604"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="8416"/>
@@ -2711,6 +2999,30 @@
                                 <exclude reference="8542"/>
                                 <exclude reference="8547"/>
                                 <exclude reference="8555"/>
+                                <exclude reference="8577"/>
+                                <exclude reference="8578"/>
+                                <exclude reference="8579"/>
+                                <exclude reference="8580"/>
+                                <exclude reference="8581"/>
+                                <exclude reference="8582"/>
+                                <exclude reference="8592"/>
+                                <exclude reference="8593"/>
+                                <exclude reference="8594"/>
+                                <exclude reference="8595"/>
+                                <exclude reference="8596"/>
+                                <exclude reference="8597"/>
+                                <exclude reference="8607"/>
+                                <exclude reference="8608"/>
+                                <exclude reference="8609"/>
+                                <exclude reference="8610"/>
+                                <exclude reference="8611"/>
+                                <exclude reference="8612"/>
+                                <exclude reference="8613"/>
+                                <exclude reference="8614"/>
+                                <exclude reference="8615"/>
+                                <exclude reference="8616"/>
+                                <exclude reference="8617"/>
+                                <exclude reference="8618"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -2726,6 +3038,18 @@
                                 <include reference="8527"/>
                                 <include reference="8532"/>
                                 <include reference="8537"/>
+                                <include reference="8559"/>
+                                <include reference="8562"/>
+                                <include reference="8565"/>
+                                <include reference="8568"/>
+                                <include reference="8571"/>
+                                <include reference="8574"/>
+                                <include reference="8583"/>
+                                <include reference="8586"/>
+                                <include reference="8589"/>
+                                <include reference="8598"/>
+                                <include reference="8601"/>
+                                <include reference="8604"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="8416"/>
@@ -2754,6 +3078,30 @@
                                 <include reference="8542"/>
                                 <include reference="8547"/>
                                 <include reference="8555"/>
+                                <include reference="8577"/>
+                                <include reference="8578"/>
+                                <include reference="8579"/>
+                                <include reference="8580"/>
+                                <include reference="8581"/>
+                                <include reference="8582"/>
+                                <include reference="8592"/>
+                                <include reference="8593"/>
+                                <include reference="8594"/>
+                                <include reference="8595"/>
+                                <include reference="8596"/>
+                                <include reference="8597"/>
+                                <include reference="8607"/>
+                                <include reference="8608"/>
+                                <include reference="8609"/>
+                                <include reference="8610"/>
+                                <include reference="8611"/>
+                                <include reference="8612"/>
+                                <include reference="8613"/>
+                                <include reference="8614"/>
+                                <include reference="8615"/>
+                                <include reference="8616"/>
+                                <include reference="8617"/>
+                                <include reference="8618"/>
                             </mask>
                         </variation>
                         <constraints>
@@ -2785,6 +3133,30 @@
                             </constraint>
                             <constraint id="8547" firstItem="5525" firstAttribute="trailing" secondItem="8424" secondAttribute="trailing" constant="60"/>
                             <constraint id="8555" firstItem="8441" firstAttribute="centerY" secondItem="5525" secondAttribute="centerY" constant="236"/>
+                            <constraint id="8577" firstItem="8568" firstAttribute="top" secondItem="8559" secondAttribute="bottom" constant="46"/>
+                            <constraint id="8578" firstItem="8568" firstAttribute="leading" secondItem="8532" secondAttribute="trailing" constant="20"/>
+                            <constraint id="8579" firstItem="8571" firstAttribute="top" secondItem="8562" secondAttribute="bottom" constant="46"/>
+                            <constraint id="8580" firstItem="8571" firstAttribute="leading" secondItem="8568" secondAttribute="trailing" constant="20"/>
+                            <constraint id="8581" firstItem="8574" firstAttribute="leading" secondItem="8571" secondAttribute="trailing" constant="20"/>
+                            <constraint id="8582" firstItem="8574" firstAttribute="top" secondItem="8565" secondAttribute="bottom" constant="46"/>
+                            <constraint id="8592" firstItem="8589" firstAttribute="top" secondItem="8574" secondAttribute="bottom" constant="46"/>
+                            <constraint id="8593" firstItem="8589" firstAttribute="leading" secondItem="8586" secondAttribute="trailing" constant="20"/>
+                            <constraint id="8594" firstItem="8586" firstAttribute="top" secondItem="8571" secondAttribute="bottom" constant="46"/>
+                            <constraint id="8595" firstItem="8586" firstAttribute="leading" secondItem="8583" secondAttribute="trailing" constant="20"/>
+                            <constraint id="8596" firstItem="8583" firstAttribute="top" secondItem="8568" secondAttribute="bottom" constant="46"/>
+                            <constraint id="8597" firstItem="8583" firstAttribute="leading" secondItem="8523" secondAttribute="trailing" constant="20"/>
+                            <constraint id="8607" firstItem="8604" firstAttribute="top" secondItem="8589" secondAttribute="bottom" constant="46"/>
+                            <constraint id="8608" firstItem="8604" firstAttribute="leading" secondItem="8601" secondAttribute="trailing" constant="20"/>
+                            <constraint id="8609" firstItem="8601" firstAttribute="top" secondItem="8586" secondAttribute="bottom" constant="46"/>
+                            <constraint id="8610" firstItem="8601" firstAttribute="leading" secondItem="8598" secondAttribute="trailing" constant="20"/>
+                            <constraint id="8611" firstItem="8598" firstAttribute="top" secondItem="8583" secondAttribute="bottom" constant="46"/>
+                            <constraint id="8612" firstItem="8598" firstAttribute="leading" secondItem="8527" secondAttribute="trailing" constant="20"/>
+                            <constraint id="8613" firstItem="8559" firstAttribute="top" secondItem="8424" secondAttribute="bottom" constant="44"/>
+                            <constraint id="8614" firstItem="8562" firstAttribute="top" secondItem="8424" secondAttribute="bottom" constant="44"/>
+                            <constraint id="8615" firstItem="8565" firstAttribute="top" secondItem="8424" secondAttribute="bottom" constant="44"/>
+                            <constraint id="8616" firstItem="8562" firstAttribute="leading" secondItem="8559" secondAttribute="trailing" constant="20"/>
+                            <constraint id="8617" firstItem="8565" firstAttribute="leading" secondItem="8562" secondAttribute="trailing" constant="20"/>
+                            <constraint id="8618" firstItem="8559" firstAttribute="leading" secondItem="8537" secondAttribute="trailing" constant="20"/>
                         </constraints>
                     </view>
                     <connections>
@@ -2799,6 +3171,18 @@
                         <outlet property="btnHearGrade1" destination="8527" id="name-outlet-8527"/>
                         <outlet property="btnFeelGrade1" destination="8532" id="name-outlet-8532"/>
                         <outlet property="btnSeeGrade1" destination="8537" id="name-outlet-8537"/>
+                        <outlet property="btnSeeGrade2" destination="8559" id="name-outlet-8559"/>
+                        <outlet property="btnSeeGrade3" destination="8562" id="name-outlet-8562"/>
+                        <outlet property="btnSeeGrade4" destination="8565" id="name-outlet-8565"/>
+                        <outlet property="btnFeelGrade2" destination="8568" id="name-outlet-8568"/>
+                        <outlet property="btnFeelGrade3" destination="8571" id="name-outlet-8571"/>
+                        <outlet property="btnFeelGrade4" destination="8574" id="name-outlet-8574"/>
+                        <outlet property="btnSmellGrade2" destination="8583" id="name-outlet-8583"/>
+                        <outlet property="btnSmellGrade3" destination="8586" id="name-outlet-8586"/>
+                        <outlet property="btnSmellGrade4" destination="8589" id="name-outlet-8589"/>
+                        <outlet property="btnHearGrade2" destination="8598" id="name-outlet-8598"/>
+                        <outlet property="btnHearGrade3" destination="8601" id="name-outlet-8601"/>
+                        <outlet property="btnHearGrade4" destination="8604" id="name-outlet-8604"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5526" userLabel="First Responder" sceneMemberID="firstResponder"/>
