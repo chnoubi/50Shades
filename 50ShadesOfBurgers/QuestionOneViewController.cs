@@ -11,6 +11,8 @@ namespace _50ShadesOfBurgers
 	partial class QuestionOneViewController : UIViewController
 	{
         AppDelegate ad = (AppDelegate)UIApplication.SharedApplication.Delegate;
+		UIImage selectedGradeImg, unselectedGradeImg;
+
         public List<String> question1, question2;
 		public QuestionOneViewController (IntPtr handle) : base (handle)
 		{
@@ -40,7 +42,45 @@ namespace _50ShadesOfBurgers
         {
             base.ViewWillAppear(animated);
 
-        }
+			unselectedGradeImg = UIImage.FromFile("unselectedGrade.png");
+			unselectedGradeImg = unselectedGradeImg.ImageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal);
+
+			selectedGradeImg = UIImage.FromFile("selectedGrade.png");
+			selectedGradeImg = selectedGradeImg.ImageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal);
+
+			setupGradeButtons();
+
+
+
+		}
+
+		private void setupGradeButtons()
+		{
+			//bun
+			btnBunGrade1.SetImage(unselectedGradeImg, UIControlState.Normal);
+			btnBunGrade2.SetImage(unselectedGradeImg, UIControlState.Normal);
+			btnBunGrade3.SetImage(unselectedGradeImg, UIControlState.Normal);
+			btnBunGrade4.SetImage(unselectedGradeImg, UIControlState.Normal);
+
+			//meat
+			btnMeatGrade1.SetImage(unselectedGradeImg, UIControlState.Normal);
+			btnMeatGrade2.SetImage(unselectedGradeImg, UIControlState.Normal);
+			btnMeatGrade3.SetImage(unselectedGradeImg, UIControlState.Normal);
+			btnMeatGrade4.SetImage(unselectedGradeImg, UIControlState.Normal);
+
+			//sauce
+			btnSauceGrade1.SetImage(unselectedGradeImg, UIControlState.Normal);
+			btnSauceGrade2.SetImage(unselectedGradeImg, UIControlState.Normal);
+			btnSauceGrade3.SetImage(unselectedGradeImg, UIControlState.Normal);
+			btnSauceGrade4.SetImage(unselectedGradeImg, UIControlState.Normal);
+
+			//salad
+			btnSaladGrade1.SetImage(unselectedGradeImg, UIControlState.Normal);
+			btnSaladGrade2.SetImage(unselectedGradeImg, UIControlState.Normal);
+			btnSaladGrade3.SetImage(unselectedGradeImg, UIControlState.Normal);
+			btnSaladGrade4.SetImage(unselectedGradeImg, UIControlState.Normal);
+		}
+
 
         public void setupPickers()
         {

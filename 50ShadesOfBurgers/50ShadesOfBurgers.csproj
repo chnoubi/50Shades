@@ -232,6 +232,8 @@
     <BundleResource Include="Resources\HomemadeApple.ttf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </BundleResource>
+    <BundleResource Include="Resources\selectedGrade.png" />
+    <BundleResource Include="Resources\unselectedGrade.png" />
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\burger-iPhone-Icon.png">

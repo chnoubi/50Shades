@@ -22,3 +22,5 @@
 /Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/50ShadesOfBurgers.exe
 /Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/50ShadesOfBurgers.exe.mdb
 /Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/bin/iPhoneSimulator/Debug/Newtonsoft.Json.dll
+/Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/optimized/selectedGrade.png
+/Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/optimized/unselectedGrade.png
