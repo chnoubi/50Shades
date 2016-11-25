@@ -9,5 +9,15 @@ namespace _50ShadesOfBurgers
         public CommentsAndConfirmViewController (IntPtr handle) : base (handle)
         {
         }
+
+		public override void ViewDidLoad()
+		{
+			base.ViewDidLoad();
+		}
+
+		public override void ViewWillAppear(bool animated)
+		{
+			base.ViewWillAppear(animated);
+		}
     }
 }

@@ -37,27 +37,27 @@ namespace _50ShadesOfBurgers
 		{
 			//Seen
 			btnSeeGrade1.SetImage(unselectedGradeImg, UIControlState.Normal);
-			//btnSeeGrade2.SetImage(unselectedGradeImg, UIControlState.Normal);
-			//btnSeeGrade3.SetImage(unselectedGradeImg, UIControlState.Normal);
-			//btnSeeGrade4.SetImage(unselectedGradeImg, UIControlState.Normal);
+			btnSeeGrade2.SetImage(unselectedGradeImg, UIControlState.Normal);
+			btnSeeGrade3.SetImage(unselectedGradeImg, UIControlState.Normal);
+			btnSeeGrade4.SetImage(unselectedGradeImg, UIControlState.Normal);
 
 			//Feelt
 			btnFeelGrade1.SetImage(unselectedGradeImg, UIControlState.Normal);
-	//		btnFeelGrade2.SetImage(unselectedGradeImg, UIControlState.Normal);
-	//		btnFeelGrade3.SetImage(unselectedGradeImg, UIControlState.Normal);
-	//		btnFeelGrade4.SetImage(unselectedGradeImg, UIControlState.Normal);
+     		btnFeelGrade2.SetImage(unselectedGradeImg, UIControlState.Normal);
+			btnFeelGrade3.SetImage(unselectedGradeImg, UIControlState.Normal);
+			btnFeelGrade4.SetImage(unselectedGradeImg, UIControlState.Normal);
 
 			//Smelle
 			btnSmellGrade1.SetImage(unselectedGradeImg, UIControlState.Normal);
-	//		btnSmellGrade2.SetImage(unselectedGradeImg, UIControlState.Normal);
-	//		btnSmellGrade3.SetImage(unselectedGradeImg, UIControlState.Normal);
-	//		btnSmellGrade4.SetImage(unselectedGradeImg, UIControlState.Normal);
+			btnSmellGrade2.SetImage(unselectedGradeImg, UIControlState.Normal);
+			btnSmellGrade3.SetImage(unselectedGradeImg, UIControlState.Normal);
+			btnSmellGrade4.SetImage(unselectedGradeImg, UIControlState.Normal);
 
 			//Heard
 			btnHearGrade1.SetImage(unselectedGradeImg, UIControlState.Normal);
-	//		btnHearGrade2.SetImage(unselectedGradeImg, UIControlState.Normal);
-	//		btnHearGrade3.SetImage(unselectedGradeImg, UIControlState.Normal);
-	//		btnHearGrade4.SetImage(unselectedGradeImg, UIControlState.Normal);
+			btnHearGrade2.SetImage(unselectedGradeImg, UIControlState.Normal);
+			btnHearGrade3.SetImage(unselectedGradeImg, UIControlState.Normal);
+			btnHearGrade4.SetImage(unselectedGradeImg, UIControlState.Normal);
 		}
 
 		private void BtnNext_TouchUpInside(object sender, EventArgs e)

@@ -16,11 +16,15 @@ namespace _50ShadesOfBurgers
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIButton btnConfirmer { get; set; }
+        UIKit.UIImageView bgrImage { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UILabel lblRajoutezComment { get; set; }
+        UIKit.UIButton btnConfirm { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel lblComment { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
@@ -28,14 +32,19 @@ namespace _50ShadesOfBurgers
 
         void ReleaseDesignerOutlets ()
         {
-            if (btnConfirmer != null) {
-                btnConfirmer.Dispose ();
-                btnConfirmer = null;
+            if (bgrImage != null) {
+                bgrImage.Dispose ();
+                bgrImage = null;
             }
 
-            if (lblRajoutezComment != null) {
-                lblRajoutezComment.Dispose ();
-                lblRajoutezComment = null;
+            if (btnConfirm != null) {
+                btnConfirm.Dispose ();
+                btnConfirm = null;
+            }
+
+            if (lblComment != null) {
+                lblComment.Dispose ();
+                lblComment = null;
             }
 
             if (txtComment != null) {

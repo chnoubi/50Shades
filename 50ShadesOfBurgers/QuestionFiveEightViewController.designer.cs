@@ -16,6 +16,10 @@ namespace _50ShadesOfBurgers
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIImageView bgrImage { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIButton btnFeelGrade1 { get; set; }
 
         [Outlet]
@@ -104,6 +108,11 @@ namespace _50ShadesOfBurgers
 
         void ReleaseDesignerOutlets ()
         {
+            if (bgrImage != null) {
+                bgrImage.Dispose ();
+                bgrImage = null;
+            }
+
             if (btnFeelGrade1 != null) {
                 btnFeelGrade1.Dispose ();
                 btnFeelGrade1 = null;
