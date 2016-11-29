@@ -45,8 +45,26 @@ namespace _50ShadesOfBurgers
 			btnBunGrade3.TouchUpInside += handleBunGrades;
 			btnBunGrade4.TouchUpInside += handleBunGrades;
 
+			//handle meat buttons
+			btnMeatGrade1.TouchUpInside += handleMeatGrades;
+			btnMeatGrade2.TouchUpInside += handleMeatGrades;
+			btnMeatGrade3.TouchUpInside += handleMeatGrades;
+			btnMeatGrade4.TouchUpInside += handleMeatGrades;
 
-            btnNext.TouchUpInside += BtnNext_TouchUpInside;
+			//handle sauce buttons
+			btnSauceGrade1.TouchUpInside += handleSauceGrades;
+			btnSauceGrade2.TouchUpInside += handleSauceGrades;
+			btnSauceGrade3.TouchUpInside += handleSauceGrades;
+			btnSauceGrade4.TouchUpInside += handleSauceGrades;
+
+			//handle salad buttons
+			btnSaladGrade1.TouchUpInside += handleSaladGrades;
+			btnSaladGrade2.TouchUpInside += handleSaladGrades;
+			btnSaladGrade3.TouchUpInside += handleSaladGrades;
+			btnSaladGrade4.TouchUpInside += handleSaladGrades;
+
+
+			btnNext.TouchUpInside += BtnNext_TouchUpInside;
         }
 
         private void BtnNext_TouchUpInside(object sender, EventArgs e)
@@ -196,27 +214,6 @@ namespace _50ShadesOfBurgers
 			checkGradeButtons();
 
 		}
-
-
-
-
-		/*   public void setupPickers()
-		   {
-			   question1.Add(ad.questions[0].QuestRep1);
-			   question1.Add(ad.questions[0].QuestRep2);
-			   question1.Add(ad.questions[0].QuestRep3);
-			   question1.Add(ad.questions[0].QuestRep4);
-
-			   question2.Add(ad.questions[1].QuestRep1);
-			   question2.Add(ad.questions[1].QuestRep2);
-			   question2.Add(ad.questions[1].QuestRep3);
-			   question2.Add(ad.questions[1].QuestRep4);
-
-			   pickerPain.Model = new QuestionPickerViewModel<String>(question1);
-			  pickerViande.Model = new QuestionPickerViewModel<String>(question2);
-
-
-		   }*/
 
 
 	}

@@ -45,63 +45,54 @@ namespace _50ShadesOfBurgers
 						}
 						break;
 					}
-			/*	case 2:
-					{
-						if (!selectedGrade2)
+				case 2:
 						{
-							btnGrade2.SetImage(selectedGradeImg, UIControlState.Normal);
-							btnGrade1.SetImage(selectedGradeImg, UIControlState.Normal);
-							selectedGrade1 = true;
-							selectedGrade2 = true;
+							if (!this.SelectedGrades[1])
+							{
+
+								this.SelectedGrades[0] = true;
+								this.SelectedGrades[1] = true;
+							}
+							else {
+								this.SelectedGrades[1] = false;
+								this.SelectedGrades[2] = false;
+								this.SelectedGrades[3] = false;
+							}
+							break;
 						}
-						else {
-							btnGrade2.SetImage(unselectedGradeImg, UIControlState.Normal);
-							btnGrade3.SetImage(unselectedGradeImg, UIControlState.Normal);
-							btnGrade4.SetImage(unselectedGradeImg, UIControlState.Normal);
-							selectedGrade2 = false;
-							selectedGrade3 = false;
-							selectedGrade4 = false;
-						}
-						break;
-					}
 				case 3:
 					{
-						if (!selectedGrade3)
+						if (!this.SelectedGrades[2])
 						{
-							btnGrade3.SetImage(selectedGradeImg, UIControlState.Normal);
-							btnGrade2.SetImage(selectedGradeImg, UIControlState.Normal);
-							btnGrade1.SetImage(selectedGradeImg, UIControlState.Normal);
-							selectedGrade1 = true;
-							selectedGrade2 = true;
-							selectedGrade3 = true;
+
+							this.SelectedGrades[0] = true;
+							this.SelectedGrades[1] = true;
+							this.SelectedGrades[2] = true;
+
 						}
 						else {
-							btnGrade3.SetImage(unselectedGradeImg, UIControlState.Normal);
-							btnGrade4.SetImage(unselectedGradeImg, UIControlState.Normal);
-							selectedGrade3 = false;
-							selectedGrade4 = false;
+							this.SelectedGrades[2] = false;
+							this.SelectedGrades[3] = false;
 						}
 						break;
 					}
 				case 4:
 					{
-						if (!selectedGrade4)
+						if (!this.SelectedGrades[3])
 						{
-							btnGrade4.SetImage(selectedGradeImg, UIControlState.Normal);
-							btnGrade3.SetImage(selectedGradeImg, UIControlState.Normal);
-							btnGrade2.SetImage(selectedGradeImg, UIControlState.Normal);
-							btnGrade1.SetImage(selectedGradeImg, UIControlState.Normal);
-							selectedGrade1 = true;
-							selectedGrade2 = true;
-							selectedGrade3 = true;
-							selectedGrade4 = true;
+
+							this.SelectedGrades[0] = true;
+							this.SelectedGrades[1] = true;
+							this.SelectedGrades[2] = true;
+							this.SelectedGrades[3] = true;
+
+
 						}
 						else {
-							btnGrade4.SetImage(unselectedGradeImg, UIControlState.Normal);
-							selectedGrade4 = false;
+							this.SelectedGrades[3] = false;
 						}
 						break;
-					}*/
+					}
 
 			}
 

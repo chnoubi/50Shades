@@ -16,11 +16,21 @@ namespace _50ShadesOfBurgers
 	{
         AppDelegate ad = (AppDelegate)UIApplication.SharedApplication.Delegate;
 
+		//variables for set up of moving txtBurgerNew
+		private nfloat scroll_amount = 0.0f;
+		private nfloat bottom = 0.0f;
+		private nfloat offset = 10.0f;
+		private bool moveViewUp = false;
+		NSObject showNotification;
+		NSObject hideNotification;
+
+
 		//  public Resto selectedResto;
 
 		  // public List<Resto> restos;
-		   public List<Burger> burgers;
-		   public SortedSet<String> burgerNames;
+		public List<Burger> burgers;
+		public SortedSet<String> burgerNames;
+
 		string placeId;
         LoadingOverlay loadingOverlay;
 		LocationPredictionClass objAutoCompleteLocationClass;
@@ -39,17 +49,17 @@ namespace _50ShadesOfBurgers
 			InitializeView();
 			ChooseRestoNameInit();
 			btnStart.TouchUpInside += HandleBtnStart;
-		//	lblChoose.Font = UIFont.FromName("HomemadeApple", 19f);
+			burgerNames = new SortedSet<String>();
+			burgers = new List<Burger>();
 
            /* restos = new List<Resto>();
-            burgers = new List<Burger>();
             
 
             restos = ad.restos;
 			restoCountry = new List<String>();
             restoCity = new SortedSet<String>();
             restoName = new SortedSet<String>();
-            burgerNames = new SortedSet<String>();
+
 
             restoCountry = getCountryList(restos);
             CreateCountryPicker(restoCountry);
@@ -81,8 +91,9 @@ namespace _50ShadesOfBurgers
 				this.PerformSegue("goToMenu", this);
 			}), true);
 
+			showNotification = UIKeyboard.Notifications.ObserveWillShow(ShowCallback);
+			hideNotification = UIKeyboard.Notifications.ObserveDidHide(HideCallback);
 
-			// getCountries();
 		}
 
 		void InitializeView()
@@ -153,6 +164,63 @@ namespace _50ShadesOfBurgers
 
 		}
 
+		//Setup show textfiels when keyboard open
+
+		void ShowCallback(object sender, UIKeyboardEventArgs args)
+		{
+			// get the keyboard size
+			CoreGraphics.CGRect r = args.FrameBegin;
+
+
+			// Bottom of the controller = initial position + height + offset      
+			bottom = (txtBurgerNew.Frame.Y + txtBurgerNew.Frame.Height + offset);
+
+			// Calculate how far we need to scroll
+			scroll_amount = (r.Height - (View.Frame.Size.Height - bottom));
+
+			// Perform the scrolling
+			if (scroll_amount > 0)
+			{
+				moveViewUp = true;
+				ScrollTheView(moveViewUp);
+			}
+			else
+			{
+				moveViewUp = false;
+			}
+
+		}
+
+
+		void HideCallback(object sender, UIKeyboardEventArgs args)
+		{
+			if (moveViewUp) { ScrollTheView(false); }
+		}
+
+		private void ScrollTheView(bool move)
+		{
+
+			// scroll the view up or down
+			UIView.BeginAnimations(string.Empty, System.IntPtr.Zero);
+			UIView.SetAnimationDuration(0.3);
+
+			CoreGraphics.CGRect frame = View.Frame;
+
+			if (move)
+			{
+				frame.Y -= (float)scroll_amount;
+			}
+			else
+			{
+				frame.Y += (float)scroll_amount;
+				scroll_amount = 0;
+			}
+
+			View.Frame = frame;
+			UIView.CommitAnimations();
+		}
+
+
 		void LocationSelectedFromAutoFill(Prediction objPrediction)
 		{
 			Console.WriteLine(objPrediction.terms[0].value);
@@ -194,9 +262,8 @@ namespace _50ShadesOfBurgers
 			CreateBurgerPicker(burgerNames);
 		}
 
-		private SortedSet<String> getBurgerSortedNameList(List<Burger> burgers)
+		private SortedSet<String> getBurgerSortedNameList(List<Burger> pBurgers)
 		{
-			SortedSet<String> burgerNames = new SortedSet<String>();
 			foreach (Burger burger in burgers)
 			{
 				burgerNames.Add(burger.BurgerName);
@@ -211,7 +278,7 @@ namespace _50ShadesOfBurgers
 		}
 
 
-		private void CreateBurgerPicker(SortedSet<String> burgerNames)
+		private void CreateBurgerPicker(SortedSet<String> pBurgerNames)
 		{
 			var picker = new UIPickerView();
 			picker.Model = new ListPickerViewModel<String>(burgerNames);

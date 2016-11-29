@@ -1,19 +1,21 @@
 ﻿<Properties StartupConfiguration="{DF20C9C0-B8C9-48E8-B106-1C6A9F23DA28}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="50ShadesOfBurgers/QuestionOneViewController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="50ShadesOfBurgers/QuestionSixSevenEightViewController.cs">
     <Files>
-      <File FileName="50ShadesOfBurgers/QuestionnaireChoixRestoViewController.cs" Line="274" Column="65" />
+      <File FileName="50ShadesOfBurgers/QuestionnaireChoixRestoViewController.cs" Line="25" Column="3" />
       <File FileName="50ShadesOfBurgers/Model/AlertViewModel.cs" Line="23" Column="2" />
       <File FileName="50ShadesOfBurgers/Model/ListPickerViewModel.cs" Line="80" Column="33" />
-      <File FileName="50ShadesOfBurgers/QuestionOneViewController.cs" Line="109" Column="6" />
-      <File FileName="50ShadesOfBurgers/Model/CheckGrades.cs" Line="104" Column="9" />
+      <File FileName="50ShadesOfBurgers/QuestionOneViewController.cs" Line="64" Column="18" />
+      <File FileName="50ShadesOfBurgers/Model/CheckGrades.cs" Line="94" Column="13" />
       <File FileName="50ShadesOfBurgers/QuestionFiveEightViewController.cs" Line="60" Column="2" />
       <File FileName="50ShadesOfBurgers/Model/QuestionPickerViewModel.cs" Line="1" Column="1" />
       <File FileName="50ShadesOfBurgers/CommentsAndConfirmViewController.cs" Line="21" Column="2" />
       <File FileName="50ShadesOfBurgers/Main.cs" Line="12" Column="1" />
+      <File FileName="50ShadesOfBurgers/MainMenuViewController.cs" Line="1" Column="1" />
+      <File FileName="50ShadesOfBurgers/QuestionSixSevenEightViewController.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
-  <MonoDevelop.Ide.ItemProperties.50ShadesOfBurgers PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.2BEFED22-D45F-4B75-B2EE-00939CBA9906" />
+  <MonoDevelop.Ide.ItemProperties.50ShadesOfBurgers PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.24A5F762-B996-443D-90AC-E29EF94409F0" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
