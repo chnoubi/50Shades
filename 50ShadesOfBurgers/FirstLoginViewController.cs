@@ -61,7 +61,6 @@ namespace _50ShadesOfBurgers
             base.ViewWillAppear(animated);
 
             Buttons.setupButtons(btnConfirm);
-			this.View.BackgroundColor = UIColor.FromPatternImage(UIImage.FromFile("bgrMainMenu.png"));
 
         }
 

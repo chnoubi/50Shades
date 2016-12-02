@@ -24,7 +24,27 @@ namespace _50ShadesOfBurgers
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIImageView imgBackground { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UITextView lblBeforeWeStart { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UILabel lblDate { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel lblEmail { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel lblJustInCase { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UITextView lblTitle { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
@@ -46,9 +66,34 @@ namespace _50ShadesOfBurgers
                 datePicker = null;
             }
 
+            if (imgBackground != null) {
+                imgBackground.Dispose ();
+                imgBackground = null;
+            }
+
+            if (lblBeforeWeStart != null) {
+                lblBeforeWeStart.Dispose ();
+                lblBeforeWeStart = null;
+            }
+
             if (lblDate != null) {
                 lblDate.Dispose ();
                 lblDate = null;
+            }
+
+            if (lblEmail != null) {
+                lblEmail.Dispose ();
+                lblEmail = null;
+            }
+
+            if (lblJustInCase != null) {
+                lblJustInCase.Dispose ();
+                lblJustInCase = null;
+            }
+
+            if (lblTitle != null) {
+                lblTitle.Dispose ();
+                lblTitle = null;
             }
 
             if (pickerGender != null) {

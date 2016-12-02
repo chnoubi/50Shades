@@ -43,6 +43,9 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>HomemadeApple.ttf</string>
+		<string>Chalk-hand-lettering-shaded_demo.ttf</string>
+		<string>Chalkboard by Marta van Eck.ttf</string>
+		<string>CoalhandLuke TRIAL.ttf</string>
 	</array>
 </dict>
 </plist>

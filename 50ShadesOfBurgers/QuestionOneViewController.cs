@@ -16,7 +16,7 @@ namespace _50ShadesOfBurgers
 		UIImage selectedGradeImg, unselectedGradeImg;
 
 		//create an instance for the bun grades
-		CheckGrades bunGrades, meatGrades, sauceGrades, saladGrades;
+		Grades bunGrades, meatGrades, sauceGrades, saladGrades;
 
         public List<String> question1, question2;
 		public QuestionOneViewController (IntPtr handle) : base (handle)
@@ -32,10 +32,10 @@ namespace _50ShadesOfBurgers
             question2 = new List<String>();
 
 			//initialize de grades (default false)
-			bunGrades = new CheckGrades();
-			meatGrades = new CheckGrades();
-			sauceGrades = new CheckGrades();
-			saladGrades = new CheckGrades();
+			bunGrades = new Grades();
+			meatGrades = new Grades();
+			sauceGrades = new Grades();
+			saladGrades = new Grades();
 
 			//handle bun buttons
 			btnBunGrade1.TouchUpInside += handleBunGrades;

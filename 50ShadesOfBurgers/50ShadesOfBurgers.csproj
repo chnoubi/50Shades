@@ -243,6 +243,16 @@
     </BundleResource>
     <BundleResource Include="Resources\selectedGrade.png" />
     <BundleResource Include="Resources\unselectedGrade.png" />
+    <BundleResource Include="Resources\Angeline Vintage_Demo.ttf" />
+    <BundleResource Include="Resources\Chalk-hand-lettering-shaded_demo.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Resources\Chalkboard by Marta van Eck.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Resources\CoalhandLuke TRIAL.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\burger-iPhone-Icon.png">

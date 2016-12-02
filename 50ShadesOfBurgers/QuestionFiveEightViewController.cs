@@ -8,7 +8,7 @@ namespace _50ShadesOfBurgers
     {
 		UIImage selectedGradeImg, unselectedGradeImg;
 
-		CheckGrades seeGrades, feelGrades, smellGrades, hearGrades;
+		Grades seeGrades, feelGrades, smellGrades, hearGrades;
 
         public QuestionFiveEightViewController (IntPtr handle) : base (handle)
         {
@@ -18,10 +18,10 @@ namespace _50ShadesOfBurgers
 		{
 			base.ViewDidLoad();
 			//initialize de grades (default false)
-			seeGrades = new CheckGrades();
-			feelGrades = new CheckGrades();
-			smellGrades = new CheckGrades();
-			hearGrades = new CheckGrades();
+			seeGrades = new Grades();
+			feelGrades = new Grades();
+			smellGrades = new Grades();
+			hearGrades = new Grades();
 
 			btnNext.TouchUpInside += BtnNext_TouchUpInside;
 			//handle bun buttons

@@ -3,8 +3,11 @@ using System.Collections.Generic;
 
 namespace _50ShadesOfBurgers
 {
-	public class CheckGrades
+	public class Grades
 	{
+		//datamember to hold the scores of each selection
+		private int score;
+
 
 		private bool[] selectedGrades = new bool[4];
 
@@ -21,9 +24,19 @@ namespace _50ShadesOfBurgers
 
 		}
 
-		public CheckGrades()
+		public int getScore()
 		{
-			
+			return this.score;
+		}
+
+		public void setScore(int score)
+		{
+			this.score = score;
+		}
+
+		public Grades()
+		{
+
 		}
 
 		public void grade(nint tag)
@@ -34,7 +47,7 @@ namespace _50ShadesOfBurgers
 					{
 						if (!this.SelectedGrades[0])
 						{
-							
+
 							this.SelectedGrades[0] = true;
 						}
 						else {
@@ -46,20 +59,20 @@ namespace _50ShadesOfBurgers
 						break;
 					}
 				case 2:
+					{
+						if (!this.SelectedGrades[1])
 						{
-							if (!this.SelectedGrades[1])
-							{
 
-								this.SelectedGrades[0] = true;
-								this.SelectedGrades[1] = true;
-							}
-							else {
-								this.SelectedGrades[1] = false;
-								this.SelectedGrades[2] = false;
-								this.SelectedGrades[3] = false;
-							}
-							break;
+							this.SelectedGrades[0] = true;
+							this.SelectedGrades[1] = true;
 						}
+						else {
+							this.SelectedGrades[1] = false;
+							this.SelectedGrades[2] = false;
+							this.SelectedGrades[3] = false;
+						}
+						break;
+					}
 				case 3:
 					{
 						if (!this.SelectedGrades[2])
