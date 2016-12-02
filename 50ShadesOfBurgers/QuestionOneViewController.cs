@@ -37,8 +37,6 @@ namespace _50ShadesOfBurgers
 			sauceGrades = new CheckGrades();
 			saladGrades = new CheckGrades();
 
-			//   this.setupPickers();
-
 			//handle bun buttons
 			btnBunGrade1.TouchUpInside += handleBunGrades;
 			btnBunGrade2.TouchUpInside += handleBunGrades;
