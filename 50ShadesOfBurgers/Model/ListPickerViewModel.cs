@@ -69,16 +69,20 @@ namespace _50ShadesOfBurgers.Model
         public override UIView GetView(UIPickerView pickerView, nint row, nint component, UIView view)
         {
           
-            pickerView.Layer.BorderColor = UIColor.Gray.CGColor;
-			pickerView.Layer.BackgroundColor = UIColor.White.CGColor;
+			pickerView.Layer.BorderColor = UIColor.Clear.CGColor;
+			pickerView.Layer.BackgroundColor = UIColor.Clear.CGColor;
           
             pickerView.Layer.BorderWidth = 1;
             pickerView.Layer.CornerRadius = 8;
 
+			pickerView.Subviews.ElementAt(1).BackgroundColor = UIColor.White;
+			pickerView.Subviews.ElementAt(2).BackgroundColor = UIColor.White;
 
-            UILabel lbl = new UILabel(new RectangleF(0, 0, (float)pickerView.RowSizeForComponent(component).Width - 10.0f, (float)pickerView.RowSizeForComponent(component).Height * 2));
-			lbl.TextColor = UIColor.Black;
-            lbl.Font = UIFont.SystemFontOfSize(12f);
+
+
+			UILabel lbl = new UILabel(new RectangleF(0, 0, (float)pickerView.RowSizeForComponent(component).Width - 10.0f, (float)pickerView.RowSizeForComponent(component).Height * 2));
+			lbl.TextColor = UIColor.White;
+            lbl.Font = UIFont.SystemFontOfSize(17f);
             lbl.TextAlignment = UITextAlignment.Center;
             lbl.LineBreakMode = UILineBreakMode.WordWrap;
 

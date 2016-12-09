@@ -24,3 +24,4 @@
 /Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/bin/iPhoneSimulator/Debug/Newtonsoft.Json.dll
 /Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/optimized/selectedGrade.png
 /Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/optimized/unselectedGrade.png
+/Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/optimized/bgrRateNavigation.png

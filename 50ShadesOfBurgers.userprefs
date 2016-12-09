@@ -1,23 +1,24 @@
 ﻿<Properties StartupConfiguration="{DF20C9C0-B8C9-48E8-B106-1C6A9F23DA28}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="50ShadesOfBurgers/Model/Reponses.cs">
+  <MonoDevelop.Ide.Workbench>
     <Files>
       <File FileName="50ShadesOfBurgers/QuestionnaireChoixRestoViewController.cs" Line="176" Column="49" />
       <File FileName="50ShadesOfBurgers/Model/AlertViewModel.cs" Line="23" Column="2" />
-      <File FileName="50ShadesOfBurgers/Model/ListPickerViewModel.cs" Line="80" Column="33" />
+      <File FileName="50ShadesOfBurgers/Model/ListPickerViewModel.cs" Line="85" Column="52" />
       <File FileName="50ShadesOfBurgers/QuestionOneViewController.cs" Line="215" Column="1" />
       <File FileName="50ShadesOfBurgers/Model/Grades.cs" Line="34" Column="23" />
       <File FileName="50ShadesOfBurgers/QuestionFiveEightViewController.cs" Line="180" Column="14" />
       <File FileName="50ShadesOfBurgers/Model/QuestionPickerViewModel.cs" Line="1" Column="1" />
       <File FileName="50ShadesOfBurgers/CommentsAndConfirmViewController.cs" Line="50" Column="49" />
-      <File FileName="50ShadesOfBurgers/Main.cs" Line="12" Column="1" />
       <File FileName="50ShadesOfBurgers/MainMenuViewController.cs" Line="1" Column="1" />
       <File FileName="50ShadesOfBurgers/QuestionSixSevenEightViewController.cs" Line="142" Column="86" />
-      <File FileName="50ShadesOfBurgers/FirstLoginViewController.cs" Line="64" Column="1" />
-      <File FileName="50ShadesOfBurgers/Model/Reponses.cs" Line="1" Column="1" />
+      <File FileName="50ShadesOfBurgers/FirstLoginViewController.cs" Line="130" Column="1" />
+      <File FileName="50ShadesOfBurgers/Model/Reponses.cs" Line="22" Column="54" />
+      <File FileName="50ShadesOfBurgers/AppDelegate.cs" Line="1" Column="1" />
+      <File FileName="50ShadesOfBurgers/Model/GooglePlaceApi/TableViewSource/LocationAutoCompleteTableSource.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|iPhone" />
-  <MonoDevelop.Ide.ItemProperties.50ShadesOfBurgers PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.598f255b16530f7b0c87b76578401f080ca0a999" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
+  <MonoDevelop.Ide.ItemProperties.50ShadesOfBurgers PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

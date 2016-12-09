@@ -61,6 +61,11 @@ namespace _50ShadesOfBurgers
             base.ViewWillAppear(animated);
 
             Buttons.setupButtons(btnConfirm);
+			datePicker.SetValueForKey(UIColor.White, (Foundation.NSString)"textColor");
+
+			//datePicker.Subviews[0].BackgroundColor = UIColor.White;
+			//datePicker.Subviews[1].BackgroundColor = UIColor.White;
+			//datePicker.SetValueForKey(UIFont.SystemFontOfSize(12f), (Foundation.NSString)"fontSize");
 
         }
 
@@ -73,8 +78,8 @@ namespace _50ShadesOfBurgers
         {
             SortedSet<String> gender = new SortedSet<String>()
             {
-                "Homme",
-                "Femme"
+                "Male",
+                "Female"
             };
             pickerGender.Model = new ListPickerViewModel<String>(gender);
 
