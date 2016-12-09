@@ -28,6 +28,10 @@ namespace _50ShadesOfBurgers
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIImageView imgBackground { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIPickerView pickerCity { get; set; }
 
         [Outlet]
@@ -49,6 +53,11 @@ namespace _50ShadesOfBurgers
             if (btnWorldTop != null) {
                 btnWorldTop.Dispose ();
                 btnWorldTop = null;
+            }
+
+            if (imgBackground != null) {
+                imgBackground.Dispose ();
+                imgBackground = null;
             }
 
             if (pickerCity != null) {

@@ -11,14 +11,16 @@
       <File FileName="50ShadesOfBurgers/CommentsAndConfirmViewController.cs" Line="50" Column="49" />
       <File FileName="50ShadesOfBurgers/MainMenuViewController.cs" Line="1" Column="1" />
       <File FileName="50ShadesOfBurgers/QuestionSixSevenEightViewController.cs" Line="142" Column="86" />
-      <File FileName="50ShadesOfBurgers/FirstLoginViewController.cs" Line="130" Column="1" />
+      <File FileName="50ShadesOfBurgers/FirstLoginViewController.cs" Line="65" Column="4" />
       <File FileName="50ShadesOfBurgers/Model/Reponses.cs" Line="22" Column="54" />
       <File FileName="50ShadesOfBurgers/AppDelegate.cs" Line="1" Column="1" />
       <File FileName="50ShadesOfBurgers/Model/GooglePlaceApi/TableViewSource/LocationAutoCompleteTableSource.cs" Line="1" Column="1" />
+      <File FileName="50ShadesOfBurgers/Top10ViewController.cs" Line="1" Column="1" />
+      <File FileName="50ShadesOfBurgers/Helper Classes/Buttons.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
-  <MonoDevelop.Ide.ItemProperties.50ShadesOfBurgers PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.ItemProperties.50ShadesOfBurgers PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.24A5F762-B996-443D-90AC-E29EF94409F0" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
