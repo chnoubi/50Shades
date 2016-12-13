@@ -25,3 +25,5 @@
 /Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/optimized/selectedGrade.png
 /Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/optimized/unselectedGrade.png
 /Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/optimized/bgrRateNavigation.png
+/Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/optimized/navBarBgrImg.png
+/Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/optimized/bgrRateNavigationClearBar.png

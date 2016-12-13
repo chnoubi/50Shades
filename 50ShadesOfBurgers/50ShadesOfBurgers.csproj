@@ -184,6 +184,10 @@
       <DependentUpon>CommentsAndConfirmViewController.cs</DependentUpon>
     </Compile>
     <Compile Include="Model\Grades.cs" />
+    <Compile Include="AboutViewController.cs" />
+    <Compile Include="AboutViewController.designer.cs">
+      <DependentUpon>AboutViewController.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Database\SQLite.cs" />
@@ -254,6 +258,8 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </BundleResource>
     <BundleResource Include="Resources\bgrRateNavigation.png" />
+    <BundleResource Include="Resources\navBarBgrImg.png" />
+    <BundleResource Include="Resources\bgrRateNavigationClearBar.png" />
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\burger-iPhone-Icon.png">

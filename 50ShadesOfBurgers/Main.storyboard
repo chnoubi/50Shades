@@ -15,7 +15,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="9244" translatesAutoresizingMaskIntoConstraints="NO" image="bgrMainMenu.png">
@@ -350,7 +350,7 @@
                         <viewControllerLayoutGuide type="bottom" id="204"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="216">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Vous tenez entre les mains une unique opportunité de satisfaire votre plaisir ultime dans la vie:                      " textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="609">
@@ -592,13 +592,11 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" id="217" title="Survey"/>
-                    <connections>
-                        <segue id="7297" destination="6534" kind="presentation" identifier="goToMenu"/>
-                    </connections>
+                    <connections/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="218" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="854" y="696"/>
+            <point key="canvasLocation" x="1830" y="660"/>
         </scene>
         <!--Top10 View Controller-->
         <scene sceneID="219">
@@ -609,7 +607,7 @@
                         <viewControllerLayoutGuide type="bottom" id="206"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="220">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="9461" translatesAutoresizingMaskIntoConstraints="NO" image="bgrRateNavigation.png">
@@ -901,7 +899,7 @@
                         <viewControllerLayoutGuide type="bottom" id="227"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="230">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -913,7 +911,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="231" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="370" y="577"/>
+            <point key="canvasLocation" x="608" y="606"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="407">
@@ -924,7 +922,7 @@
                         <viewControllerLayoutGuide type="bottom" id="406"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="409">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <subviews/>
@@ -945,7 +943,7 @@
             <objects>
                 <navigationController definesPresentationContext="YES" id="1113" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1116">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                     </navigationBar>
                     <connections>
@@ -965,7 +963,7 @@
                         <viewControllerLayoutGuide type="bottom" id="1111"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="1120">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="8047" translatesAutoresizingMaskIntoConstraints="NO" image="bgrRateNavigation.png">
@@ -1315,7 +1313,7 @@
                         <viewControllerLayoutGuide type="bottom" id="1524"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="1527">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="8227" translatesAutoresizingMaskIntoConstraints="NO" image="bgrRateNavigation.png">
@@ -2089,7 +2087,7 @@
                         <viewControllerLayoutGuide type="bottom" id="2259"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="2262">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="8621" translatesAutoresizingMaskIntoConstraints="NO" image="bgrRateNavigation.png">
@@ -2226,15 +2224,15 @@
             <objects>
                 <tableViewController title="Top 10" id="3196" customClass="Top10TableViewController" sceneMemberID="viewController" hasRefreshControl="0">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="3197">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TableCell" rowHeight="61" id="3200">
-                                <rect key="frame" x="0.0" y="55.5" width="320" height="61"/>
+                                <rect key="frame" x="0.0" y="55.5" width="375" height="61"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3200" id="3201">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="60.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="60.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews/>
                                     <variation key="heightClass=regular-widthClass=compact">
@@ -2275,7 +2273,7 @@
                         <viewControllerLayoutGuide type="bottom" id="4298"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="4301">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <subviews>
@@ -2494,7 +2492,7 @@
                         <viewControllerLayoutGuide type="bottom" id="5226"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="5229">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <subviews>
@@ -2547,7 +2545,7 @@
                         <viewControllerLayoutGuide type="bottom" id="5522"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="5525">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <subviews>
@@ -3320,7 +3318,7 @@
                         <viewControllerLayoutGuide type="bottom" id="6532"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="6535">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <subviews>
@@ -3455,7 +3453,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <segue id="8750" destination="210" kind="show"/>
+                                    <segue id="9629" destination="9531" kind="presentation"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -3548,7 +3546,7 @@
             <objects>
                 <navigationController id="7500" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="7502">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -3558,6 +3556,206 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7503" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="552" y="-196"/>
+        </scene>
+        <scene sceneID="9530">
+            <objects>
+                <navigationController id="9531" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9533">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue id="9572" destination="9540" kind="relationship" relationship="rootViewController"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9534" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="684" y="1302"/>
+        </scene>
+        <scene sceneID="9539">
+            <objects>
+                <viewController id="9540" sceneMemberID="viewController" customClass="AboutViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9537"/>
+                        <viewControllerLayoutGuide type="bottom" id="9538"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9541">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="9574" translatesAutoresizingMaskIntoConstraints="NO" image="bgrRateNavigationClearBar.png">
+                                <rect key="frame" x="61" y="186" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                </variation>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="9861" translatesAutoresizingMaskIntoConstraints="NO" text="The idea of this app is very simple and can be summarized in three basic principles:">
+                                <rect key="frame" x="51" y="280" width="240" height="128"/>
+                                <color key="backgroundColor" colorSpace="calibratedWhite" white="0" alpha="0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="20" y="90" width="335" height="60"/>
+                                    <mask key="constraints">
+                                        <include reference="9870"/>
+                                    </mask>
+                                </variation>
+                                <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                <constraints>
+                                    <constraint id="9870" firstItem="9861" firstAttribute="height" constant="60"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="9870"/>
+                                    </mask>
+                                </variation>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="9862" translatesAutoresizingMaskIntoConstraints="NO" text="1. Burger only">
+                                <rect key="frame" x="40" y="159" width="240" height="128"/>
+                                <color key="backgroundColor" colorSpace="calibratedWhite" white="0" alpha="0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="40" y="160" width="300" height="40"/>
+                                    <mask key="constraints">
+                                        <include reference="9871"/>
+                                    </mask>
+                                </variation>
+                                <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                <constraints>
+                                    <constraint id="9871" firstItem="9862" firstAttribute="height" constant="40"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="9871"/>
+                                    </mask>
+                                </variation>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="9863" translatesAutoresizingMaskIntoConstraints="NO" text="2. 5 Senses">
+                                <rect key="frame" x="40" y="159" width="240" height="128"/>
+                                <color key="backgroundColor" colorSpace="calibratedWhite" white="0" alpha="0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="40" y="210" width="300" height="40"/>
+                                    <mask key="constraints">
+                                        <include reference="9872"/>
+                                    </mask>
+                                </variation>
+                                <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                <constraints>
+                                    <constraint id="9872" firstItem="9863" firstAttribute="height" constant="40"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="9872"/>
+                                    </mask>
+                                </variation>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="9864" translatesAutoresizingMaskIntoConstraints="NO" text="3. Eat it the way you like it!">
+                                <rect key="frame" x="40" y="159" width="240" height="128"/>
+                                <color key="backgroundColor" colorSpace="calibratedWhite" white="0" alpha="0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="40" y="260" width="300" height="40"/>
+                                    <mask key="constraints">
+                                        <include reference="9873"/>
+                                    </mask>
+                                </variation>
+                                <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                <constraints>
+                                    <constraint id="9873" firstItem="9864" firstAttribute="height" constant="40"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="9873"/>
+                                    </mask>
+                                </variation>
+                            </textView>
+                        </subviews>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="9574"/>
+                                <exclude reference="9861"/>
+                                <exclude reference="9862"/>
+                                <exclude reference="9863"/>
+                                <exclude reference="9864"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="9575"/>
+                                <exclude reference="9576"/>
+                                <exclude reference="9577"/>
+                                <exclude reference="9578"/>
+                                <exclude reference="9865"/>
+                                <exclude reference="9868"/>
+                                <exclude reference="9869"/>
+                                <exclude reference="9874"/>
+                                <exclude reference="9875"/>
+                                <exclude reference="9876"/>
+                                <exclude reference="9877"/>
+                                <exclude reference="9878"/>
+                                <exclude reference="9879"/>
+                                <exclude reference="9880"/>
+                                <exclude reference="9881"/>
+                                <exclude reference="9882"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="9574"/>
+                                <include reference="9861"/>
+                                <include reference="9862"/>
+                                <include reference="9863"/>
+                                <include reference="9864"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="9575"/>
+                                <include reference="9576"/>
+                                <include reference="9577"/>
+                                <include reference="9578"/>
+                                <include reference="9865"/>
+                                <include reference="9868"/>
+                                <include reference="9869"/>
+                                <include reference="9874"/>
+                                <include reference="9875"/>
+                                <include reference="9876"/>
+                                <include reference="9877"/>
+                                <include reference="9878"/>
+                                <include reference="9879"/>
+                                <include reference="9880"/>
+                                <include reference="9881"/>
+                                <include reference="9882"/>
+                            </mask>
+                        </variation>
+                        <constraints>
+                            <constraint id="9575" firstItem="9537" firstAttribute="bottom" secondItem="9574" secondAttribute="top" constant="44"/>
+                            <constraint id="9576" firstItem="9574" firstAttribute="leading" secondItem="9541" secondAttribute="leading"/>
+                            <constraint id="9577" firstItem="9574" firstAttribute="trailing" secondItem="9541" secondAttribute="trailing"/>
+                            <constraint id="9578" firstItem="9574" firstAttribute="bottom" secondItem="9538" secondAttribute="top"/>
+                            <constraint id="9865" firstItem="9861" firstAttribute="top" secondItem="9537" secondAttribute="bottom" constant="26"/>
+                            <constraint id="9868" firstItem="9861" firstAttribute="leading" secondItem="9541" secondAttribute="leading" constant="20"/>
+                            <constraint id="9869" firstItem="9541" firstAttribute="trailing" secondItem="9861" secondAttribute="trailing" constant="20"/>
+                            <constraint id="9874" firstItem="9862" firstAttribute="leading" secondItem="9541" secondAttribute="leading" constant="40"/>
+                            <constraint id="9875" firstItem="9541" firstAttribute="trailing" secondItem="9862" secondAttribute="trailing" constant="35"/>
+                            <constraint id="9876" firstItem="9862" firstAttribute="top" secondItem="9861" secondAttribute="bottom" constant="10"/>
+                            <constraint id="9877" firstItem="9863" firstAttribute="top" secondItem="9862" secondAttribute="bottom" constant="10"/>
+                            <constraint id="9878" firstItem="9863" firstAttribute="leading" secondItem="9541" secondAttribute="leading" constant="40"/>
+                            <constraint id="9879" firstItem="9541" firstAttribute="trailing" secondItem="9863" secondAttribute="trailing" constant="35"/>
+                            <constraint id="9880" firstItem="9864" firstAttribute="top" secondItem="9863" secondAttribute="bottom" constant="10"/>
+                            <constraint id="9881" firstItem="9864" firstAttribute="leading" secondItem="9541" secondAttribute="leading" constant="40"/>
+                            <constraint id="9882" firstItem="9541" firstAttribute="trailing" secondItem="9864" secondAttribute="trailing" constant="35"/>
+                        </constraints>
+                    </view>
+                    <navigationItem title="About this App" id="9571" key="navigationItem"/>
+                    <connections>
+                        <segue id="9835" destination="6534" kind="presentation" identifier="goToMenu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9542" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1229" y="1310"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers/>
@@ -3601,6 +3799,8 @@
         <image name="selectedGrade.png" width="512" height="512"/>
         <image name="unselectedGrade.png" width="512" height="512"/>
         <image name="bgrRateNavigation.png" width="750" height="1334"/>
+        <image name="navBarBgrImg.png" width="320" height="64"/>
+        <image name="bgrRateNavigationClearBar.png" width="750" height="1334"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedScreenMetrics key="destination" type="retina47"/>

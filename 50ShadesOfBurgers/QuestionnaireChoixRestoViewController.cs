@@ -91,6 +91,8 @@ namespace _50ShadesOfBurgers
 				this.PerformSegue("goToMenu", this);
 			}), true);
 
+			this.NavigationController.NavigationBar.BarTintColor = UIColor.Yellow;
+
 			showNotification = UIKeyboard.Notifications.ObserveWillShow(ShowCallback);
 			hideNotification = UIKeyboard.Notifications.ObserveDidHide(HideCallback);
 

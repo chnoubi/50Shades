@@ -1,22 +1,20 @@
 ﻿<Properties StartupConfiguration="{DF20C9C0-B8C9-48E8-B106-1C6A9F23DA28}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="50ShadesOfBurgers/AboutViewController.cs">
     <Files>
-      <File FileName="50ShadesOfBurgers/QuestionnaireChoixRestoViewController.cs" Line="176" Column="49" />
-      <File FileName="50ShadesOfBurgers/Model/AlertViewModel.cs" Line="23" Column="2" />
+      <File FileName="50ShadesOfBurgers/QuestionnaireChoixRestoViewController.cs" Line="94" Column="4" />
       <File FileName="50ShadesOfBurgers/Model/ListPickerViewModel.cs" Line="85" Column="52" />
       <File FileName="50ShadesOfBurgers/QuestionOneViewController.cs" Line="215" Column="1" />
       <File FileName="50ShadesOfBurgers/Model/Grades.cs" Line="34" Column="23" />
       <File FileName="50ShadesOfBurgers/QuestionFiveEightViewController.cs" Line="180" Column="14" />
-      <File FileName="50ShadesOfBurgers/Model/QuestionPickerViewModel.cs" Line="1" Column="1" />
       <File FileName="50ShadesOfBurgers/CommentsAndConfirmViewController.cs" Line="50" Column="49" />
-      <File FileName="50ShadesOfBurgers/MainMenuViewController.cs" Line="1" Column="1" />
+      <File FileName="50ShadesOfBurgers/MainMenuViewController.cs" Line="26" Column="88" />
       <File FileName="50ShadesOfBurgers/QuestionSixSevenEightViewController.cs" Line="142" Column="86" />
       <File FileName="50ShadesOfBurgers/FirstLoginViewController.cs" Line="65" Column="4" />
-      <File FileName="50ShadesOfBurgers/Model/Reponses.cs" Line="22" Column="54" />
       <File FileName="50ShadesOfBurgers/AppDelegate.cs" Line="1" Column="1" />
-      <File FileName="50ShadesOfBurgers/Model/GooglePlaceApi/TableViewSource/LocationAutoCompleteTableSource.cs" Line="1" Column="1" />
       <File FileName="50ShadesOfBurgers/Top10ViewController.cs" Line="1" Column="1" />
-      <File FileName="50ShadesOfBurgers/Helper Classes/Buttons.cs" Line="1" Column="1" />
+      <File FileName="50ShadesOfBurgers/Top10TableViewController.cs" Line="1" Column="1" />
+      <File FileName="50ShadesOfBurgers/RestoDetailViewController.cs" Line="1" Column="1" />
+      <File FileName="50ShadesOfBurgers/AboutViewController.cs" Line="36" Column="5" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
