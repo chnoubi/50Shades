@@ -11,9 +11,14 @@ namespace _50ShadesOfBurgers.Model
     {
         UILabel lblBurgerName, lblRestoName;
         UIImageView imageView;
+		UIImage bgrImg;
         public CustomTop10Cell (string cellId) : base(UITableViewCellStyle.Default, cellId)
         {
-            SelectionStyle = UITableViewCellSelectionStyle.Gray;
+			bgrImg = UIImage.FromFile("navBarBgrImg.png");
+
+			ContentView.BackgroundColor = UIColor.FromPatternImage(bgrImg);
+
+			SelectionStyle = UITableViewCellSelectionStyle.Gray;
             lblBurgerName = new UILabel()
             {
                 Font = UIFont.FromName("Cochin-BoldItalic", 22f),

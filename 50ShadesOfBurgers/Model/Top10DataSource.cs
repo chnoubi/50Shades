@@ -61,6 +61,7 @@ namespace _50ShadesOfBurgers.Model
             cell.UpdateCell(burgerName, restoName, UIImage.FromFile("images/" + imageGrade));
 
 
+
             return cell;
         }
 

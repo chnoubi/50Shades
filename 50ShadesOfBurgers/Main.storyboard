@@ -613,7 +613,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="9461" translatesAutoresizingMaskIntoConstraints="NO" image="bgrRateNavigation.png">
                                 <rect key="frame" x="65" y="112" width="240" height="128"/>
                                 <variation key="heightClass=regular-widthClass=compact">
-                                    <rect key="frame" x="10" y="65" width="350" height="603"/>
+                                    <rect key="frame" x="0.0" y="65" width="375" height="603"/>
                                 </variation>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Choose a city:" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="3154">
@@ -772,8 +772,6 @@
                             <mask key="constraints">
                                 <exclude reference="9466"/>
                                 <exclude reference="9467"/>
-                                <exclude reference="9468"/>
-                                <exclude reference="9469"/>
                                 <exclude reference="9471"/>
                                 <exclude reference="9472"/>
                                 <exclude reference="9473"/>
@@ -798,6 +796,8 @@
                                 <exclude reference="9496"/>
                                 <exclude reference="9497"/>
                                 <exclude reference="9498"/>
+                                <exclude reference="9889"/>
+                                <exclude reference="9890"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -815,8 +815,6 @@
                             <mask key="constraints">
                                 <include reference="9466"/>
                                 <include reference="9467"/>
-                                <include reference="9468"/>
-                                <include reference="9469"/>
                                 <include reference="9471"/>
                                 <include reference="9472"/>
                                 <include reference="9473"/>
@@ -841,13 +839,13 @@
                                 <include reference="9496"/>
                                 <include reference="9497"/>
                                 <include reference="9498"/>
+                                <include reference="9889"/>
+                                <include reference="9890"/>
                             </mask>
                         </variation>
                         <constraints>
                             <constraint id="9466" firstItem="9461" firstAttribute="top" secondItem="205" secondAttribute="bottom" constant="1"/>
                             <constraint id="9467" firstItem="9461" firstAttribute="bottom" secondItem="206" secondAttribute="top" constant="1"/>
-                            <constraint id="9468" firstItem="9461" firstAttribute="leading" secondItem="220" secondAttribute="leading" constant="10"/>
-                            <constraint id="9469" firstItem="220" firstAttribute="trailing" secondItem="9461" secondAttribute="trailing" constant="15"/>
                             <constraint id="9471" firstItem="220" firstAttribute="trailing" secondItem="3156" secondAttribute="trailing" constant="95"/>
                             <constraint id="9472" firstItem="3156" firstAttribute="leading" secondItem="220" secondAttribute="leading" constant="95"/>
                             <constraint id="9473" firstItem="206" firstAttribute="top" secondItem="3156" secondAttribute="bottom" constant="37"/>
@@ -872,6 +870,8 @@
                             <constraint id="9496" firstItem="4106" firstAttribute="top" secondItem="3153" secondAttribute="bottom" constant="30"/>
                             <constraint id="9497" firstItem="4106" firstAttribute="leading" secondItem="220" secondAttribute="leading" constant="95"/>
                             <constraint id="9498" firstItem="220" firstAttribute="trailing" secondItem="4106" secondAttribute="trailing" constant="95"/>
+                            <constraint id="9889" firstItem="9461" firstAttribute="trailing" secondItem="220" secondAttribute="trailing"/>
+                            <constraint id="9890" firstItem="9461" firstAttribute="leading" secondItem="220" secondAttribute="leading"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" id="221" title="Top 10" image="cup.png"/>
@@ -2240,6 +2240,7 @@
                                     </variation>
                                 </tableViewCellContentView>
                                 <connections/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0" green="1" blue="1" alpha="1"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
