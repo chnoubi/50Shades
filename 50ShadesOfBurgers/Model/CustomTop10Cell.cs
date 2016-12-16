@@ -14,9 +14,10 @@ namespace _50ShadesOfBurgers.Model
 		UIImage bgrImg;
         public CustomTop10Cell (string cellId) : base(UITableViewCellStyle.Default, cellId)
         {
-			bgrImg = UIImage.FromFile("navBarBgrImg.png");
+			//TO DO CHANGE BGR IMG TO MATCH STYLE
+			bgrImg = UIImage.FromFile("woodTexture.png");
 
-			ContentView.BackgroundColor = UIColor.FromPatternImage(bgrImg);
+			//ContentView.BackgroundColor = UIColor.FromPatternImage(bgrImg);
 
 			SelectionStyle = UITableViewCellSelectionStyle.Gray;
             lblBurgerName = new UILabel()

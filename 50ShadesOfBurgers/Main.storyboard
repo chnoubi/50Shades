@@ -676,7 +676,7 @@
                                     <color key="titleColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
                                 </state>
                                 <variation key="heightClass=regular-widthClass=compact">
-                                    <rect key="frame" x="95" y="180" width="185" height="40"/>
+                                    <rect key="frame" x="95" y="179" width="185" height="40"/>
                                     <mask key="constraints">
                                         <include reference="9499"/>
                                     </mask>
@@ -700,7 +700,7 @@
                                 <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact">
-                                    <rect key="frame" x="95" y="260" width="185" height="20"/>
+                                    <rect key="frame" x="95" y="260.5" width="185" height="20"/>
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4164">
@@ -711,7 +711,7 @@
                                     <color key="titleColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
                                 </state>
                                 <variation key="heightClass=regular-widthClass=compact">
-                                    <rect key="frame" x="95" y="380" width="185" height="40"/>
+                                    <rect key="frame" x="95" y="380.5" width="185" height="40"/>
                                     <mask key="constraints">
                                         <include reference="9489"/>
                                     </mask>
@@ -731,7 +731,7 @@
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4167">
                                 <rect key="frame" x="0.0" y="111" width="320" height="162"/>
                                 <variation key="heightClass=regular-widthClass=compact">
-                                    <rect key="frame" x="70" y="280" width="235" height="100"/>
+                                    <rect key="frame" x="70" y="280.5" width="235" height="100"/>
                                     <mask key="constraints">
                                         <include reference="9485"/>
                                     </mask>
@@ -752,7 +752,7 @@
                                 <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact">
-                                    <rect key="frame" x="35" y="110" width="305" height="40"/>
+                                    <rect key="frame" x="35" y="110" width="305" height="39"/>
                                 </variation>
                             </label>
                         </subviews>
@@ -2278,115 +2278,91 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Nom du Resto" lineBreakMode="tailTruncation" minimumFontSize="10" id="4382" translatesAutoresizingMaskIntoConstraints="NO" textAlignment="center">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="9918" translatesAutoresizingMaskIntoConstraints="NO" image="bgrRateNavigationClearBar.png">
+                                <rect key="frame" x="83" y="219" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Resto Name" lineBreakMode="tailTruncation" minimumFontSize="10" id="4382" translatesAutoresizingMaskIntoConstraints="NO" textAlignment="center">
                                 <rect key="frame" x="131" y="212" width="42" height="21"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="ChalkboardbyMartavanEck" family="Chalkboard by Marta van Eck" pointSize="37"/>
+                                <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact">
-                                    <rect key="frame" x="0.0" y="70" width="375" height="20"/>
-                                    <mask key="constraints">
-                                        <include reference="6472"/>
-                                    </mask>
-                                </variation>
-                                <constraints>
-                                    <constraint id="6472" firstItem="4382" firstAttribute="height" constant="20"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="6472"/>
-                                    </mask>
+                                    <rect key="frame" x="35" y="110" width="305" height="39"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Adresse:" lineBreakMode="tailTruncation" minimumFontSize="10" id="4495" translatesAutoresizingMaskIntoConstraints="NO">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Address:" lineBreakMode="tailTruncation" minimumFontSize="10" id="4495" translatesAutoresizingMaskIntoConstraints="NO">
                                 <rect key="frame" x="20" y="124" width="42" height="21"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="ChalkboardbyMartavanEck" family="Chalkboard by Marta van Eck" pointSize="25"/>
+                                <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact">
-                                    <rect key="frame" x="20" y="110" width="155" height="20"/>
-                                    <mask key="constraints">
-                                        <include reference="6480"/>
-                                    </mask>
-                                </variation>
-                                <constraints>
-                                    <constraint id="6480" firstItem="4495" firstAttribute="height" constant="20"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="6480"/>
-                                    </mask>
+                                    <rect key="frame" x="20" y="169" width="155" height="26.5"/>
                                 </variation>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Adresse du Resto" lineBreakMode="tailTruncation" minimumFontSize="10" id="4496" translatesAutoresizingMaskIntoConstraints="NO">
                                 <rect key="frame" x="20" y="152" width="42" height="21"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="ChalkboardbyMartavanEck" family="Chalkboard by Marta van Eck" pointSize="17"/>
+                                <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact">
-                                    <rect key="frame" x="20" y="140" width="335" height="20"/>
+                                    <rect key="frame" x="20" y="215" width="335" height="20"/>
                                     <mask key="constraints">
-                                        <include reference="6484"/>
+                                        <include reference="9938"/>
+                                        <include reference="9939"/>
                                     </mask>
                                 </variation>
                                 <constraints>
-                                    <constraint id="6484" firstItem="4496" firstAttribute="height" constant="20"/>
+                                    <constraint id="9938" firstItem="4496" firstAttribute="width" constant="335"/>
+                                    <constraint id="9939" firstItem="4496" firstAttribute="height" constant="20"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="6484"/>
+                                        <exclude reference="9938"/>
+                                        <exclude reference="9939"/>
                                     </mask>
                                 </variation>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Tel:" lineBreakMode="tailTruncation" minimumFontSize="10" id="4497" translatesAutoresizingMaskIntoConstraints="NO">
                                 <rect key="frame" x="20" y="124" width="42" height="21"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="ChalkboardbyMartavanEck" family="Chalkboard by Marta van Eck" pointSize="25"/>
+                                <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <rect key="frame" x="20" y="190" width="50" height="20"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="20" y="270" width="50" height="30"/>
                                     <mask key="constraints">
-                                        <include reference="6488"/>
+                                        <include reference="9996"/>
                                     </mask>
                                 </variation>
                                 <constraints>
-                                    <constraint id="6488" firstItem="4497" firstAttribute="height" constant="20"/>
+                                    <constraint id="9996" firstItem="4497" firstAttribute="width" constant="50"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="6488"/>
+                                        <exclude reference="9996"/>
                                     </mask>
                                 </variation>
                             </label>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="4498" translatesAutoresizingMaskIntoConstraints="NO">
                                 <rect key="frame" x="0.0" y="284" width="160" height="240"/>
                                 <variation key="heightClass=regular-widthClass=compact">
-                                    <rect key="frame" x="0.0" y="256" width="375" height="367"/>
+                                    <rect key="frame" x="20" y="318" width="335" height="319"/>
                                 </variation>
                             </mapView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Tel du Resto" lineBreakMode="tailTruncation" minimumFontSize="10" id="4499" translatesAutoresizingMaskIntoConstraints="NO">
                                 <rect key="frame" x="59" y="204" width="42" height="21"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="ChalkboardbyMartavanEck" family="Chalkboard by Marta van Eck" pointSize="17"/>
+                                <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <rect key="frame" x="60" y="190" width="195" height="21"/>
-                                    <mask key="constraints">
-                                        <include reference="6492"/>
-                                    </mask>
-                                </variation>
-                                <constraints>
-                                    <constraint id="6492" firstItem="4499" firstAttribute="height" constant="21"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="6492"/>
-                                    </mask>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="78" y="273" width="222" height="30"/>
                                 </variation>
                             </label>
                         </subviews>
@@ -2398,27 +2374,30 @@
                                 <exclude reference="4497"/>
                                 <exclude reference="4498"/>
                                 <exclude reference="4499"/>
+                                <exclude reference="9918"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="6473"/>
-                                <exclude reference="6474"/>
-                                <exclude reference="6475"/>
-                                <exclude reference="6481"/>
-                                <exclude reference="6482"/>
-                                <exclude reference="6483"/>
-                                <exclude reference="6485"/>
-                                <exclude reference="6486"/>
-                                <exclude reference="6487"/>
-                                <exclude reference="6489"/>
-                                <exclude reference="6490"/>
-                                <exclude reference="6493"/>
-                                <exclude reference="6494"/>
-                                <exclude reference="6498"/>
-                                <exclude reference="6499"/>
-                                <exclude reference="6500"/>
-                                <exclude reference="6501"/>
-                                <exclude reference="6502"/>
-                                <exclude reference="6503"/>
+                                <exclude reference="9925"/>
+                                <exclude reference="9926"/>
+                                <exclude reference="9927"/>
+                                <exclude reference="9928"/>
+                                <exclude reference="9929"/>
+                                <exclude reference="9930"/>
+                                <exclude reference="9931"/>
+                                <exclude reference="9933"/>
+                                <exclude reference="9934"/>
+                                <exclude reference="9935"/>
+                                <exclude reference="9936"/>
+                                <exclude reference="9941"/>
+                                <exclude reference="9955"/>
+                                <exclude reference="9956"/>
+                                <exclude reference="9971"/>
+                                <exclude reference="9973"/>
+                                <exclude reference="9974"/>
+                                <exclude reference="9975"/>
+                                <exclude reference="9983"/>
+                                <exclude reference="9987"/>
+                                <exclude reference="9989"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -2429,49 +2408,56 @@
                                 <include reference="4497"/>
                                 <include reference="4498"/>
                                 <include reference="4499"/>
+                                <include reference="9918"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="6473"/>
-                                <include reference="6474"/>
-                                <include reference="6475"/>
-                                <include reference="6481"/>
-                                <include reference="6482"/>
-                                <include reference="6483"/>
-                                <include reference="6485"/>
-                                <include reference="6486"/>
-                                <include reference="6487"/>
-                                <include reference="6489"/>
-                                <include reference="6490"/>
-                                <include reference="6493"/>
-                                <include reference="6494"/>
-                                <include reference="6498"/>
-                                <include reference="6499"/>
-                                <include reference="6500"/>
-                                <include reference="6501"/>
-                                <include reference="6502"/>
-                                <include reference="6503"/>
+                                <include reference="9925"/>
+                                <include reference="9926"/>
+                                <include reference="9927"/>
+                                <include reference="9928"/>
+                                <include reference="9929"/>
+                                <include reference="9930"/>
+                                <include reference="9931"/>
+                                <include reference="9933"/>
+                                <include reference="9934"/>
+                                <include reference="9935"/>
+                                <include reference="9936"/>
+                                <include reference="9941"/>
+                                <include reference="9955"/>
+                                <include reference="9956"/>
+                                <include reference="9971"/>
+                                <include reference="9973"/>
+                                <include reference="9974"/>
+                                <include reference="9975"/>
+                                <include reference="9983"/>
+                                <include reference="9987"/>
+                                <include reference="9989"/>
                             </mask>
                         </variation>
                         <constraints>
-                            <constraint id="6473" firstItem="4382" firstAttribute="trailing" secondItem="4301" secondAttribute="trailing"/>
-                            <constraint id="6474" firstItem="4382" firstAttribute="leading" secondItem="4301" secondAttribute="leading"/>
-                            <constraint id="6475" firstItem="4382" firstAttribute="top" secondItem="4301" secondAttribute="top" constant="70"/>
-                            <constraint id="6481" firstItem="4495" firstAttribute="top" secondItem="4382" secondAttribute="bottom" constant="20"/>
-                            <constraint id="6482" firstItem="4495" firstAttribute="leading" secondItem="4301" secondAttribute="leading" constant="20"/>
-                            <constraint id="6483" firstItem="4301" firstAttribute="trailing" secondItem="4495" secondAttribute="trailing" constant="200"/>
-                            <constraint id="6485" firstItem="4496" firstAttribute="leading" secondItem="4301" secondAttribute="leading" constant="20"/>
-                            <constraint id="6486" firstItem="4301" firstAttribute="trailing" secondItem="4496" secondAttribute="trailing" constant="20"/>
-                            <constraint id="6487" firstItem="4496" firstAttribute="top" secondItem="4495" secondAttribute="bottom" constant="10"/>
-                            <constraint id="6489" firstItem="4497" firstAttribute="leading" secondItem="4301" secondAttribute="leading" constant="20"/>
-                            <constraint id="6490" firstItem="4497" firstAttribute="top" secondItem="4496" secondAttribute="bottom" constant="30"/>
-                            <constraint id="6493" firstItem="4499" firstAttribute="top" secondItem="4496" secondAttribute="bottom" constant="30"/>
-                            <constraint id="6494" firstItem="4301" firstAttribute="trailing" secondItem="4499" secondAttribute="trailing" constant="120"/>
-                            <constraint id="6498" firstItem="4497" firstAttribute="trailing" secondItem="4499" secondAttribute="leading" constant="10"/>
-                            <constraint id="6499" firstItem="4499" firstAttribute="leading" secondItem="4497" secondAttribute="centerX" constant="15"/>
-                            <constraint id="6500" firstItem="4498" firstAttribute="trailing" secondItem="4301" secondAttribute="trailing"/>
-                            <constraint id="6501" firstItem="4498" firstAttribute="leading" secondItem="4301" secondAttribute="leading"/>
-                            <constraint id="6502" firstItem="4301" firstAttribute="bottom" secondItem="4498" secondAttribute="bottom" constant="44"/>
-                            <constraint id="6503" firstItem="4498" firstAttribute="centerY" secondItem="4301" secondAttribute="centerY" constant="106"/>
+                            <constraint id="9925" firstItem="4382" firstAttribute="top" secondItem="4297" secondAttribute="bottom" constant="46"/>
+                            <constraint id="9926" firstItem="4382" firstAttribute="leading" secondItem="4301" secondAttribute="leading" constant="35"/>
+                            <constraint id="9927" firstItem="4301" firstAttribute="trailing" secondItem="4382" secondAttribute="trailing" constant="35"/>
+                            <constraint id="9928" firstItem="4495" firstAttribute="top" secondItem="4382" secondAttribute="bottom" constant="20"/>
+                            <constraint id="9929" firstItem="4495" firstAttribute="leading" secondItem="4301" secondAttribute="leading" constant="20"/>
+                            <constraint id="9930" firstItem="4301" firstAttribute="trailing" secondItem="4495" secondAttribute="trailing" constant="200"/>
+                            <constraint id="9931" firstItem="4496" firstAttribute="leading" secondItem="4301" secondAttribute="leading" constant="20"/>
+                            <constraint id="9933" firstItem="4496" firstAttribute="top" secondItem="4495" secondAttribute="bottom" constant="20"/>
+                            <constraint id="9934" firstItem="4497" firstAttribute="top" secondItem="4496" secondAttribute="bottom" constant="35"/>
+                            <constraint id="9935" firstItem="4497" firstAttribute="leading" secondItem="4301" secondAttribute="leading" constant="20"/>
+                            <constraint id="9936" firstItem="4499" firstAttribute="leading" secondItem="4497" secondAttribute="trailing" constant="8"/>
+                            <constraint id="9941" firstItem="4499" firstAttribute="top" secondItem="4496" secondAttribute="bottom" constant="35">
+                                <variation key="heightClass=regular-widthClass=compact" constant="38"/>
+                            </constraint>
+                            <constraint id="9955" firstItem="4498" firstAttribute="leading" secondItem="4301" secondAttribute="leading" constant="20"/>
+                            <constraint id="9956" firstItem="4301" firstAttribute="trailing" secondItem="4498" secondAttribute="trailing" constant="20"/>
+                            <constraint id="9971" firstItem="9918" firstAttribute="trailing" secondItem="4301" secondAttribute="trailing"/>
+                            <constraint id="9973" firstItem="9918" firstAttribute="leading" secondItem="4301" secondAttribute="leading"/>
+                            <constraint id="9974" firstItem="4297" firstAttribute="bottom" secondItem="9918" secondAttribute="top" constant="44"/>
+                            <constraint id="9975" firstItem="9918" firstAttribute="bottom" secondItem="4298" secondAttribute="top"/>
+                            <constraint id="9983" firstItem="4301" firstAttribute="trailing" secondItem="4499" secondAttribute="trailing" constant="75"/>
+                            <constraint id="9987" firstItem="4298" firstAttribute="top" secondItem="4498" secondAttribute="bottom" constant="30"/>
+                            <constraint id="9989" firstItem="4498" firstAttribute="centerY" secondItem="4301" secondAttribute="centerY" constant="144"/>
                         </constraints>
                     </view>
                     <connections>
@@ -2479,11 +2465,13 @@
                         <outlet property="lblRestoAdresse" destination="4496" id="name-outlet-4496"/>
                         <outlet property="mapViewResto" destination="4498" id="name-outlet-4498"/>
                         <outlet property="lblRestoTel" destination="4499" id="name-outlet-4499"/>
+                        <outlet property="lblAddress" destination="4495" id="name-outlet-4495"/>
+                        <outlet property="lblTel" destination="4497" id="name-outlet-4497"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4302" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2225" y="-144"/>
+            <point key="canvasLocation" x="2165" y="-172"/>
         </scene>
         <scene sceneID="5227">
             <objects>
@@ -3562,7 +3550,7 @@
             <objects>
                 <navigationController id="9531" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="9533">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -3581,7 +3569,7 @@
                         <viewControllerLayoutGuide type="bottom" id="9538"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="9541">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <subviews>
@@ -3802,6 +3790,7 @@
         <image name="bgrRateNavigation.png" width="750" height="1334"/>
         <image name="navBarBgrImg.png" width="320" height="64"/>
         <image name="bgrRateNavigationClearBar.png" width="750" height="1334"/>
+        <image name="woodTexture.png" width="375" height="60"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedScreenMetrics key="destination" type="retina47"/>

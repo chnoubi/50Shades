@@ -14,7 +14,7 @@ namespace _50ShadesOfBurgers
 	{
         public List<BurgerTableModel> burgers;
         LoadingOverlay loadingOverlay;
-        public int restoId;
+		public string restoGoogleId;
         public String Choice { get; set; }
         public String Name { get; set; }
 		public Top10TableViewController (IntPtr handle) : base (handle)
@@ -84,7 +84,7 @@ namespace _50ShadesOfBurgers
             if (segue.Identifier == "goToRestoDetail")
             {
                 var restoDetailVC = segue.DestinationViewController as RestoDetailViewController;
-                restoDetailVC.restoId = restoId;
+                restoDetailVC.restoGoogleId = restoGoogleId;
             }
             
 

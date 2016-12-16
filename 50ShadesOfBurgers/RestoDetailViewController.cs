@@ -6,23 +6,43 @@ using System.CodeDom.Compiler;
 using System.Net;
 using System.Text;
 using UIKit;
+using Google.Maps;
+using CoreGraphics;
+using System.Threading.Tasks;
 
 namespace _50ShadesOfBurgers
 {
 	partial class RestoDetailViewController : UIViewController
 	{
-        public int restoId { get; set; }
-        public Resto resto;
+		public string restoGoogleId { get; set; }
+		string strPlaceQuery;
+		public PlaceDetailsClass resto;
         LoadingOverlay loadingOverlay;
 		public RestoDetailViewController (IntPtr handle) : base (handle)
 		{
 		}
 
-        public override void ViewWillAppear(bool animated)
+		public override void ViewDidLoad()
+		{
+			base.ViewDidLoad();
+
+		}
+
+		void buildUrlString()
+		{
+			StringBuilder builderUrl = new StringBuilder(Constants.strPlacesRequestUrl);
+			builderUrl.Append("?placeid={0}").Append("&key=").Append(Constants.strGooglePlaceAPIKey);
+			strPlaceQuery = builderUrl.ToString();
+			builderUrl.Clear();
+			builderUrl = null;
+		}
+
+		public override void ViewWillAppear(bool animated)
         {
             base.ViewWillAppear(animated);
-            resto = new Resto();
-            getResto(restoId);
+            buildUrlString();
+			resto = new PlaceDetailsClass();
+			getResto(restoGoogleId);
 
             var bounds = UIScreen.MainScreen.Bounds;
             loadingOverlay = new LoadingOverlay(bounds,"Getting Details...");
@@ -34,25 +54,18 @@ namespace _50ShadesOfBurgers
         public override void ViewDidAppear(bool animated)
         {
             base.ViewDidAppear(animated);
-            lblRestoName.Text = resto.RestoName;
-            lblRestoAdresse.Text = resto.RestoCity + " " + resto.RestoCountry;
-            lblRestoTel.Text = "+ 32 (2) 222.34.45";
+			lblRestoName.Text = resto.result.name;
+			lblRestoAdresse.Text = resto.result.formatted_address;
+			lblRestoTel.Text = resto.result.international_phone_number;
         }
 
-        public void getResto(int restoId)
-        {
 
-            var webClient = new WebClient();
-            webClient.Encoding = Encoding.UTF8;
-            webClient.Headers[HttpRequestHeader.ContentType] = "application/x-www-form-urlencoded";
 
-            webClient.UploadStringCompleted += (s, e) => InvokeOnMainThread(() =>
-            {
-                var json = e.Result;
-                resto = JsonConvert.DeserializeObject<Resto>(json);
-            });
-
-            webClient.UploadStringAsync(new Uri("http://dtsl.ehb.be/~ronald.hollander/pma/php/getRestoDetail.php"), String.Format("restoId={0}", restoId));
-        }
-    }
+		public async Task<PlaceDetailsClass> getResto(string restoId)
+		{
+			string strFullURL = string.Format(strPlaceQuery,restoId);
+			resto = await RestRequestClass.PlaceDetails(strFullURL);
+			return resto;
+		}
+	}
 }

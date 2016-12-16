@@ -38,6 +38,17 @@ namespace _50ShadesOfBurgers
 			return objLocationPredictClass;
 		}
 
+		internal static async Task<PlaceDetailsClass> PlaceDetails (string strFullURL)
+		{
+			PlaceDetailsClass objPlaceDetails = null;
+			string strResult = await CallService(strFullURL);
+			if (strResult != "Exception")
+			{
+				objPlaceDetails = JsonConvert.DeserializeObject<PlaceDetailsClass>(strResult);
+			}
+			return objPlaceDetails;
+		}
+
 	}
 }
 

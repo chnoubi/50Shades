@@ -10,7 +10,7 @@ namespace _50ShadesOfBurgers.Model
 
         public String BurgerName { get; set; }
 
-        public int RestoId { get; set; }
+        public String RestoGoogleId { get; set; }
 
         public String RestoName { get; set; }
 

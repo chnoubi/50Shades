@@ -188,6 +188,7 @@
     <Compile Include="AboutViewController.designer.cs">
       <DependentUpon>AboutViewController.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\GooglePlaceApi\PlaceDetailsClass.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Database\SQLite.cs" />
@@ -202,6 +203,9 @@
     <Reference Include="Xamarin.iOS" />
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Maps">
+      <HintPath>..\..\..\Downloads\googleiosmaps-2.1.0.0\lib\ios-unified\Google.Maps.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -260,6 +264,7 @@
     <BundleResource Include="Resources\bgrRateNavigation.png" />
     <BundleResource Include="Resources\navBarBgrImg.png" />
     <BundleResource Include="Resources\bgrRateNavigationClearBar.png" />
+    <BundleResource Include="Resources\woodTexture.png" />
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\burger-iPhone-Icon.png">

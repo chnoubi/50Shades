@@ -67,7 +67,7 @@ namespace _50ShadesOfBurgers.Model
 
         public override void RowSelected(UITableView tableView, NSIndexPath indexPath)
         {
-            controller.restoId = Burgers[indexPath.Row].RestoId;
+            controller.restoGoogleId = Burgers[indexPath.Row].RestoGoogleId;
             controller.PerformSegue("goToRestoDetail", this);
 
             

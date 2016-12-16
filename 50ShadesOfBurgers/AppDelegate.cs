@@ -7,6 +7,8 @@ using System.Collections.Generic;
 using System.Net;
 using System.Text;
 using UIKit;
+using Google.Maps;
+
 
 namespace _50ShadesOfBurgers
 {
@@ -17,7 +19,6 @@ namespace _50ShadesOfBurgers
     public class AppDelegate : UIApplicationDelegate
     {
         // class-level declarations
-
         //this storyboard
         UIStoryboard storyBoard = UIStoryboard.FromName("Main", null);
         public User user { get; set; }
@@ -55,7 +56,7 @@ namespace _50ShadesOfBurgers
             else
             {
 
-                Window = new UIWindow(UIScreen.MainScreen.Bounds);
+				Window = new UIWindow(UIScreen.MainScreen.Bounds);
                 connection = new Connections();
 
                 user = connection.getUser();

@@ -16,6 +16,10 @@ namespace _50ShadesOfBurgers
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel lblAddress { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UILabel lblRestoAdresse { get; set; }
 
         [Outlet]
@@ -28,10 +32,19 @@ namespace _50ShadesOfBurgers
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel lblTel { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         MapKit.MKMapView mapViewResto { get; set; }
 
         void ReleaseDesignerOutlets ()
         {
+            if (lblAddress != null) {
+                lblAddress.Dispose ();
+                lblAddress = null;
+            }
+
             if (lblRestoAdresse != null) {
                 lblRestoAdresse.Dispose ();
                 lblRestoAdresse = null;
@@ -45,6 +58,11 @@ namespace _50ShadesOfBurgers
             if (lblRestoTel != null) {
                 lblRestoTel.Dispose ();
                 lblRestoTel = null;
+            }
+
+            if (lblTel != null) {
+                lblTel.Dispose ();
+                lblTel = null;
             }
 
             if (mapViewResto != null) {
