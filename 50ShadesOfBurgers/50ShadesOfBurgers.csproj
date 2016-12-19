@@ -189,6 +189,7 @@
       <DependentUpon>AboutViewController.cs</DependentUpon>
     </Compile>
     <Compile Include="Model\GooglePlaceApi\PlaceDetailsClass.cs" />
+    <Compile Include="Model\BurgerPlacesAnnotation.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Database\SQLite.cs" />

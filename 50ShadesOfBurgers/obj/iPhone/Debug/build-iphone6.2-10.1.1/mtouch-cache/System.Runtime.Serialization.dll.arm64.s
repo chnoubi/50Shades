@@ -21,7 +21,7 @@ Ldebug_info_begin:
 	.short 2
 	.long 0
 	.byte 8,1
-	.asciz "Mono AOT Compiler 4.6.2 (tarball Tue Nov  1 20:38:16 EDT 2016)"
+	.asciz "Mono AOT Compiler 4.6.2 (tarball Mon Dec 12 22:24:30 EST 2016)"
 	.asciz "System.Runtime.Serialization.dll"
 	.asciz ""
 
@@ -132,7 +132,7 @@ LDIFF_SYM3=ut_end - ut_0
 	.align 4
 	.no_dead_strip System_Runtime_Serialization_KeyValue_2_K_REF_V_REF_get_Key
 System_Runtime_Serialization_KeyValue_2_K_REF_V_REF_get_Key:
-.file 1 "/Users/builder/data/lanes/3969/44931ae8/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/System.Runtime.Serialization/System/Runtime/Serialization/CollectionDataContract.cs"
+.file 1 "/Users/builder/data/lanes/3988/e02d2723/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/System.Runtime.Serialization/System/Runtime/Serialization/CollectionDataContract.cs"
 .loc 1 41 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -218,7 +218,7 @@ Lme_3:
 	.align 4
 	.no_dead_strip System_Runtime_Serialization_DataContractAttribute__ctor
 System_Runtime_Serialization_DataContractAttribute__ctor:
-.file 2 "/Users/builder/data/lanes/3969/44931ae8/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/System.Runtime.Serialization/System/Runtime/Serialization/DataContractAttribute.cs"
+.file 2 "/Users/builder/data/lanes/3988/e02d2723/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/System.Runtime.Serialization/System/Runtime/Serialization/DataContractAttribute.cs"
 .loc 2 17 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -295,7 +295,7 @@ Lme_7:
 	.align 4
 	.no_dead_strip System_Runtime_Serialization_DataMemberAttribute__ctor
 System_Runtime_Serialization_DataMemberAttribute__ctor:
-.file 3 "/Users/builder/data/lanes/3969/44931ae8/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/System.Runtime.Serialization/System/Runtime/Serialization/DataMemberAttribute.cs"
+.file 3 "/Users/builder/data/lanes/3988/e02d2723/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/System.Runtime.Serialization/System/Runtime/Serialization/DataMemberAttribute.cs"
 .loc 3 12 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -421,7 +421,7 @@ b System_Runtime_Serialization_DateTimeOffsetAdapter_get_UtcDateTime
 	.align 4
 	.no_dead_strip System_Runtime_Serialization_DateTimeOffsetAdapter_get_UtcDateTime
 System_Runtime_Serialization_DateTimeOffsetAdapter_get_UtcDateTime:
-.file 4 "/Users/builder/data/lanes/3969/44931ae8/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/System.Runtime.Serialization/System/Runtime/Serialization/DateTimeOffsetAdapter.cs"
+.file 4 "/Users/builder/data/lanes/3988/e02d2723/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/System.Runtime.Serialization/System/Runtime/Serialization/DateTimeOffsetAdapter.cs"
 .loc 4 30 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
@@ -500,7 +500,7 @@ Lme_12:
 	.align 4
 	.no_dead_strip System_Runtime_Serialization_EnumMemberAttribute_get_Value
 System_Runtime_Serialization_EnumMemberAttribute_get_Value:
-.file 5 "/Users/builder/data/lanes/3969/44931ae8/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/System.Runtime.Serialization/System/Runtime/Serialization/EnumMemberAttribute.cs"
+.file 5 "/Users/builder/data/lanes/3988/e02d2723/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/System.Runtime.Serialization/System/Runtime/Serialization/EnumMemberAttribute.cs"
 .loc 5 19 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -516,7 +516,7 @@ Lme_13:
 	.align 4
 	.no_dead_strip System_Runtime_Serialization_KnownTypeAttribute__ctor_System_Type
 System_Runtime_Serialization_KnownTypeAttribute__ctor_System_Type:
-.file 6 "/Users/builder/data/lanes/3969/44931ae8/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/System.Runtime.Serialization/System/Runtime/Serialization/KnownTypeAttribute.cs"
+.file 6 "/Users/builder/data/lanes/3988/e02d2723/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/System.Runtime.Serialization/System/Runtime/Serialization/KnownTypeAttribute.cs"
 .loc 6 20 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -1005,7 +1005,7 @@ _mono_aot_file_info:
 	.long 56,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 215,200,203,178,162,132,120,62,236,193,62,7,165,218,144,89
+	.byte 1,65,118,71,115,66,211,250,16,233,254,85,19,180,102,149
 	.globl _mono_aot_module_System_Runtime_Serialization_info
 	.align 3
 _mono_aot_module_System_Runtime_Serialization_info:

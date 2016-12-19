@@ -40,3 +40,7 @@
 /Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/obj/iPhone/Debug/build-iphone6.2-10.1.1/optimized/bgrRateNavigation.png
 /Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/obj/iPhone/Debug/build-iphone6.2-10.1.1/optimized/Entitlements.plist
 /Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/obj/iPhone/Debug/build-iphone6.2-10.1.1/optimized/
+/Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/obj/iPhone/Debug/build-iphone6.2-10.1.1/optimized/navBarBgrImg.png
+/Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/obj/iPhone/Debug/build-iphone6.2-10.1.1/optimized/bgrRateNavigationClearBar.png
+/Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/obj/iPhone/Debug/build-iphone6.2-10.1.1/optimized/woodTexture.png
+/Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/bin/iPhone/Debug/Google.Maps.dll

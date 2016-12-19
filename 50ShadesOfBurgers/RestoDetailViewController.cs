@@ -9,6 +9,8 @@ using UIKit;
 using Google.Maps;
 using CoreGraphics;
 using System.Threading.Tasks;
+using MapKit;
+using CoreLocation;
 
 namespace _50ShadesOfBurgers
 {
@@ -57,6 +59,15 @@ namespace _50ShadesOfBurgers
 			lblRestoName.Text = resto.result.name;
 			lblRestoAdresse.Text = resto.result.formatted_address;
 			lblRestoTel.Text = resto.result.international_phone_number;
+
+			var restoCoords = new CLLocationCoordinate2D(resto.result.geometry.location.lat, resto.result.geometry.location.lng);
+
+			var annotation = new BurgerPlacesAnnotation(restoCoords, resto.result.name);
+			mapViewResto.AddAnnotation(annotation);
+
+			MKCoordinateSpan span = new MKCoordinateSpan(KilometresToLatitudeDegrees(2), KilometresToLongitudeDegrees(2, restoCoords.Latitude));
+			mapViewResto.Region = new MKCoordinateRegion(restoCoords, span);
+
         }
 
 
@@ -66,6 +77,25 @@ namespace _50ShadesOfBurgers
 			string strFullURL = string.Format(strPlaceQuery,restoId);
 			resto = await RestRequestClass.PlaceDetails(strFullURL);
 			return resto;
+		}
+
+		// <summary>Converts kilometres to latitude degrees</summary>
+		public double KilometresToLatitudeDegrees(double kms)
+		{
+			double earthRadius = 6371.0; // in kms
+			double radiansToDegrees = 180.0 / Math.PI;
+			return (kms / earthRadius) * radiansToDegrees;
+		}
+			                                             
+		// <summary>Converts kilometres to longitudinal degrees at a specified latitude</summary>
+		public double KilometresToLongitudeDegrees(double kms, double atLatitude)
+		{
+			double earthRadius = 6371.0; // in kms
+			double degreesToRadians = Math.PI / 180.0;
+			double radiansToDegrees = 180.0 / Math.PI;
+			// derive the earth's radius at that point in latitude
+			double radiusAtLatitude = earthRadius * Math.Cos(atLatitude * degreesToRadians);
+			return (kms / radiusAtLatitude) * radiansToDegrees;
 		}
 	}
 }

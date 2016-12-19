@@ -21,7 +21,7 @@ Ldebug_info_begin:
 	.short 2
 	.long 0
 	.byte 8,1
-	.asciz "Mono AOT Compiler 4.6.2 (tarball Tue Nov  1 20:38:16 EDT 2016)"
+	.asciz "Mono AOT Compiler 4.6.2 (tarball Mon Dec 12 22:24:30 EST 2016)"
 	.asciz "Microsoft.CSharp.dll"
 	.asciz ""
 
@@ -121,7 +121,7 @@ jit_code_start:
 	.align 4
 	.no_dead_strip Microsoft_CSharp_RuntimeBinder_Binder_GetMember_Microsoft_CSharp_RuntimeBinder_CSharpBinderFlags_string_System_Type_System_Collections_Generic_IEnumerable_1_Microsoft_CSharp_RuntimeBinder_CSharpArgumentInfo
 Microsoft_CSharp_RuntimeBinder_Binder_GetMember_Microsoft_CSharp_RuntimeBinder_CSharpBinderFlags_string_System_Type_System_Collections_Generic_IEnumerable_1_Microsoft_CSharp_RuntimeBinder_CSharpArgumentInfo:
-.file 1 "/Users/builder/data/lanes/3969/44931ae8/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/Microsoft.CSharp/Microsoft.CSharp.RuntimeBinder/Binder.cs"
+.file 1 "/Users/builder/data/lanes/3988/e02d2723/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/Microsoft.CSharp/Microsoft.CSharp.RuntimeBinder/Binder.cs"
 .loc 1 57 0 prologue_end
 .word 0xa9bc7bfd
 .word 0x910003fd
@@ -177,7 +177,7 @@ Lme_1:
 	.align 4
 	.no_dead_strip Microsoft_CSharp_RuntimeBinder_CSharpArgumentInfo__ctor_Microsoft_CSharp_RuntimeBinder_CSharpArgumentInfoFlags_string
 Microsoft_CSharp_RuntimeBinder_CSharpArgumentInfo__ctor_Microsoft_CSharp_RuntimeBinder_CSharpArgumentInfoFlags_string:
-.file 2 "/Users/builder/data/lanes/3969/44931ae8/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/Microsoft.CSharp/Microsoft.CSharp.RuntimeBinder/CSharpArgumentInfo.cs"
+.file 2 "/Users/builder/data/lanes/3988/e02d2723/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/Microsoft.CSharp/Microsoft.CSharp.RuntimeBinder/CSharpArgumentInfo.cs"
 .loc 2 44 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
@@ -241,7 +241,7 @@ Lme_4:
 	.align 4
 	.no_dead_strip Microsoft_CSharp_RuntimeBinder_CSharpGetMemberBinder__ctor_string_System_Type_System_Collections_Generic_IEnumerable_1_Microsoft_CSharp_RuntimeBinder_CSharpArgumentInfo
 Microsoft_CSharp_RuntimeBinder_CSharpGetMemberBinder__ctor_string_System_Type_System_Collections_Generic_IEnumerable_1_Microsoft_CSharp_RuntimeBinder_CSharpArgumentInfo:
-.file 3 "/Users/builder/data/lanes/3969/44931ae8/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/Microsoft.CSharp/Microsoft.CSharp.RuntimeBinder/CSharpGetMemberBinder.cs"
+.file 3 "/Users/builder/data/lanes/3988/e02d2723/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/Microsoft.CSharp/Microsoft.CSharp.RuntimeBinder/CSharpGetMemberBinder.cs"
 .loc 3 43 0 prologue_end
 .word 0xa9bc7bfd
 .word 0x910003fd
@@ -416,7 +416,7 @@ Lme_6:
 	.align 4
 	.no_dead_strip Microsoft_CSharp_RuntimeBinder_CSharpSetMemberBinder__ctor_Microsoft_CSharp_RuntimeBinder_CSharpBinderFlags_string_System_Type_System_Collections_Generic_IEnumerable_1_Microsoft_CSharp_RuntimeBinder_CSharpArgumentInfo
 Microsoft_CSharp_RuntimeBinder_CSharpSetMemberBinder__ctor_Microsoft_CSharp_RuntimeBinder_CSharpBinderFlags_string_System_Type_System_Collections_Generic_IEnumerable_1_Microsoft_CSharp_RuntimeBinder_CSharpArgumentInfo:
-.file 4 "/Users/builder/data/lanes/3969/44931ae8/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/Microsoft.CSharp/Microsoft.CSharp.RuntimeBinder/CSharpSetMemberBinder.cs"
+.file 4 "/Users/builder/data/lanes/3988/e02d2723/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/Microsoft.CSharp/Microsoft.CSharp.RuntimeBinder/CSharpSetMemberBinder.cs"
 .loc 4 44 0 prologue_end
 .word 0xa9bb7bfd
 .word 0x910003fd
@@ -686,7 +686,7 @@ Lme_8:
 	.align 4
 	.no_dead_strip Microsoft_CSharp_RuntimeBinder_DynamicContext__ctor_Mono_CSharp_ModuleContainer_Mono_CSharp_ReflectionImporter
 Microsoft_CSharp_RuntimeBinder_DynamicContext__ctor_Mono_CSharp_ModuleContainer_Mono_CSharp_ReflectionImporter:
-.file 5 "/Users/builder/data/lanes/3969/44931ae8/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/Microsoft.CSharp/Microsoft.CSharp.RuntimeBinder/DynamicContext.cs"
+.file 5 "/Users/builder/data/lanes/3988/e02d2723/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/Microsoft.CSharp/Microsoft.CSharp.RuntimeBinder/DynamicContext.cs"
 .loc 5 48 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
@@ -1294,7 +1294,7 @@ Lme_e:
 	.align 4
 	.no_dead_strip Microsoft_CSharp_RuntimeBinder_Extensions_ToReadOnly_T_REF_System_Collections_Generic_IEnumerable_1_T_REF
 Microsoft_CSharp_RuntimeBinder_Extensions_ToReadOnly_T_REF_System_Collections_Generic_IEnumerable_1_T_REF:
-.file 6 "/Users/builder/data/lanes/3969/44931ae8/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/Microsoft.CSharp/Microsoft.CSharp.RuntimeBinder/Extensions.cs"
+.file 6 "/Users/builder/data/lanes/3988/e02d2723/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/Microsoft.CSharp/Microsoft.CSharp.RuntimeBinder/Extensions.cs"
 .loc 6 41 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
@@ -1330,7 +1330,7 @@ Lme_f:
 	.align 4
 	.no_dead_strip Microsoft_CSharp_RuntimeBinder_RuntimeBinderContext__ctor_Microsoft_CSharp_RuntimeBinder_DynamicContext_System_Type
 Microsoft_CSharp_RuntimeBinder_RuntimeBinderContext__ctor_Microsoft_CSharp_RuntimeBinder_DynamicContext_System_Type:
-.file 7 "/Users/builder/data/lanes/3969/44931ae8/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/Microsoft.CSharp/Microsoft.CSharp.RuntimeBinder/RuntimeBinderContext.cs"
+.file 7 "/Users/builder/data/lanes/3988/e02d2723/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/Microsoft.CSharp/Microsoft.CSharp.RuntimeBinder/RuntimeBinderContext.cs"
 .loc 7 51 0 prologue_end
 .word 0xa9bc7bfd
 .word 0x910003fd
@@ -1561,7 +1561,7 @@ Lme_1b:
 	.align 4
 	.no_dead_strip Microsoft_CSharp_RuntimeBinder_RuntimeBinderException__ctor
 Microsoft_CSharp_RuntimeBinder_RuntimeBinderException__ctor:
-.file 8 "/Users/builder/data/lanes/3969/44931ae8/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/Microsoft.CSharp/Microsoft.CSharp.RuntimeBinder/RuntimeBinderException.cs"
+.file 8 "/Users/builder/data/lanes/3988/e02d2723/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/Microsoft.CSharp/Microsoft.CSharp.RuntimeBinder/RuntimeBinderException.cs"
 .loc 8 37 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -1594,7 +1594,7 @@ Lme_1d:
 	.align 4
 	.no_dead_strip Microsoft_CSharp_RuntimeBinder_RuntimeBinderInternalCompilerException__ctor
 Microsoft_CSharp_RuntimeBinder_RuntimeBinderInternalCompilerException__ctor:
-.file 9 "/Users/builder/data/lanes/3969/44931ae8/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/Microsoft.CSharp/Microsoft.CSharp.RuntimeBinder/RuntimeBinderInternalCompilerException.cs"
+.file 9 "/Users/builder/data/lanes/3988/e02d2723/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/Microsoft.CSharp/Microsoft.CSharp.RuntimeBinder/RuntimeBinderInternalCompilerException.cs"
 .loc 9 37 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -1627,7 +1627,7 @@ Lme_1f:
 	.align 4
 	.no_dead_strip Microsoft_CSharp_RuntimeBinder_CSharpBinder__ctor_System_Dynamic_DynamicMetaObjectBinder_Mono_CSharp_Expression_System_Dynamic_DynamicMetaObject
 Microsoft_CSharp_RuntimeBinder_CSharpBinder__ctor_System_Dynamic_DynamicMetaObjectBinder_Mono_CSharp_Expression_System_Dynamic_DynamicMetaObject:
-.file 10 "/Users/builder/data/lanes/3969/44931ae8/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/Microsoft.CSharp/Microsoft.CSharp.RuntimeBinder/CSharpBinder.cs"
+.file 10 "/Users/builder/data/lanes/3988/e02d2723/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/Microsoft.CSharp/Microsoft.CSharp.RuntimeBinder/CSharpBinder.cs"
 .loc 10 50 0 prologue_end
 .word 0xa9bc7bfd
 .word 0x910003fd
@@ -2074,7 +2074,7 @@ Lme_26:
 	.align 4
 	.no_dead_strip Microsoft_CSharp_RuntimeBinder_ErrorPrinter__ctor
 Microsoft_CSharp_RuntimeBinder_ErrorPrinter__ctor:
-.file 11 "/Users/builder/data/lanes/3969/44931ae8/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/Microsoft.CSharp/Microsoft.CSharp.RuntimeBinder/ErrorPrinter.cs"
+.file 11 "/Users/builder/data/lanes/3988/e02d2723/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/Microsoft.CSharp/Microsoft.CSharp.RuntimeBinder/ErrorPrinter.cs"
 .loc 11 38 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -2214,7 +2214,7 @@ Lme_2c:
 	.align 4
 	.no_dead_strip System_Array_InternalArray__Insert_T_REF_int_T_REF
 System_Array_InternalArray__Insert_T_REF_int_T_REF:
-.file 12 "/Users/builder/data/lanes/3969/44931ae8/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/corlib/System/Array.cs"
+.file 12 "/Users/builder/data/lanes/3988/e02d2723/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/corlib/System/Array.cs"
 .loc 12 160 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
@@ -2523,7 +2523,7 @@ Lme_32:
 	.align 4
 	.no_dead_strip System_Runtime_CompilerServices_ReadOnlyCollectionBuilder_1_T_REF__ctor_System_Collections_Generic_IEnumerable_1_T_REF
 System_Runtime_CompilerServices_ReadOnlyCollectionBuilder_1_T_REF__ctor_System_Collections_Generic_IEnumerable_1_T_REF:
-.file 13 "/Users/builder/data/lanes/3969/44931ae8/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/dlr/Runtime/Microsoft.Scripting.Core/Utils/ReadOnlyCollectionBuilder.cs"
+.file 13 "/Users/builder/data/lanes/3988/e02d2723/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/dlr/Runtime/Microsoft.Scripting.Core/Utils/ReadOnlyCollectionBuilder.cs"
 .loc 13 70 0 prologue_end
 .word 0xa9b97bfd
 .word 0x910003fd
@@ -3857,7 +3857,7 @@ _mono_aot_file_info:
 	.long 96,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 0,14,148,123,155,37,97,202,40,229,16,35,212,11,16,221
+	.byte 195,16,45,3,122,35,202,184,159,200,29,252,216,81,171,32
 	.globl _mono_aot_module_Microsoft_CSharp_info
 	.align 3
 _mono_aot_module_Microsoft_CSharp_info:
