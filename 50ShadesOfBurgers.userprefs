@@ -1,24 +1,27 @@
 ﻿<Properties StartupConfiguration="{DF20C9C0-B8C9-48E8-B106-1C6A9F23DA28}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="50ShadesOfBurgers/RestoDetailViewController.cs">
+  <MonoDevelop.Ide.Workbench>
     <Files>
       <File FileName="50ShadesOfBurgers/Model/ListPickerViewModel.cs" Line="85" Column="52" />
       <File FileName="50ShadesOfBurgers/QuestionOneViewController.cs" Line="215" Column="1" />
       <File FileName="50ShadesOfBurgers/Model/Grades.cs" Line="34" Column="23" />
-      <File FileName="50ShadesOfBurgers/QuestionFiveEightViewController.cs" Line="180" Column="14" />
-      <File FileName="50ShadesOfBurgers/CommentsAndConfirmViewController.cs" Line="50" Column="49" />
+      <File FileName="50ShadesOfBurgers/QuestionFiveEightViewController.cs" Line="140" Column="24" />
+      <File FileName="50ShadesOfBurgers/CommentsAndConfirmViewController.cs" Line="71" Column="17" />
       <File FileName="50ShadesOfBurgers/MainMenuViewController.cs" Line="26" Column="88" />
       <File FileName="50ShadesOfBurgers/QuestionSixSevenEightViewController.cs" Line="142" Column="86" />
       <File FileName="50ShadesOfBurgers/FirstLoginViewController.cs" Line="65" Column="4" />
-      <File FileName="50ShadesOfBurgers/RestoDetailViewController.cs" Line="59" Column="1" />
+      <File FileName="50ShadesOfBurgers/RestoDetailViewController.cs" Line="77" Column="6" />
       <File FileName="50ShadesOfBurgers/AboutViewController.cs" Line="45" Column="4" />
       <File FileName="50ShadesOfBurgers/Model/CustomTop10Cell.cs" Line="20" Column="6" />
       <File FileName="50ShadesOfBurgers/Model/Top10DataSource.cs" Line="66" Column="10" />
       <File FileName="50ShadesOfBurgers/Model/GooglePlaceApi/PlaceDetailsClass.cs" Line="33" Column="36" />
       <File FileName="50ShadesOfBurgers/Top10TableViewController.cs" Line="87" Column="58" />
+      <File FileName="50ShadesOfBurgers/Model/BurgerPlacesAnnotation.cs" Line="27" Column="3" />
+      <File FileName="50ShadesOfBurgers/Main.cs" Line="12" Column="1" />
+      <File FileName="50ShadesOfBurgers/Model/MapDelegate.cs" Line="23" Column="64" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
-  <MonoDevelop.Ide.ItemProperties.50ShadesOfBurgers PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.598f255b16530f7b0c87b76578401f080ca0a999" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.ItemProperties.50ShadesOfBurgers PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.30737AD0-EDB6-4D1B-8B4E-DE542B98A836" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

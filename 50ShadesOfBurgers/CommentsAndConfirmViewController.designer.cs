@@ -24,6 +24,22 @@ namespace _50ShadesOfBurgers
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton btnOverallGrade1 { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton btnOverallGrade2 { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton btnOverallGrade3 { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton btnOverallGrade4 { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UILabel lblComment { get; set; }
 
         [Outlet]
@@ -40,6 +56,26 @@ namespace _50ShadesOfBurgers
             if (btnConfirm != null) {
                 btnConfirm.Dispose ();
                 btnConfirm = null;
+            }
+
+            if (btnOverallGrade1 != null) {
+                btnOverallGrade1.Dispose ();
+                btnOverallGrade1 = null;
+            }
+
+            if (btnOverallGrade2 != null) {
+                btnOverallGrade2.Dispose ();
+                btnOverallGrade2 = null;
+            }
+
+            if (btnOverallGrade3 != null) {
+                btnOverallGrade3.Dispose ();
+                btnOverallGrade3 = null;
+            }
+
+            if (btnOverallGrade4 != null) {
+                btnOverallGrade4.Dispose ();
+                btnOverallGrade4 = null;
             }
 
             if (lblComment != null) {

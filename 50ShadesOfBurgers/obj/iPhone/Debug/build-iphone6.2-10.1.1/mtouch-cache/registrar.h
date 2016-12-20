@@ -43,6 +43,7 @@
 @class CommentsAndConfirmViewController;
 @class AboutViewController;
 @class _50ShadesOfBurgers_BurgerPlacesAnnotation;
+@class _50ShadesOfBurgers_MapDelegate;
 @class FirstLoginViewController;
 @class AppDelegate;
 @class QuestionnaireChoixRestoViewController;

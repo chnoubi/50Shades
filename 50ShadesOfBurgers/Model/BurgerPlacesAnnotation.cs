@@ -23,5 +23,8 @@ namespace _50ShadesOfBurgers
 			this.coord = coordinate;
 			this.title = title;
 		}
+
+
+
 	}
 }

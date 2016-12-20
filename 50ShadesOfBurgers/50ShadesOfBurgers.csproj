@@ -190,6 +190,7 @@
     </Compile>
     <Compile Include="Model\GooglePlaceApi\PlaceDetailsClass.cs" />
     <Compile Include="Model\BurgerPlacesAnnotation.cs" />
+    <Compile Include="Model\MapDelegate.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Database\SQLite.cs" />

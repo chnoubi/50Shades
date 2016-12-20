@@ -19,6 +19,7 @@ namespace _50ShadesOfBurgers
 		public string restoGoogleId { get; set; }
 		string strPlaceQuery;
 		public PlaceDetailsClass resto;
+		MapDelegate mapDelegate;
         LoadingOverlay loadingOverlay;
 		public RestoDetailViewController (IntPtr handle) : base (handle)
 		{
@@ -27,6 +28,7 @@ namespace _50ShadesOfBurgers
 		public override void ViewDidLoad()
 		{
 			base.ViewDidLoad();
+
 
 		}
 
@@ -56,20 +58,31 @@ namespace _50ShadesOfBurgers
         public override void ViewDidAppear(bool animated)
         {
             base.ViewDidAppear(animated);
+
+			showRestoData();
+
+
+		}
+
+		public void showRestoData()
+		{
 			lblRestoName.Text = resto.result.name;
 			lblRestoAdresse.Text = resto.result.formatted_address;
 			lblRestoTel.Text = resto.result.international_phone_number;
 
 			var restoCoords = new CLLocationCoordinate2D(resto.result.geometry.location.lat, resto.result.geometry.location.lng);
 
+			//mapDelegate = new MapDelegate();
+			//implements MapDelegate and GetViewForAnnotation method
+			//mapViewResto.Delegate = mapDelegate;
+ 
 			var annotation = new BurgerPlacesAnnotation(restoCoords, resto.result.name);
+
 			mapViewResto.AddAnnotation(annotation);
 
 			MKCoordinateSpan span = new MKCoordinateSpan(KilometresToLatitudeDegrees(2), KilometresToLongitudeDegrees(2, restoCoords.Latitude));
 			mapViewResto.Region = new MKCoordinateRegion(restoCoords, span);
-
-        }
-
+		}
 
 
 		public async Task<PlaceDetailsClass> getResto(string restoId)
@@ -97,5 +110,8 @@ namespace _50ShadesOfBurgers
 			double radiusAtLatitude = earthRadius * Math.Cos(atLatitude * degreesToRadians);
 			return (kms / radiusAtLatitude) * radiansToDegrees;
 		}
+
+
+
 	}
 }
