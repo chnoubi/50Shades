@@ -1,6 +1,6 @@
-# Version: 10.3.0.0 (xcode8.2: e02d272)
-# [first argument, ignore] # /Library/Frameworks/Xamarin.iOS.framework/Versions/10.3.0.0/lib/mtouch/mtouch.exe
-/Library/Frameworks/Xamarin.iOS.framework/Versions/10.3.0.0/lib/mtouch/mtouch.exe \
+# Version: 10.3.1.8 (cycle8-xi: 7beaef4)
+# [first argument, ignore] # /Library/Frameworks/Xamarin.iOS.framework/Versions/10.3.1.8/lib/mtouch/mtouch.exe
+/Library/Frameworks/Xamarin.iOS.framework/Versions/10.3.1.8/lib/mtouch/mtouch.exe \
 	--cache \
 	/Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/mtouch-cache \
 	--sim \
@@ -14,7 +14,7 @@
 	--sdk \
 	10.2 \
 	--targetver \
-	8.0 \
+	10.0 \
 	--http-message-handler=HttpClientHandler \
 	--tls-provider=default \
 	--abi=i386 \

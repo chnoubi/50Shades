@@ -21,9 +21,7 @@ namespace _50ShadesOfBurgers
 		private nfloat bottom = 0.0f;
 		private nfloat offset = 10.0f;
 		private bool moveViewUp = false;
-		NSObject showNotification;
-		NSObject hideNotification;
-
+		private UIView activeView;
 
 		//  public Resto selectedResto;
 
@@ -91,10 +89,8 @@ namespace _50ShadesOfBurgers
 				this.PerformSegue("goToMenu", this);
 			}), true);
 
-			this.NavigationController.NavigationBar.BarTintColor = UIColor.Yellow;
-
-			showNotification = UIKeyboard.Notifications.ObserveWillShow(ShowCallback);
-			hideNotification = UIKeyboard.Notifications.ObserveDidHide(HideCallback);
+			NSNotificationCenter.DefaultCenter.AddObserver(UIKeyboard.DidShowNotification, ShowCallback);
+			NSNotificationCenter.DefaultCenter.AddObserver(UIKeyboard.WillHideNotification, HideCallback);
 
 		}
 
@@ -166,16 +162,21 @@ namespace _50ShadesOfBurgers
 
 		}
 
-		//Setup show textfiels when keyboard open
+		//Setup show textfield when keyboard open
 
-		void ShowCallback(object sender, UIKeyboardEventArgs args)
+		void ShowCallback(NSNotification notification)
 		{
+			
 			// get the keyboard size
-			CoreGraphics.CGRect r = args.FrameBegin;
+			CoreGraphics.CGRect r = UIKeyboard.BoundsFromNotification(notification);
+			foreach (UIView view in this.View.Subviews)
+			{
+				if (view.IsFirstResponder) activeView = view;
+			}
 
 
 			// Bottom of the controller = initial position + height + offset      
-			bottom = (txtBurgerNew.Frame.Y + txtBurgerNew.Frame.Height + offset);
+			bottom = (activeView.Frame.Y + activeView.Frame.Height + offset);
 
 			// Calculate how far we need to scroll
 			scroll_amount = (r.Height - (View.Frame.Size.Height - bottom));
@@ -194,7 +195,7 @@ namespace _50ShadesOfBurgers
 		}
 
 
-		void HideCallback(object sender, UIKeyboardEventArgs args)
+		void HideCallback(NSNotification notification)
 		{
 			if (moveViewUp) { ScrollTheView(false); }
 		}

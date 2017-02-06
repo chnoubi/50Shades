@@ -28,10 +28,10 @@ namespace _50ShadesOfBurgers
 			btnTop10Img = UIImage.FromFile("BestBurgersButton.png");
 			btnTop10Img = btnTop10Img.ImageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal);
 
-			btnLocateImg = UIImage.FromFile("LocateABurgerButton.png");
+			btnLocateImg = UIImage.FromFile("LocateABurgerButtonComingSoon.png");
 			btnLocateImg = btnLocateImg.ImageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal);
 
-			btnGoldenImg = UIImage.FromFile("GoldenBurgerButton.png");
+			btnGoldenImg = UIImage.FromFile("GoldenBurgerButtonComingSoon.png");
 			btnGoldenImg = btnGoldenImg.ImageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal);
 
 			btnAboutImg = UIImage.FromFile("AboutThisAppButton.png");
@@ -40,7 +40,9 @@ namespace _50ShadesOfBurgers
 			btnRate.SetImage(btnRateImg, UIControlState.Normal);
 			btnTop10.SetImage(btnTop10Img, UIControlState.Normal);
 			btnLocate.SetImage(btnLocateImg, UIControlState.Normal);
+			btnLocate.Enabled = false;
 			btnGolden.SetImage(btnGoldenImg, UIControlState.Normal);
+			btnGolden.Enabled = false;
 			btnAbout.SetImage(btnAboutImg, UIControlState.Normal);
 
 		}

@@ -29,3 +29,6 @@
 /Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/optimized/bgrRateNavigationClearBar.png
 /Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/optimized/woodTexture.png
 /Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/bin/iPhoneSimulator/Debug/Google.Maps.dll
+/Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/optimized/Default-568h@2x.png
+/Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/optimized/LocateABurgerButtonComingSoon.png
+/Users/ronaldhollander/GitHub/50Shades/50ShadesOfBurgers/obj/iPhoneSimulator/Debug/optimized/GoldenBurgerButtonComingSoon.png
